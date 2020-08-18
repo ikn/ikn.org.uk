@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ page_title | e }}</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="{{ site.stylesheets_page.child('site.css').link | e }}" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="{{ site.stylesheets_page.child(page_id + '.css').link | e }}" />
+    {% for js_dep in js_deps %}
+        <script src="{{ site.scripts_page.child('lib').child(js_dep.value + '.js').link | e }}"
+                defer
+        ></script>
+    {% endfor %}
+    <script src="{{ site.scripts_page.child(page_id + '.js').link | e }}"
+            defer
+    ></script>
+</head>
+<body>

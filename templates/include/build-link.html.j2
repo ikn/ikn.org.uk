@@ -1,0 +1,10 @@
+<a
+    href="{{ build.intro.url | e }}"
+    title="{{ build.metadata.title | e }}">
+    {% for tag in util.get_build_tags(site, build) -%}
+        <img src="{{ tag.build_icon_page.link | e }}"
+             alt="{{ tag.name | e }}"
+             width="{{ tag.build_icon_page.width | e }}"
+             height="{{ tag.build_icon_page.height | e }}" />
+    {%- endfor %}
+</a>

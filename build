@@ -1,0 +1,24 @@
+#! /usr/bin/env python3
+
+import sys
+import os
+
+import gw2build
+
+main_site_path = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))
+sys.path.append(os.path.join(main_site_path, 'gw2', 'lib'))
+
+import gw2site
+
+builds_path = os.path.expanduser(
+    '~/Documents/Other/todo/games/guild wars 2/builds/active')
+site_path = os.path.join(main_site_path, 'gw2')
+dest_path = os.path.join(main_site_path, 'ikn', 'gw2')
+
+builds = {}
+for in_name in os.listdir(builds_path):
+    build_meta = gw2build.parse.parse_title(in_name)
+    with open(os.path.join(builds_path, in_name), 'r') as f_in:
+        builds[in_name] = gw2build.parse.parse_body(f_in, build_meta)
+
+gw2site.Site(builds, site_path, dest_path).build()

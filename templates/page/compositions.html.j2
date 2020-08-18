@@ -1,0 +1,63 @@
+{% include 'include/header.html.j2' %}
+<div id="content">
+    <h1>{{ page_title | e }}</h1>
+
+    <div id="compositions-container">
+
+        <div id="compositions">
+            <h2>Compositions</h2>
+            {% for comp in compositions %}
+                {% set composition = comp.compositions[0] %}
+                {% include 'include/compositions-group.html.j2' %}
+                <div class="composition-extra-groupings">
+                    {% for composition in comp.compositions[1:] %}
+                        {% include 'include/compositions-group.html.j2' %}
+                    {% endfor %}
+                </div>
+                <hr />
+            {% endfor %}
+        </div>
+
+        <div id="roles">
+            <h2>Roles</h2>
+            {% for role in roles.values() %}
+                <h3 id="role-{{ role.role.id_ | e }}"
+                    data-role-id="{{ role.role.id_ | e }}"
+                    title="{{ role.role | e }}">
+                    {% set role_id = role.role.id_ %}
+                    Role: {% include 'include/role-icon.html.j2' %}
+                </h3>
+                <h4 title="Builds that fill this role">Builds</h4>
+                <ul>
+                    {% for build_name in role.role.build_names %}
+                        {% set build = builds[build_name] %}
+                        <li>{% include 'include/build-link.html.j2' %}</li>
+                    {% endfor %}
+                </ul>
+                {% if role.role.providing_roles %}
+                    <h4 title="Other roles that can be used in place of this one, but are less efficient">
+                        Also covered by
+                    </h4>
+                    <ul>
+                        {% for providing_role in (
+                            compositions_module.sort_roles(
+                                role.role.providing_roles))
+                        %}
+                            <li>
+                                <a href="#role-{{ providing_role.id_ | e }}"
+                                   data-role-id="{{ providing_role.id_ | e }}"
+                                   class="providing-role">
+                                    {% set role_id = providing_role.id_ %}
+                                    {% include 'include/role-icon.html.j2' %}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                <hr />
+            {% endfor %}
+        </div>
+
+    </div>
+
+</div>

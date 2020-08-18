@@ -1,0 +1,30 @@
+/* TODO: merge with ikn */
+
+/* GLOBAL */
+body {margin: 0; background: #babaff url(bg.png); font-size: 81%; color: #335;}
+a {text-decoration: none; color: #77f;}
+a:hover {text-decoration: underline; color: #99f;}
+a img {border: none;}
+
+#nav, #content, #foot {background: url(w.4.png); background: rgba(255, 255, 255, 0.4);}
+
+/* CONTENT */
+#content {max-width: 900px; margin: 12px 12px 12px 102px; padding: 6px 24px 6px;}
+p {line-height: 1.5em; margin: 12px 0;}
+h1 {margin: 12px 36px 18px; padding: 0 6px; border-bottom: 1px solid #babaff;}
+h2 {margin-left: 24px;}
+h3 {margin-left: 12px;}
+hr {border: none; border-top: 1px solid #babaff; margin: 12px -12px;}
+dt {font-weight: bold; margin-bottom: 6px;}
+dd {margin-left: 24px; margin-bottom: 12px;}
+#content ul {margin: 12px 0; padding-left: 24px;}
+#content li {margin: 6px 0;}
+
+[title] { cursor: help; }
+a[title], button[title] { cursor: pointer; }
+a [title], button [title] { cursor: inherit; }
+button { cursor: pointer; border: 1px solid #babaff; background: url(w.3.png); background: rgba(255, 255, 255, 0.3); }
+.hr-button { width: 100%; padding: 0; font-size: 80%; }
+.highlight, :target {
+    background: #eeb !important;
+}
