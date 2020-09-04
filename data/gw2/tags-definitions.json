@@ -32,14 +32,15 @@
     "healing": { "build icon": "healing power" },
 
     "might": { "build icon": "might" },
-    "5m": { "build icon": "might" },
-    "10m": { "build icon": "might" },
+    "some might": { "build icon": "might" },
+    "squad might": { "build icon": "might" },
+    "some squad might": { "build icon": "might" },
     "quickness": { "build icon": "quickness" },
-    "5q": { "build icon": "quickness" },
-    "10q": { "build icon": "quickness" },
-    "p10q": { "build icon": "quickness" },
+    "some quickness": { "build icon": "quickness" },
+    "squad quickness": { "build icon": "quickness" },
+    "some squad quickness": { "build icon": "quickness" },
     "alacrity": { "build icon": "alacrity" },
-    "5a": { "build icon": "alacrity" },
-    "10a": { "build icon": "alacrity" },
-    "p10a": { "build icon": "alacrity" }
+    "some alacrity": { "build icon": "alacrity" },
+    "squad alacrity": { "build icon": "alacrity" },
+    "some squad alacrity": { "build icon": "alacrity" }
 }

@@ -1,20 +1,39 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-    <title>{{ page_title | e }}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="{{ site.style_images_page.child('icon.png').link | urlencode }}">
+    <title>{{ page_title + '' | e }}</title>{# operating on the string to force it to exist #}
     <link rel="stylesheet"
           type="text/css"
-          href="{{ site.stylesheets_page.child('site.css').link | e }}" />
-    <link rel="stylesheet"
-          type="text/css"
-          href="{{ site.stylesheets_page.child(page_id + '.css').link | e }}" />
+          href="{{ site.stylesheets_page.child('site.css').link | urlencode }}" />
+    {% if site.stylesheets_page.child(page_id + '.css').exists() %}
+        <link rel="stylesheet"
+            type="text/css"
+            href="{{ site.stylesheets_page.child(page_id + '.css').link | urlencode }}" />
+    {% endif %}
     {% for js_dep in js_deps %}
-        <script src="{{ site.scripts_page.child('lib').child(js_dep.value + '.js').link | e }}"
+        <script src="{{ site.scripts_page.child('lib').child(js_dep.value + '.js').link | urlencode }}"
                 defer
         ></script>
     {% endfor %}
-    <script src="{{ site.scripts_page.child(page_id + '.js').link | e }}"
-            defer
-    ></script>
+    {% if site.scripts_page.child(page_id + '.js').exists() %}
+        <script src="{{ site.scripts_page.child(page_id + '.js').link | urlencode }}"
+                defer
+        ></script>
+    {% endif %}
 </head>
+
 <body>
+    <ul id="nav">
+        <li><a href="{{ site.page.link | e }}" title="website home page">Home</a></li>
+        <li><a href="{{ site.link('game') }}">Games</a></li>
+        <li><a href="{{ site.link('app') }}" title="desktop GUI applications">Applications</a></li>
+        <li><a href="{{ site.link('lib') }}" title="code libraries">Libraries</a></li>
+        <li><a href="{{ site.link('tool') }}" title="tools, utilities and helper programs">Tools</a></li>
+        <li><a href="{{ site.link('dustforce/maps') }}" title="custom maps for Dustforce">Dustforce</a></li>
+        <li><a href="{{ site.link('gw2/builds') }}" title="builds for Guild Wars 2">GW2 builds</a></li>
+    </ul>
+    <div id="sohorribleimsorry"></div>
+    <div id="content">
+        <h1>{{ page_title | e }}</h1>

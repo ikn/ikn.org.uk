@@ -11,7 +11,7 @@
 #compositions {
     margin-right: 60px;
 }
-@media (max-width: 600px) {
+@media (max-width: 675px) {
     #compositions-container {
         flex-direction: column;
     }
@@ -32,11 +32,11 @@
     margin-top: 6px;
 }
 #compositions table td {
-    background: url(w.4.png); background: rgba(255, 255, 255, 0.4);
+    background: url({{ site.style_images_page.child('w.4.png').link | e }}); background: rgba(255, 255, 255, 0.4);
     text-align: center;
 }
 #compositions table td.empty {
-    background: url(w.2.png); background: rgba(255, 255, 255, 0.2);
+    background: url({{ site.style_images_page.child('w.2.png').link | e }}); background: rgba(255, 255, 255, 0.2);
 }
 #compositions table td {
     border: 1px solid #babaff;
@@ -54,9 +54,23 @@
 }
 
 /* roles section */
-#roles h3 img {
-    vertical-align: -3px;
+
+#roles {
+    flex-grow: 1;
+    column-width: 150px;
+    column-fill: balance-all;
+    column-rule: 1px solid #babaff;
 }
-#roles li img {
-    vertical-align: middle;
+#roles h2 {
+    column-span: all;
+}
+#roles .role {
+    margin: 0 12px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+/* first column margin doesn't collapse, others do */
+#roles h2 + .role h3 {
+    margin-top: 0;
 }

@@ -2,7 +2,7 @@ util = (() => {
     const util = {};
 
     const SCROLL_TOP_GAP = 6;
-    const SCROLL_SHOW_HEIGHT = 100;
+    const SCROLL_SHOW_HEIGHT = 150;
     const KEYCODE_ESCAPE = 27;
 
     // make `$el` visible in the window with the minimal amount of scrolling
@@ -13,7 +13,7 @@ util = (() => {
         if (elTop < viewTop) {
             window.scrollBy(0, elTop - SCROLL_TOP_GAP - viewTop);
         } else if (elTop + SCROLL_SHOW_HEIGHT > viewBottom) {
-            window.scrollBy(0, elTop + 100 - viewBottom);
+            window.scrollBy(0, elTop + SCROLL_SHOW_HEIGHT - viewBottom);
         }
     };
 

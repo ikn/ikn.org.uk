@@ -1,0 +1,17 @@
+{% for build_group in grouped_builds %}
+    <h{{ header_level }}>{{ build_group['label'] | e }}</h{{ header_level }}>
+    {% if build_group['html desc'] %}
+        <p>{{ build_group['html desc'] }}</p>
+    {% endif %}
+    {% if build_group['groups'] %}
+        {% set grouped_builds = build_group['groups'] %}
+        {% set header_level = header_level + 1 %}
+        {% include 'include/gw2/grouped-builds.html.j2' %}
+    {% else %}
+        <ul>
+            {% for build in build_group['builds'] %}
+                <li>{% include 'include/gw2/build-link.html.j2' %}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endfor %}

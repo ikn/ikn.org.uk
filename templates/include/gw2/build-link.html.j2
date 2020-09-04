@@ -1,0 +1,11 @@
+<a
+    href="{{ build.intro.url | e }}"
+    title="{{ build.metadata.title | e }}">
+    {% for tag in gw2util.get_build_tags(gw2site, build) -%}
+        {% include 'include/gw2/build-tag.html.j2' %}
+    {%- endfor -%}
+    {%- set text_tags = gw2util.get_text_build_tags(gw2site, build) -%}
+    {% if text_tags -%}
+        &mdash;{{ text_tags | e }}
+    {% endif %}
+</a>
