@@ -1,0 +1,18 @@
+{% set page_title = 'Sequence' %}
+{% include 'include/header.html.j2' %}
+{% set license = 'BSD_NEW' %}
+{% include 'include/license.html.j2' %}
+
+<p>This is a puzzle game I made for <a href="http://www.glorioustrainwrecks.com/node/2097">Pirate Kart V</a> in February 2012.  To play, use the mouse to move and rotate the line so that all the red lines will cross it once extended.  Press space to start things moving along the lines.  Red lines with blue circles at the end will turn by the angle indicated in dark blue when any of the other moving things cross the main line.</p>
+<h2>Download</h2>
+<ul>
+    <li><strong><a href="{{ site.link('download/game/sequence/sequence-pk.tar.gz') }}">Source (134KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/sequence/sequence-win-pk.zip') }}">Windows binary (5.86MiB)</a></strong></li>
+</ul>
+<h2>Screenshots</h2>
+<p><img src="{{ site.link('resources/img/game/sequence/level 4.png') }}" alt="screenshot" width="960" height="540"></p>
+<p><img src="{{ site.link('resources/img/game/sequence/level 5.png') }}" alt="screenshot" width="960" height="540"></p>
+<p><img src="{{ site.link('resources/img/game/sequence/level 5 (running).png') }}" alt="screenshot" width="960" height="540"></p>
+<p><img src="{{ site.link('resources/img/game/sequence/level 6.png') }}" alt="screenshot" width="960" height="540"></p>
+
+{% include 'include/footer.html.j2' %}

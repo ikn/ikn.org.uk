@@ -1,0 +1,28 @@
+{% set page_title = 'pacman-expire-cache' %}
+{% include 'include/header.html.j2' %}
+{% set license = 'GPL_V3' %}
+{% include 'include/license.html.j2' %}
+
+<p>pacman-expire-cache is a tool for deleting old cached package files for the <i>pacman</i> package manager.  Existing cache cleaners generally offer the ability to retain the latest X versions of each package, or of each installed package.  This is not useful in the following cases:
+<ul>
+    <li>a package has been broken for a while, but not used recently, and has been updated many times recently, such that you only notice the issue once all working versions have been deleted</li>
+    <li>a package has been accidentally removed, and then an update pushed which breaks it</li>
+</ul>
+<p>pacman-expire-cache solves these issues by allowing you to retain, independently:
+<ul>
+    <li>package files newer than X days</li>
+    <li>the latest Y versions for each installed package</li>
+    <li>the latest Z versions for each not-installed package</li>
+</ul>
+<h2>Download</h2>
+<ul>
+    <li><strong><a href="{{ site.link('download/tool/pacman-expire-cache/pacman-expire-cache-0.2.tar.gz') }}">Source (0.2, 4.36KiB)</a></strong></li>
+    <li><strong><a href="https://aur.archlinux.org/packages/pacman-expire-cache/">Arch Linux package (AUR)</a></strong></li>
+    <li><strong><a href="https://github.com/ikn/pacman-expire-cache">Git repository</a></strong></li>
+</ul>
+<h3>Older versions</h3>
+<ul>
+    <li><strong><a href="{{ site.link('download/tool/pacman-expire-cache/pacman-expire-cache-0.1.tar.gz') }}">Source (0.1, 3.73KiB)</a></strong></li>
+</ul>
+
+{% include 'include/footer.html.j2' %}

@@ -1,0 +1,32 @@
+{% set page_title = 'Python modules' %}
+{% include 'include/header.html.j2' %}
+{% set license = 'LGPL_V3' %}
+{% include 'include/license.html.j2' %}
+{% set license = 'GPL_V3' %}
+{% include 'include/license.html.j2' %}
+
+<p>This page lists a few Python modules I've written; most stuff is fairly well documented with more information than I've given here.  Within each section, I've ordered them, quite subjectively, in some sort of mix of interestingness, usefulness and recency, 'best' first.</p>
+<p><a href="https://github.com/ikn/python-modules">Git repository</a>.</p>
+<h2>Python 3</h2>
+<p>Possibly 3.0, 3.1 or 3.2.  Go with 3.2 (or later) if you can.</p>
+<ul>
+    <li><b><a href="{{ site.link('download/lib/gcutil.py') }}">gcutil</a></b> For managing GameCube filesystems.</li>
+    <li><b><a href="{{ site.link('download/lib/fsmanage.py') }}">fsmanage</a></b> (depends on <a href="https://live.gnome.org/PyGObject">PyGObject 3</a>) A GTK3 file manager for an arbitrary filesystem backend.  This is deprecated in favour of <a href="../fsmanage">a rewritten version</a>.</li>
+    <li><b><a href="{{ site.link('download/lib/srss.py') }}">srss</a></b> Streaming RSS feed creator/maintainer.</li>
+</ul>
+<h2>Python 2</h2>
+<p>2.6 or later 2.x; possibly 2.5 or something in cases, but don't count on it.</p>
+<ul>
+    <li><b><a href="{{ site.link('download/lib/cmdparse.py') }}">cmdparse</a></b> (depends on miscutil) A CLI command parser - stuff like <code>program command [options] [arguments]</code>.  Inspired by Mercurial, it accepts any unambiguous abbreviation of known commands.</li>
+    <li><b><a href="{{ site.link('download/lib/stringcompress.py') }}">stringcompress</a></b> Encode strings to an arbitrary character set, and get good compression for strings only using a few characters (especially if you know what those characters will be).</li>
+    <li><b><a href="{{ site.link('download/lib/htmlparse.py') }}">htmlparse</a></b> (depends on miscutil) Parse (X)HTML (and apply CSS selections to the result).</li>
+    <li><b><a href="{{ site.link('download/lib/dispman.py') }}">dispman</a></b> (depends on <a href="http://www.pygame.org">Pygame</a>) Manage multiple displays on a single Pygame surface.</li>
+    <li><b><a href="{{ site.link('download/lib/tiler.py') }}">tiler</a></b> (depends on <a href="http://www.pygame.org">Pygame</a>) Draw and manage a tiled grid in Pygame.</li>
+    <li><b><a href="{{ site.link('download/lib/fetch.py') }}">fetch</a></b> (depends on <a href="http://pycurl.sourceforge.net">PycURL</a>) Easy URL fetching with cookies and parallel transfers and stuff.</li>
+    <li><b><a href="{{ site.link('download/lib/sph.py') }}">sph</a></b> A spatial hash implementation.</li>
+    <li><b><a href="{{ site.link('download/lib/gtkutil.py') }}">gtkutil</a></b> (depends on <a href="http://www.pygtk.org">PyGTK</a>) General PyGTK stuff.</li>
+    <li><b><a href="{{ site.link('download/lib/miscutil.py') }}">miscutil</a></b> A few miscellaneous things.</li>
+    <li><b><a href="{{ site.link('download/lib/mwbot.py') }}">mwbot</a></b> (depends on htmlparse, fetch, <a href="http://pycurl.sourceforge.net">PycURL</a>) Read from and write to MediaWiki installations: fetch and process data; perform edits, moves, deletions and the like.  This <s>is</s> was going through a bit of a transformation and only the basics really work.</li>
+</ul>
+
+{% include 'include/footer.html.j2' %}

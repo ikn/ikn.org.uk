@@ -1,0 +1,126 @@
+{% set page_title = 'Brain Requirement Just A Formality' %}
+{% include 'include/header.html.j2' %}
+{% set license = 'GPL_V3' %}
+{% include 'include/license.html.j2' %}
+{% set license = 'CC0_V1' %}
+{% include 'include/license.html.j2' %}
+
+<p>This is a Sokoban-like puzzle game with different types of blocks and a level editor that I started in December 2010.  I spent some time on it over the next year, then decided it wasn't very interesting any more and moved on to other things, and now I've released it in the state I happened to leave it in.  Controls and other details are in the included readme.</p>
+<h2>Download</h2>
+<p>On Windows: the source will work, but it contains files that are invalid, so you probably want to use the other download.</p>
+<ul>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-final.tar.gz') }}">source (157KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-win-final.zip') }}">Windows binary (6.19MiB)</a></strong></li>
+</ul>
+<h3>Older versions</h3>
+<h4>Source</h4>
+<ul>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-4-12-2011.tar.gz') }}">4/12/2011 (193KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-2-12-2011.tar.gz') }}">2/12/2011 (193KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-1-12-2011-3.tar.gz') }}">1/12/2011-3 (192KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-1-12-2011-2.tar.gz') }}">1/12/2011-2 (191KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-1-12-2011.tar.gz') }}">1/12/2011 (180KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-30-11-2011-4.tar.gz') }}">30/11/2011-4 (180KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-30-11-2011-3.tar.gz') }}">30/11/2011-3 (179KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-30-11-2011-2.tar.gz') }}">30/11/2011-2 (179KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-30-11-2011.tar.gz') }}">30/11/2011 (164KiB)</a></strong></li>
+</ul>
+<h4>Windows binary</h4>
+<ul>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-win-4-12-2011.zip') }}">4/12/2011 (6.22MiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-30-11-2011-2-win.zip') }}">30/11/2011-2 (6.21MiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/brjaf/brjaf-30-11-2011-win.zip') }}">30/11/2011 (6.20MiB)</a></strong></li>
+</ul>
+<h2>Development</h2>
+<h3>Editor</h3>
+<p>You start with a blank 5x5 grid, resizable with keyboard shortcuts (shift/alt+arrow keys (shift moves top and left sides, alt moves bottom and right sides)).  On the right is another grid with every type of block and surface that can be placed in the puzzle: simply select them and insert them wherever.  It's possible to undo and redo changes, and delete or overwrite placed blocks and surfaces.</p>
+<p class="centre"><img src="{{ site.link('resources/img/game/brjaf/editor.png') }}" alt="the editor"></p>
+<p>(Oh, a quick note: doing crazy things in the editor <em>will</em> crash the game when you play the level, especially if you place a load of bouncing blocks (the green ones) and have them all moving around.)</p>
+<h4>Controls</h4>
+<p>I chose the keyboard shortcuts to be, hopefully, intuitive - which ended up meaning just having as many key 'aliases' for each action as makes sense.  To place, or 'insert', the currently selected block or surface, for example, you can press enter, space, i, or the insert key.  To switch the selection between the two grids, there's tab, F8, slash and backslash, all of which I've seen used for tabbing in various programs (ctrl+pageup/pagedown, alt+left/right, ctrl+left/right and alt+1/2 don't work, however).</p>
+<p>Undo is ctrl+z or u, and redo is ctrl+y, ctrl+shift+z or ctrl+r, all of which, again, I've seen used before.  So, hopefully, anyone who uses keyboard shortcuts enough should be able to just guess how most things work.</p>
+<p>Switching between the puzzles and then selecting tiles with the keyboard is fiddly, though, so there's also mouse control: click on a tile on the right to choose a block or surface, and click on a tile on the left to put it in the puzzle.  Right-click to delete stuff.  Simple, and much quicker.</p>
+<h4>Saving</h4>
+<p>Level names are fun.  These will also be the level's filename, so obvious things to filter out include path separators (\ on Windows, / everywhere else), '.' and '..' (which signify the current and parent directory respectively), spaces (they're used to separate level names on the level select screen) and a blank name.  I also had to restrict the number of characters so that they wouldn't look silly when laid out on the level select screen, and because the text entry widget I've created is fixed-length to make things easier.</p>
+<p>Further to that, as you probably know, Windows filesystems don't allow a load of characters, like ':', '?', '*', '&lt;', '"', '|' - these are easy to catch by just trying to create the file and looking at the error returned.  But did you know that if you try to save a file ending in '.' or ' ', Windows just ignores it and saves the file with a truncated name without even telling you?  And did you know Windows treats filenames as case-insensitive?  Just try to create a file called 'A' and one called 'a' in the same directory.  Craziness indeed...</p>
+<p>Now, it makes sense that to save a puzzle, you should be able to solve it (and you would only be asked to anyway if there were at least one controllable block and the player wouldn't win straight away, without doing anything).  This can be annoying, though, especially if the puzzle takes a long time to complete - you don't want to have to do so every time you save it.</p>
+<p>The way around this was to have a separate set of 'draft' puzzles - you can't play these from the menu, only edit them, and then save them as playable custom levels once they're actually finished.  Selecting 'save' from the editor pause menu can still be used to test the level, of course.</p>
+<h3>Solutions</h3>
+<h4>Auto-solving</h4>
+<p>What if a puzzle's just too hard for whoever's playing to complete?  There's a menu option when playing levels to automatically complete the level for you.  This doesn't actually count as a completion, just shows you how to do it - and, of course, you can stop it whenever you want, if you only need a hint as to how to start.</p>
+<p>Controlling the playback of a solution is easy: space or enter pauses, and when paused, right moves forwards one step at a time (I never implemented stepping backwards).  Unpause again with space or enter, and then you can make the solution run at the fastest possible speed by holding tab - that is, the fastest speed anyone could play at.  Hold ctrl+tab to speed up the framerate and further boost the solving speed.</p>
+<p>The way auto-solving works means the default speed is customisable: 'wait' periods are incorporated, defaulting to 5 frames, which is half a second at the default framerate.  Of course, some puzzles need a few consecutive moves to be done within a certain time limit, so this is only a maximum wait period.</p>
+<p>Each frame, the input (L/R/U/D) is displayed on the bottom of the screen - on the frame you need to enter it to get what's happening to happen.  This is weird, at first, since the effect (the blocks moving) will happen on the <em>next</em> frame - but it makes sense, right?</p>
+<h4>Recording solutions</h4>
+<p>We can do more than just auto-solving puzzles.  I talked about the need to solve a custom puzzle before saving it - why not take the input from this playthrough and save it as a solution along with the puzzle?  This can then be played back - the end result is that we can guarantee you can view a solution for even custom levels.  Fun.</p>
+<h4>Solution format</h4>
+<p>Now, to save a solution to a puzzle, you need some sort of format you can then write code to generate and interpret.  I needed it to be easy to read and write by hand, with a text editor, and to allow for both rigid frame timings and the flexible timings I mentioned earlier.  The rigid timing is necessary for recorded solutions, since it's potentially insanely tricky to work out whether we can speed up or slow down a gap between input frames - any other blocks on the grid could be moving around anywhere and block off or open up paths.</p>
+<p>Another thing to think about is how to deal with those multi-move constraints - needing to move to a certain tile before some time limit is up, or to do so slowly enough that a particular something will have happened by the time you get there.</p>
+<p>Here are a few examples of what I ended up with:</p>
+<pre><code>: ,r,,r,,r,,r,,d,,d,,d,,d</code></pre>
+<p>This goes in the level definition file, so ':' is necessary to mark this line as a solution.  Then we alternate between frame timings and inputs between each ',': wait, then move; wait, then move.  Every frame timing here is blank, which means the amount of time is unimportant and will be decided by the solution speed setting - for example, this defaults to the equivalent of</p>
+<pre><code>: 5,r,5,r,5,r,5,r,5,d,5,d,5,d,5,d</code></pre>
+<p>and, when fast-forwarding, to</p>
+<pre><code>: 0,r,0,r,0,r,0,r,0,d,0,d,0,d,0,d</code></pre>
+<p>As for the input frames, 'r' means right and 'd' means down.  So we can also have:</p>
+<pre><code>: ,dr,,dr,,dr</code></pre>
+<p>which 'pushes' (moves) diagonally down and right three times in a row.</p>
+<p>All of the existing levels with more complicated timing are way too complicated for examples, so I've mocked up a simple timing example.  Here's the level:</p>
+<p class="centre"><img src="{{ site.link('resources/img/game/brjaf/example level 1.png') }}" alt="example level"></p>
+<p>The light grey block is on an arrow pointing up, and arrows apply a force in the direction they're pointing.  So if you don't move, the grey block is going to move around and block off the red goal without any possiblity of getting past it.  You'll lose on the 7th move, so you need to move right twice in 6 frames.  Each move takes a frame, leaving 2 frames for each of the two waiting periods (2 + 1 + 2 + 1 = 6).  So we get as a solution,</p>
+<pre><code>: &lt;=2,r,&lt;=2,r,,r</code></pre>
+<p>since the last wait can, of course, be as long as you want.  So each of the first two waiting periods is at most 2 frames - fast-forwarding will still wait 0 frames each time, but the default speed will have each last 2 frames, getting the red block there in time.  You can use '&gt;', '&gt;=', '&lt;' and '&lt;=', and even sandwich a wait between two values with something like '&lt;=5&gt;1' (this waits between 2 and 5 frames inclusive).</p>
+<p>How about holding a direction?  Another example:</p>
+<p class="centre"><img src="{{ site.link('resources/img/game/brjaf/example level 2.png') }}" alt="example level"></p>
+<p>To complete this, you need to hold down to work against the arrow, then press right at the same time - the vertical forces cancel out, and you just move right, to the goal.  Now, initially, you might want to have this:</p>
+<pre><code>: ,d,,dr</code></pre>
+<p>but if the wait between the two input frames ('d' and 'dr') is longer than a frame, you'll be moved up again by the arrow before you can move right.  If you put a '0' in there to leave no wait between moving down to the arrow and moving right to the goal, it'll work, but it's not really something someone would do.  We want that slowed up a bit more...</p>
+<pre><code>: ,d,[d],dr</code></pre>
+<p>The '[d]' in the wait section means 'hold down while waiting however long it is you wait for' - so, like someone playing the level would, the auto-solver moves down, waits on the arrow, holding down to stay there (for 5 frames by default), then presses right as well to move along.  Of course, you can do '[ul]' to hold up and left, and even '[ul]&lt;=3'.</p>
+<p>And that's pretty much it.  I tend to record solutions through the editor to get the directions easily, then tweak the timings by hand to make it work at different speeds.  I've probably spent more time than you'd expect on something that does nothing more than give the player help - but hey, it was fun, and I like how it's turned out.</p>
+<h3>Level sharing</h3>
+<h4>Compression</h4>
+<p>Obviously to share a level with someone else you can just pass the level file around, but this involves unnecessary work: you need to find the directory containing levels, bother with uploading and downloading, and avoid name conflicts.  Generating a short string to act as a code you can just copy/paste is much better, so the challenge is making levels fit into a reasonably small string.</p>
+<p>The first thing I did was try compressing levels with <a href="http://zlib.net/">zlib</a>, <a href="http://www.bzip.org/">bzip2</a> and <a href="https://en.wikipedia.org/wiki/LZMA">LZMA</a>, then encoding to base-64 for something printable; the results weren't great.  It's fairly apparent that one saving could come from using an output character set larger than base-64: ignoring whitespace, there are 94 printable ASCII characters.  I wrote encoding/decoding routines to do this for arbitrary input and output character sets, and got slightly better results, but it became clear I'd have to actually think about the format of the stuff I'm storing to get smaller strings.</p>
+<p>So, a level looks like this:</p>
+<pre><code>6 4
+0 0 1
+1 1 1
+1 2 0
+0 2 1
+1 2 2
+2 3 0
+1 4 1
+1 4 2
+
+0 1 0
+-5 1 3
+-6 3 0
+-6 3 1
+-6 3 2
+0 4 0
+@ Working together?  How sweet...
+: [r],dr,[r]>0,dr,0,r,0,r,>1,r,>0,l,,r,>1,l,0,l,0,l,0,l,[l],lu,,l,,u,>0,r,,r,,r,,u,,u,,u,,l,,l,[u],ur</code></pre>
+<p>The first line is the level's size, and then follow block and surface types and positions.  Lines starting with '@' are messages and lines starting with ':' are solutions; I chose this particular example to give an idea of the possible characters in solutions.</p>
+<p>So first of all, I can split this up into four sections, each using a different character set: the first line, the surfaces and blocks, the messages, and the solutions.  By reserving a specific character in the output, these can be joined back together for the resulting compressed string.</p>
+<p>The first line is separate to the blocks and surfaces because it's much better to encode the latter with each number a 'character' in the input, and get rid of the spaces and line breaks.  I can't apply this to the first line too because the numbers can be very large for very large levels, increasing the input character set and negating the whole point of doing this.</p>
+<p>So, given this idea, I wrote compression/decompression routines that work with a known 'container' character set for the input data to compress it quite well.  They actually try both assuming this and embedding the actual character set in the compressed string, which is sometimes slightly better.  These are available as a Python module called 'stringcompress' <a href="{{ site.link('lib/python') }}">here</a>.</p>
+<p>For the blocks and surfaces, then, the container character set is '05 43617289-' - the strange order is for tiny optimisations that don't really matter.  For solutions, testing shows that zlib is actually better for very long solutions; otherwise, the container character set is ',drlu0&lt;&gt;=1[]23456789:'.  I also try splitting the solution into two parts and compressing each separately, because this is sometimes better.</p>
+<p>Messages are composed of printable characters (restricted to those allowed), but are never really long enough for zlib to do better than just encoding the spaces away.  Testing shows that this would involve messages longer than 150 characters, which is crazy even for a custom level.</p>
+<p>I've glossed over some details, but this works quite well.  The above level becomes</p>
+<pre>ad07nJX!%FCea&lt;SqzN3YN*/115]Xp03!QS$qG"e{hq!JYF[)>P[]Nukh-AOoB`0306[`ha_vpJVwZ5,sGevmzJ)R?>jc3`ZL|Mw{9"_juVJle{9K'm-*113vH%JMu</pre>
+<p>which isn't bad.  You get the real savings for big levels with lots of stuff, which is precisely where it's most important.</p>
+<h4>Importing</h4>
+<p>When the player tries to save a level imported from a shared code, I need to determine whether to save it as a draft or not; the distinction is that draft levels don't have a stored solution.  Rather than just trust the source of the level and assume the existence of a solution means it works, I chose to actually check all solutions and remove broken ones, and <em>then</em> see if there are any solutions left.</p>
+<p>The first thing to do is check that at least one goal tile and one controllable (player) block exists.  Then run each solution in turn and check if the player's winning by the end.  This is mostly easy, but there are a few edge cases to look out for.  An example:</p>
+<p class="centre"><img src="{{ site.link('resources/img/game/brjaf/example edge case 1.png') }}" alt="example level"></p>
+<p>A valid solution here is just to press right once, but when this finishes, the player isn't winning.  For this reason, we need to continue running the level until nothing moves in a step - then this will keep running until the player reaches the goal and the level is marked as won.</p>
+<p>Of course, another problem arises from this: what about infinite loops?  Example:</p>
+<p class="centre"><img src="{{ site.link('resources/img/game/brjaf/example edge case 2.png') }}" alt="example level"></p>
+<p>Now, you can't have a working solution with an infinite loop because solutions have finite length, but if you edit the level file here and set the solution to moving right once, there's going to be a problem testing the solution's validity with the process so far.  Yes, it's a pretty evil thing to do.  But some people are pretty evil.</p>
+<p>I need to check for loops, then.  But there's a problem: it's possible to set up a few loops with different running times, such that you can quickly push the time taken for the whole level to return to some previous state into hundreds or thousands of steps.  Here's a simple example:</p>
+<p class="centre"><img src="{{ site.link('resources/img/game/brjaf/example edge case 3.png') }}" alt="example level"></p>
+<p>It's probably a bad idea to store this many states in memory and check against each of the previous few hundred a few hundred times, all while the player's waiting for the save screen to appear.</p>
+<p>The solution?  Until I think of something better, just limit the number of steps allowed after the solution ends to something sufficiently high.  1000 seems quick enough.  No-one cares about being forced to save a crazy level by an evil person as a draft anyway, right...?</p>
+
+{% include 'include/footer.html.j2' %}

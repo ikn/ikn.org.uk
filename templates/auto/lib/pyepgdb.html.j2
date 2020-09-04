@@ -1,0 +1,23 @@
+{% set page_title = 'pyepgdb' %}
+{% include 'include/header.html.j2' %}
+{% set license = 'BSD_NEW' %}
+{% include 'include/license.html.j2' %}
+
+<?php license("BSD-new"); ?>
+<p>pyepgdb is a Python 3 library for parsing epgdb (v2) files produced by <a href="https://tvheadend.org/">Tvheadend</a>.  See also <a href="{{ site.link('tool/tvheadend-safe-restart') }}">tvheadend-safe-restart</a>, since Tvheadend doesn't update the epgdb file until it restarts.</p>
+<h2>Documentation</h2>
+<p><a href="doc">API documentation</a>.</p>
+<h2>Download</h2>
+<ul>
+    <li><strong><a href="{{ site.link('download/lib/pyepgdb/pyepgdb-1.2.0.tar.gz') }}">Source (1.2.0, 18.1KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/lib/pyepgdb/pyepgdb-1.1.0.tar.gz') }}">Source (1.1.0, 16.8KiB)</a></strong></li>
+    <li><strong><a href="https://aur.archlinux.org/packages/python-pyepgdb/">Arch Linux package (AUR)</a></strong></li>
+    <li><strong><a href="https://pypi.org/project/pyepgdb/">Python package (PyPI)</a></strong></li>
+    <li><strong><a href="https://github.com/ikn/pyepgdb">Git repository</a></strong></li>
+</ul>
+<h3>Older versions</h3>
+<ul>
+    <li><strong><a href="{{ site.link('download/lib/pyepgdb/pyepgdb-1.0.0.tar.gz') }}">Source (1.0.0, 15.4KiB)</a></strong></li>
+</ul>
+
+{% include 'include/footer.html.j2' %}

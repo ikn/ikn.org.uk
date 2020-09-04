@@ -1,0 +1,45 @@
+#! /bin/bash
+
+# Distributed under the terms of the BSD 3-Clause license
+
+# Usage:
+# "audctl toggle" - toggle muted status of audio device
+# "audctl up" - increase audio volume
+# "audctl down" - decrease audio volume
+# "audctl <n>" - set volume to <n>%
+
+device="Master playback"
+step="5%"
+
+getvol () { amixer get $device | grep -o "[0-9]*%" | head -n1; }
+
+muted () {
+    if [ -n "`amixer get $device | grep "\[on\]"`" ]; then
+        return 1
+    else
+        return 0
+    fi
+}
+
+# handle arguments
+if [ -z $@ ]; then
+    echo "error: expected an argument" 1>&2
+    exit 1
+fi
+for arg in $@; do
+    case $arg in
+    toggle) amixer -q set $device toggle ;;
+    up)     amixer -q set $device $step+ ;;
+    down)   amixer -q set $device $step- ;;
+    *)
+        if [ "$arg" -ge 0 ]; then
+            amixer -q set $device $arg%
+        else
+            echo "error: unknown option '$arg'" 1>&2
+            exit 1
+        fi
+        ;;
+    esac
+done
+
+notifaud &

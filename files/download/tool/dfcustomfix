@@ -1,0 +1,32 @@
+#! /bin/bash
+
+# Distributed under the terms of the BSD 3-Clause license
+
+# Sets up the standard user custom levels directory to be merged with the CMP
+# directory.  Multiple calls toggle this behaviour.
+
+# Takes no arguments.
+
+cmp_dir=/opt/Dustforce/content/levels3
+local_dir=~/.HitboxTeam/Dustforce/user/levels
+
+if [ -L "$local_dir" ]; then
+    echo >&2 "revert"
+    rm "$local_dir"
+    mkdir "$local_dir"
+    find "$cmp_dir" -user "$USER" | xargs mv -t "$local_dir"
+
+    if [ -z "$(find "$cmp_dir" -not -user root -print -quit)" ]; then
+        echo >&2 "only original levels remain"
+        sudo chmod o-w /opt/Dustforce/content/levels3/
+    else
+        echo >&2 "some custom levels remain"
+    fi
+
+else
+    echo >&2 "set up"
+    sudo chmod o+w /opt/Dustforce/content/levels3/
+    mv "$local_dir"/* "$cmp_dir"
+    rmdir "$local_dir"
+    ln -s "$cmp_dir" "$local_dir"
+fi

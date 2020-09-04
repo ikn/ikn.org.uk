@@ -1,0 +1,19 @@
+{% set page_title = 'It\'s Probably Not Even Paint' %}
+{% include 'include/header.html.j2' %}
+{% set license = 'GPL_V3' %}
+{% include 'include/license.html.j2' %}
+{% set license = 'CC0_V1' %}
+{% include 'include/license.html.j2' %}
+
+<p>A multiplayer game about painting a canvas, made for <a href="http://www.ludumdare.com/compo/">Ludum Dare</a> 26 (April 2013), which had the theme 'minimalism'.  The idea is to fire paint balls across the canvas to paint it in your colour; when it's fully painted, the player with the most paint on it wins.  I don't think the gameplay is great - there are no real obvious strategies to do better, and it doesn't feel right - so, as you can tell, I haven't focused much on graphics and sound.</p>
+<h2>Download</h2>
+<ul>
+    <li><strong><a href="{{ site.link('download/game/ipnep/ipnep-ld.tar.gz') }}">Source (1.16MiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/ipnep/ipnep-win-ld.zip') }}">Windows binary (7.15MiB)</a></strong></li>
+</ul>
+<h2>Screenshots</h2>
+<p><img src="{{ site.link('resources/img/game/ipnep/screen 1.png') }}" alt="screenshot" width="1024" height="576"></p>
+<p><img src="{{ site.link('resources/img/game/ipnep/screen 2.png') }}" alt="screenshot" width="1024" height="576"></p>
+<p><img src="{{ site.link('resources/img/game/ipnep/screen 3.png') }}" alt="screenshot" width="1024" height="576"></p>
+
+{% include 'include/footer.html.j2' %}

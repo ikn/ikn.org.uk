@@ -1,0 +1,60 @@
+{% set page_title = 'Scripts' %}
+{% include 'include/header.html.j2' %}
+
+<p>Interpreted (desktop) things (<a href="http://www.gnu.org/software/bash">Bash</a>/<a href="http://www.python.org">Python</a>) that aren't full-fledged pieces of software.  They're only tested on Linux, and most will only work on Linux (and similar, if supported by the dependencies).</p>
+<h2>Instructions</h2>
+<p>Make the script executable:</p>
+<pre><code>chmod +x path/to/script</code></pre>
+<p>Then place the script somewhere on your path: do</p>
+<pre><code>echo $PATH</code></pre>
+<p>for a list of paths checked by the shell; if none of these are under your home directory, it makes sense to create a <i>~/bin</i> directory and put something like</p>
+<pre><code>export PATH="$PATH:$HOME/bin"</code></pre>
+<p>in your shell configuration file (<i>~/.bashrc</i> for Bash).</p>
+<p>For Python scripts, change the first line to point to the location of the Python executable for the matching version (2 or 3) (Python 2 or 3 might be <i>python</i> instead of <i>python2</i>, for example).</p>
+
+{% set license = 'GPL_V3' %}
+{% include 'include/license.html.j2' %}
+
+<a name="ytsubs"></a><h2>ytsubs</h2>
+<p>Create an RSS feed from your YouTube subscriptions.  (YouTube no longer provides any reliable method of receiving updates.)</p>
+<p><b>Usage</b>: run <i>ytsubs -h</i>.</p>
+<p><b>Dependencies</b>: Python 3.2 or later 3.x.</p>
+<p><strong><a href="{{ site.link('download/tool/ytsubs') }}">Download (0.3.3)</a></strong>.  There's also an <a href="https://aur.archlinux.org/packages/ytsubs/">Arch package</a>.</p>
+
+{% set license = 'BSD_NEW' %}
+{% include 'include/license.html.j2' %}
+
+<a name="aud"></a><h2>audctl/notifaud</h2>
+<p>Control the volume on an <a href="http://www.alsa-project.org">ALSA</a> system.  audctl does the controlling, and notifaud sends a desktop notification (via <a href="http://www.galago-project.org">libnotify</a>) indicating the current state; I use these together with <a href="http://www.nongnu.org/xbindkeys">xbindkeys</a> to map my keyboard's volume keys.  If you want to use both together, uncomment (remove the '#' from) the last line of audctl, and it will run notifaud every time it's called.</p>
+<p>Unlike most volume control utilities I've used, audctl does not unmute the volume when it is changed; this is by design.</p>
+<p><b>Configuration</b>: audctl has a couple of things to set: open up the script in an editor and change the variables at the top (7th and 8th lines) if you want to.  See <code>man amixer</code> for details on what values these can take.  Similarly, open notifaud and change the values of 'TIMEOUT' and 'PID_FILE' to set the duration of notifications and the temporary file to use (lines 15 and 16).</p>
+<p><b>Usage</b>: audctl takes a single argument: 'up' or 'down' to step the volume up or down; 'toggle' to mute/unmute sound; or a number (integer) to set the volume to (a percentage, without the '%').  notifaud takes no arguments.</p>
+<p><b>Dependencies</b>: both depend on <a href="ftp://ftp.alsa-project.org/pub/utils">alsa-utils</a> (in particular, amixer), and audctl also requires Bash.  notifaud depends on <a href="http://www.galago-project.org">notify-python</a>, and won't do much without some sort of notification daemon, like <a href="http://www.galago-project.org">notification-daemon</a> or <a href="http://goodies.xfce.org/projects/applications/xfce4-notifyd">Xfce Notification Daemon</a>.</p>
+<p><strong>Download</strong>: <a href="{{ site.link('download/tool/audctl') }}">audctl</a>/<a href="{{ site.link('download/tool/notifaud') }}">notifaud</a>.</p>
+
+{% set license = 'BSD_NEW' %}
+{% include 'include/license.html.j2' %}
+
+<a name="dfcustomfix"></a><h2>dfcustomfix</h2>
+<p>For many people running <a href="http://dustforce.com">Dustforce</a> on Linux, the custom levels menu crashes the game.  This is a workaround that adds custom levels to the community map pack.  Running the script moves current custom levels into CMP and links the custom levels directory with appropriate permissions for adding new ones.  Running the script again reverts the changes made.</p>
+<p><b>Dependencies</b>: Bash, sudo, sudo privileges.</p>
+<p><strong><a href="{{ site.link('download/tool/dfcustomfix') }}">Download</a></strong>.</p>
+
+{% set license = 'GPL_V3' %}
+{% include 'include/license.html.j2' %}
+
+<a name="aur-sync"></a><h2>aur-sync</h2>
+<p>Install Arch Linux packages from <a href="https://aur.archlinux.org/">AUR</a>.</p>
+<p><b>Usage</b>: takes a list of package names to install or update; passing the '-f' option forces an update for packages already at the latest version.  Passing no packages tries to update every foreign package currently installed (the output of <code>pacman -Qmq</code>).</p>
+<p><b>Dependencies</b>: Python 3.</p>
+<p><strong><a href="{{ site.link('download/tool/aur-sync') }}">Download</a></strong>.</p>
+
+{% set license = 'BSD_NEW' %}
+{% include 'include/license.html.j2' %}
+
+<a name="mw-transfer-img"></a><h2>mw-transfer-img</h2>
+<p>An interactive script for transferring files from one <a href="http://www.mediawiki.org">MediaWiki</a> wiki to another.  Useful when migrating a wiki that you don't have backend access to.</p>
+<p><b>Dependencies</b>: Python 2.</p>
+<p><strong><a href="{{ site.link('download/tool/mw-transfer-img.tar.gz') }}">Download</a></strong>.</p>
+
+{% include 'include/footer.html.j2' %}

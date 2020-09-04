@@ -1,0 +1,30 @@
+{% set page_title = 'jsession' %}
+{% include 'include/header.html.j2' %}
+{% set license = 'GPL_V3' %}
+{% include 'include/license.html.j2' %}
+
+<p>jsession is a tiny session manager for X.  On login, It searches through a configurable list of files and runs the commands in them (commenting is supported too).</p>
+<h2>Installation</h2>
+<p>Follow the instructions in the included README (including installing the dependencies), and note how configuration works.  Make sure you have a window manager being launched (put a call in one of the 'init' files listed in the config file) before trying to get a session going!  It's also probably a good idea to have a terminal emulator run so you can quit the session using</p>
+<pre><code>jsession-quit logout</code></pre>
+<p>(Of course, you could always start X from a terminal (tty) and log out by sending it an interrupt signal.)</p>
+<p>To get jsession to run on login, put a call to <i>jsession</i> in your <i>~/.xinitrc</i> file, or look up how your distribution/display manager do things.</p>
+<h2>Download</h2>
+<ul>
+    <li><strong><a href="{{ site.link('download/tool/jsession/jsession-0.3.1.tar.gz') }}">Source (0.3.1, 6.66KiB)</a></strong></li>
+    <li><strong><a href="https://aur.archlinux.org/packages/jsession">Arch Linux package (AUR)</a></strong></li>
+    <li><strong><a href="https://github.com/ikn/jsession">Git repository</a></strong></li>
+</ul>
+<h3>Older versions</h3>
+<ul>
+    <li><strong><a href="{{ site.link('download/tool/jsession/jsession-0.3.0.tar.gz') }}">Source (0.3.0, 6.63KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/tool/jsession/jsession-0.2.5.tar.gz') }}">Source (0.2.5, 17.5KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/tool/jsession/jsession-0.2.4.tar.gz') }}">Source (0.2.4, 16.8KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/tool/jsession/jsession-0.2.3.tar.gz') }}">Source (0.2.3, 16.4KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/tool/jsession/jsession-0.2.2.tar.gz') }}">Source (0.2.2, 15.9KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/tool/jsession/jsession-0.2.1.tar.gz') }}">Source (0.2.1, 3.48KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/tool/jsession/jsession-0.2.0.tar.gz') }}">Source (0.2.0, 3.34KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/tool/jsession/jsession-0.1.0.tar.gz') }}">Source (0.1.0, 2.06KiB)</a></strong></li>
+</ul>
+
+{% include 'include/footer.html.j2' %}

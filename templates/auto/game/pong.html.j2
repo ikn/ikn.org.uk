@@ -1,0 +1,17 @@
+{% set page_title = 'Pong' %}
+{% include 'include/header.html.j2' %}
+{% set license = 'EXPAT' %}
+{% include 'include/license.html.j2' %}
+
+<p>I made this game for a 2-week competition in October 2011; it's Pong with 0-4 paddles and some gravity stuff.  Controls and other details are in the included readme.</p>
+<p>These downloads have a few bugfixes made after the competition's end, but no gameplay changes or extra levels or features.</p>
+<h2>Download</h2>
+<ul>
+    <li><strong><a href="{{ site.link('download/game/pong/pong.tar.gz') }}">Source (86.1KiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/pong/pong-win.zip') }}">Windows binary (6.12MiB)</a></strong></li>
+</ul>
+<h2>Screenshots</h2>
+<p><img src="{{ site.link('resources/img/game/pong/level 1.png') }}" alt="level 1" width="960" height="480"></p>
+<p><img src="{{ site.link('resources/img/game/pong/level 3.png') }}" alt="level 3" width="960" height="480"></p>
+
+{% include 'include/footer.html.j2' %}

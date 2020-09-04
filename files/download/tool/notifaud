@@ -1,0 +1,67 @@
+#! /usr/bin/env python2
+
+# Distributed under the terms of the BSD 3-Clause license
+
+# Takes no arguments.
+
+import os
+from signal import signal, SIGUSR1
+from subprocess import check_output
+import re
+from time import sleep
+
+import pynotify
+
+PID_FILE = '/tmp/notifaud-pids'
+TIMEOUT = 3
+n = None
+pynotify.init('notifaud')
+
+def notify ():
+    # get volume and whether muted
+    s = check_output(('amixer', 'get', 'Master', 'playback'))
+    vol = re.findall('[0-9]*%', s)[0]
+    vol_num = int(vol[:-1])
+    muted = re.search(r'\[on\]', s) is None
+    if muted:
+        icon = 'muted'
+    elif vol_num > 70:
+        icon = 'high'
+    elif vol_num > 40:
+        icon = 'medium'
+    else:
+        icon = 'low'
+    args = (vol, None, 'audio-volume-' + icon)
+    global n
+    if n is None:
+        # create notification
+        n = pynotify.Notification(*args)
+        n.set_timeout(TIMEOUT * 1000)
+    else:
+        # update notification
+        n.update(*args)
+    n.show()
+    sleep(TIMEOUT)
+
+def update (sig, stack):
+    # update notification
+    global n
+    if n is not None:
+        notify()
+    # else between writing PID to file and creating the notification
+
+# get current notification, if any
+try:
+    with open(PID_FILE) as f:
+        pid = int(f.read())
+    # send signal to other instance to tell it to renew the notification
+    os.kill(pid, SIGUSR1)
+except:
+    # write PID to file
+    with open(PID_FILE, 'w') as f:
+        f.write(str(os.getpid()))
+    # set up signal handler and notify
+    signal(SIGUSR1, update)
+    notify()
+    # remove PID file
+    os.remove(PID_FILE)

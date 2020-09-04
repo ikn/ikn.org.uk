@@ -1,0 +1,323 @@
+#! /usr/bin/env python3
+
+# Distributed under the terms of the GNU General Public License, version 3
+
+# Upgrade the given packages from AUR, else all foreign packages.  Built
+# packages are copied to ~/.aurcache/.
+
+# For options, run "aur-sync -h".
+
+# TODO:
+# bash completion
+# -o --open: if -d passed, open each path (with xdg-open)
+# dependency handling
+# -e --edit: pause after download/extract for making changes to package (wait for input)
+# -s --show: display PKGBUILD and pre/post install scripts before installing ($EDITOR) (makepkg -o, makepkg -e)
+
+from sys import argv, stderr
+import os
+import signal
+from subprocess import Popen, check_output
+from optparse import OptionParser
+import json
+from glob import glob
+import shutil
+import tarfile
+from urllib.request import urlopen
+from urllib.error import URLError
+from urllib.parse import urlencode
+
+BASE_URL = 'http://aur.archlinux.org'
+HOME = os.path.expanduser('~')
+_WORKDIR = os.path.join(HOME, '.aur')
+WORKDIR = None
+CACHE = os.path.join(HOME, '.aurcache')
+IGNORE_FILE = os.path.join('~', '.aur-sync-ignore')
+
+processes = []
+
+
+def print (*args, **kw):
+    __builtins__.print(*args, file=stderr, **kw)
+
+
+def print_stdout (*args, **kw):
+    __builtins__.print(*args, **kw)
+
+
+def cleanup_workdir ():
+    if WORKDIR is None:
+        # not created yet
+        return
+    preserve = []
+    ds = glob(WORKDIR + os.sep + '*')
+    for d in ds:
+        if 'preserve' in os.listdir(d):
+            preserve.append(d)
+    if preserve:
+        for d in ds:
+            if d not in preserve:
+                shutil.rmtree(d)
+    elif os.path.exists(WORKDIR):
+        shutil.rmtree(WORKDIR)
+
+
+def set_preserved (name):
+    with open(os.path.join(WORKDIR, name, 'preserve'), 'w'):
+        pass
+
+
+def quit (sig, frame):
+    for p in processes:
+        try:
+            os.kill(p.pid, signal.SIGTERM)
+        except ProcessLookupError:
+            # already ended
+            pass
+    for p in processes:
+        p.wait()
+    cleanup_workdir()
+    print('')
+    exit(1)
+
+
+def get (method, *args):
+    url = BASE_URL + '/rpc.php?'
+    get_args = [('type', method)]
+    if len(args) == 1:
+        get_args.append(('arg', args[0]))
+    else:
+        get_args += [('arg[]', arg) for arg in args]
+    try:
+        with urlopen(url + urlencode(get_args)) as request:
+            # json.load takes str, not bytes, so we have to use json.loads
+            page = json.loads(request.read().decode('latin_1'))
+    except URLError:
+        page = None
+    return page
+
+
+def ask (q, default=True):
+    try:
+        print(q, '[Y/n]' if default else '[y/N]', end=' ')
+        s = input()
+    except EOFError:
+        return default
+    if s and s.lower() != ('n', 'y')[default]:
+        return not default
+    return default
+
+
+def install (pkg, path, options):
+    pkg_dir = os.path.join(WORKDIR, pkg)
+    if not os.path.exists(pkg_dir):
+        os.makedirs(pkg_dir)
+    # download
+    archive_url = BASE_URL + path
+    ext = '.'.join(os.path.basename(path).split('.')[1:])
+    archive = os.path.join(pkg_dir, pkg + '.' + ext)
+    try:
+        with urlopen(archive_url) as request:
+            with open(archive, 'wb') as f:
+                shutil.copyfileobj(request, f)
+    except URLError:
+        print('{}: couldn\'t download package'.format(pkg))
+        return False
+
+    # extract
+    if not tarfile.is_tarfile(archive):
+        print('{}: something wrong with tarball'.format(pkg))
+        return False
+    ar = tarfile.open(archive)
+    # get files/dirs in the archive root
+    # dirs might not have entries of their own, only their children
+    root_names = set()
+    for f in ar.members:
+        name = f.name
+        if os.sep in name:
+            name = name[:name.find(os.sep)]
+        root_names.add(name)
+    if len(root_names) == 1:
+        # just a directory
+        ar.extractall(pkg_dir)
+        build_dir = os.path.join(pkg_dir, root_names.pop())
+    else:
+        # extract everything to pkg_dir
+        build_dir = os.path.join(pkg_dir, pkg)
+        os.makedirs(build_dir)
+        ar.extractall(build_dir)
+
+    # download/extract source
+    p = Popen(('makepkg', '-o'), cwd=build_dir)
+    processes.append(p)
+    if p.wait() != 0:
+        return False
+    if options.download_only:
+        set_preserved(pkg)
+        return '{}: downloaded to \'{}\''.format(pkg, pkg_dir)
+
+    # build
+    p = Popen(('makepkg', '-esr'), cwd=build_dir)
+    processes.append(p)
+    if p.wait() != 0:
+        return False
+    # copy to cache
+    pkgs = glob(os.path.join(build_dir, '*.pkg.tar*'))
+    for pkg in pkgs:
+        shutil.copy(pkg, CACHE)
+    # install
+    try:
+        input('package built; press enter to continue with installation ')
+    except EOFError:
+        pass
+    if pkgs:
+        p = Popen(['sudo', 'pacman', '-U'] + pkgs)
+        processes.append(p)
+        if p.wait() != 0:
+            return False
+    return True
+
+
+def update (*want, options=None):
+    # get a list of wanted packages and current versions, if any
+    got = check_output((b'pacman', b'-Qm')).decode('latin_1').splitlines()
+    got = dict(pkg.split(' ') for pkg in got)
+    explicit = len(want) != 0
+    if explicit:
+        want_got = {name: ver for name, ver in got.items() if name in want}
+        want = {name: want_got.get(name) for name in want}
+    else:
+        want = got
+
+    # get AUR info for these packages
+    response = get('multiinfo', *want.keys())
+    if response is None:
+        print('error: AUR appears to be inaccessible')
+        return False
+    if response['type'] == 'error':
+        print('error:', response)
+        return False
+    current = {}
+    for pkg in response['results']:
+        current[pkg['Name']] = pkg
+
+    # generate ignore list
+    ignore = [pkg.strip() for pkg in options.ignore.split(',') if pkg.strip()]
+    ignore_file = os.path.expanduser(options.ignore_file)
+    try:
+        with open(ignore_file) as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        pass
+    except OSError:
+        print('warning: couldn\'t read from ignored packages file (\'{}\')'.
+              format(ignore_file))
+    else:
+        for line in lines:
+            line = line.strip()
+            if line:
+                ignore.append(line)
+
+    # get packages to update
+    pkgs = []
+    for name, old_ver in sorted(want.items()):
+        if name in current:
+            # found the package: compare versions
+            new_ver = current[name]['Version']
+            if old_ver is not None:
+                rtn = int(check_output((b'vercmp', old_ver.encode('ascii'),
+                                        new_ver.encode('ascii'))))
+                if rtn == 0:
+                    if options.force:
+                        print('warning: reinstalling \'{}\' ({})'
+                              .format(name, old_ver))
+                    else:
+                        continue
+                elif rtn > 0:
+                    if options.force:
+                        msg = 'warning: downgrading \'{}\' ({} -> {})'
+                    else:
+                        msg = 'warning: local version of \'{}\' is newer ' \
+                              '({} -> {})'
+                    print(msg.format(name, old_ver, new_ver))
+                    if not options.force:
+                        continue
+        # check if ignored (only get here if want to install the package)
+        if name in ignore:
+            if options.force:
+                print('warning: installing ignored package \'{}\''
+                      .format(name))
+            else:
+                if explicit:
+                    print('warning: ignoring \'{}\''.format(name))
+                continue
+        if name not in current:
+            print('warning: no such package \'{}\''.format(name))
+            continue
+        pkgs.append((name, old_ver, new_ver, current[name]['URLPath']))
+    pkgs.sort()
+
+    # confirm
+    if not pkgs:
+        print('no packages to install')
+        return True
+    print('will install the following packages:')
+    for name, old_ver, new_ver, path in pkgs:
+        print('   ', name, '({} -> {})'.format(old_ver, new_ver))
+    if not ask('continue?'):
+        return True
+
+    # set up environment
+    global WORKDIR
+    WORKDIR = _WORKDIR
+    while os.path.exists(WORKDIR):
+        WORKDIR += '_'
+    os.makedirs(WORKDIR)
+    if not os.path.exists(CACHE):
+        os.makedirs(CACHE)
+
+    # install packages
+    to_print = []
+    for name, old_ver, new_ver, path in pkgs:
+        # returns whether failed, possibly a string to print
+        rtn = install(name, path, options)
+        if not rtn:
+            msg = '{}: failed to build/install; remove temporary files?'
+            if not ask(msg.format(name), False):
+                set_preserved(name)
+        elif isinstance(rtn, str):
+            to_print.append(rtn)
+    if to_print:
+        print_stdout()
+    for s in to_print:
+        print_stdout(s)
+
+    cleanup_workdir()
+    return True
+
+
+signal.signal(signal.SIGTERM, quit)
+signal.signal(signal.SIGINT, quit)
+
+op = OptionParser(prog='aur-sync', usage='aur-sync [options] [packages...]',
+                  description='Upgrade the given packages from AUR, else all '
+                              'foreign packages.')
+op.add_option('-f', '--force', action='store_true', dest='force',
+              help='force reinstall/downgrade of up-to-date or ignored '
+                   'packages')
+op.add_option('-i', '--ignore', action='store', type='string', dest='ignore',
+              metavar='PACKAGES',
+              help='comma-separated list of packages to skip upgrading')
+op.add_option('--ignore-file', action='store', dest='ignore_file',
+              metavar='FILENAME',
+              help='file containing a list of packages to ignore, one per '
+                   'line; defaults to ~/.aur-sync-ignore')
+op.add_option('-d', '--download-only', action='store_true',
+              dest='download_only',
+              help='only download and extract packages, and print the paths '
+                   'to stdout')
+op.set_defaults(force=False, ignore='', ignore_file=IGNORE_FILE,
+                download_only=False)
+
+options, args = op.parse_args()
+exit(0 if update(*args, options=options) else 1)

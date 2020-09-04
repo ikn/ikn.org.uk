@@ -1,0 +1,52 @@
+{% set page_title = 'Game engine' %}
+{% include 'include/header.html.j2' %}
+{% set license = 'LGPL_V3' %}
+{% include 'include/license.html.j2' %}
+{% set license = 'BSD_NEW' %}
+{% include 'include/license.html.j2' %}
+
+<p>A game engine sort of thing that has just come out of seeing what I tend to reimplement for many games, and doing it in the general case.  Stuff will change a lot, and some things are probably broken...</p>
+<p>This is written on top of <a href="http://pygame.org">Pygame</a>, and as such is for 2D games written in Python and has no hardware-accelerated graphics.</p>
+<h2>Download</h2>
+<p>Use the <a href="https://github.com/ikn/pygame-template">GitHub repository</a>.  Apart from the <i>engine</i> package, there are some other files in here&mdash;build system, basic readme, entry point scripts, etc..  To use this, edit the files in <i>game/</i>, outside of <i>game/engine/</i>.</p>
+<h2>Documentation</h2>
+<p><a href="doc">API documentation</a> (includes a tutorial).</p>
+<h2>Features</h2>
+<ul>
+    <li>nested running game <b>worlds</b> (<a class="note" href="doc/game.html">doc</a>)</li>
+    <li>global or local <b>configuration</b> system with easy saving/loading (<a class="note" href="doc/settings.html">doc</a>)</li>
+    <li>multi-line <b>text rendering</b> (<a class="note" href="doc/text.html">doc</a>)</li>
+    <li>simple <b>audio</b>: sensible volume scaling, autoplay music, play random sounds from a group (<a class="note" href="doc/game.html">doc</a>)</li>
+    <li>basic <b>resource caching</b> for images, fonts, sounds... (<a class="note" href="doc/res.html">doc</a>)</li>
+    <li>timing/callback-based event <b>scheduler</b> (<a class="note" href="doc/sched.html">doc</a>)
+        <ul>
+            <li>automatic framerate adjustment for slowdown</li>
+            <li>interpolation of values
+                <ul>
+                    <li>some presets (linear, damped motion, shaking)</li>
+                    <li>handles arbitrarily nested sequences</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>callback-based <b>event handling</b> (<a class="note" href="doc/evt.html">doc</a>)
+        <ul>
+            <li>treat any input type as any event type (keyboard keys as axes, gamepad analogue sticks as buttons...)</li>
+            <li>use any button as a button modifier</li>
+            <li>automatic input normalisation to avoid missing buttons that were pressed too early</li>
+            <li>extra button modes: held, repeat when held, double-press</li>
+            <li>simple deadzones for axes</li>
+            <li>concise configuration file format for specifying control schemes</li>
+        </ul>
+    </li>
+    <li><b>graphics</b> system (<a class="note" href="doc/gfx.html">doc</a>)
+        <ul>
+            <li>add graphics to graphics managers to handle drawing automatically</li>
+            <li>transformation system with automatic retransforming</li>
+            <li>graphics managers are themselves transformable graphics</li>
+            <li>graphic wrappers: solid colour, text, animation, tilemap...</li>
+        </ul>
+    </li>
+</ul>
+
+{% include 'include/footer.html.j2' %}

@@ -1,0 +1,26 @@
+{% set page_title = 'Can\'t Even Apologise' %}
+{% include 'include/header.html.j2' %}
+{% set license = 'BSD_NEW' %}
+{% include 'include/license.html.j2' %}
+
+<p>This is a game I made for <a href="http://www.ludumdare.com/compo/">Ludum Dare</a> 22, which took place in December 2011.  You play as a person-thing who kills anyone that gets near (he's cursed or something).  Controls and other details are in the included readme.</p>
+<p>If you have trouble seeing the dark levels, try turning up your screen backlight.  Oh, and I know the sounds are painful if you're using headphones: unfortunately, I didn't realise it in time for the competition (fixed in the updated version).</p>
+<h2>Download</h2>
+<h3>Update</h3>
+<p>This includes some changes: fixes for a couple of exploits, jumps in level 5 less annoying, pausing, antialiasing the silhouetted shapes, no jump/walking sounds when on a person-thing, better sounds, and particles.</p>
+<ul>
+    <li><strong><a href="{{ site.link('download/game/apologise/apologise-update.tar.gz') }}">Source (4.80MiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/apologise/apologise-win-update.zip') }}">Windows binary (10.7MiB)</a></strong></li>
+</ul>
+<h3>Original</h3>
+<p>This is the version I had after the 48-hour competition.</p>
+<ul>
+    <li><strong><a href="{{ site.link('download/game/apologise/apologise-48h.tar.gz') }}">Source (5.03MiB)</a></strong></li>
+    <li><strong><a href="{{ site.link('download/game/apologise/apologise-win-48h.zip') }}">Windows binary (11.0MiB)</a></strong></li>
+</ul>
+<h2>Screenshots</h2>
+<p><img src="{{ site.link('resources/img/game/apologise/level 3.png') }}" alt="screenshot" width="1000" height="500"></p>
+<p><img src="{{ site.link('resources/img/game/apologise/level 5.png') }}" alt="screenshot" width="1000" height="500"></p>
+<p><img src="{{ site.link('resources/img/game/apologise/level 6.png') }}" alt="screenshot" width="1000" height="500"></p>
+
+{% include 'include/footer.html.j2' %}
