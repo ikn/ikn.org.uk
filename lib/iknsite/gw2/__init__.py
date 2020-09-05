@@ -32,7 +32,8 @@ class Gw2Site:
         return tags
 
     def _load_builds (self):
-        with open(os.path.join(self.data_path, 'builds.json')) as builds_config_f:
+        builds_config_path = os.path.join(self.data_path, 'builds.json')
+        with open(builds_config_path) as builds_config_f:
             builds_config = json.load(builds_config_f)
         builds_base_path = os.path.expanduser(builds_config['path'])
         categories = ['active', '3rd party']
@@ -43,7 +44,8 @@ class Gw2Site:
             for in_name in os.listdir(path):
                 build_meta = gw2build.parse.parse_title(in_name)
                 with open(os.path.join(path, in_name), 'r') as f_in:
-                    builds[in_name] = gw2build.parse.parse_body(f_in, build_meta)
+                    builds[in_name] = (
+                        gw2build.parse.parse_body(f_in, build_meta))
 
         return builds
 

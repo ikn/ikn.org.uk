@@ -1,0 +1,14 @@
+[
+    {
+        "src path": "~/Documents/Coding/projects/in progress/fsmanage/doc",
+        "dest path": "lib/fsmanage/doc"
+    },
+    {
+        "src path": "~/Documents/Coding/projects/in progress/game-engine/doc",
+        "dest path": "lib/game-engine/doc"
+    },
+    {
+        "src path": "~/Documents/Coding/projects/end-of-life/pyepgdb/doc",
+        "dest path": "lib/pyepgdb/doc"
+    }
+]

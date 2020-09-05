@@ -7,6 +7,7 @@ import jinja2
 from . import (
     files as files_page_builder,
     autotemplates as autotemplates_page_builder,
+    doc as doc_page_builder,
     gw2 as gw2_page_builder,
     util,
 )
@@ -79,6 +80,7 @@ class Site:
         for page_builder in (
             files_page_builder,
             autotemplates_page_builder,
+            doc_page_builder,
             gw2_page_builder,
         ):
             util.log(LOG_TAG, f'start {page_builder.PAGE_ID}')
