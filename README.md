@@ -1,4 +1,4 @@
-Source code for http://ikn.org.uk
+Source code for <http://ikn.org.uk>.
 
 # License
 
