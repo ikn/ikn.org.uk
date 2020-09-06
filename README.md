@@ -12,7 +12,7 @@ builds a static site in the `dist` directory.
 
 # Dependencies
 
-- [Python 3](http://www.python.org) (>= 3.4)
+- [Python 3](http://www.python.org) (>= 3.7)
 - [Jinja 2](https://jinja.palletsprojects.com/en/2.11.x/)
 - [Pillow](https://python-pillow.org/)
 - `gw2build` Python module - currently unreleased
