@@ -1,7 +1,7 @@
 import collections
 import html
 
-import gw2build
+import gw2buildutil
 
 from .. import util
 
@@ -10,12 +10,12 @@ PAGE_ID = 'builds'
 PAGE_TITLE = 'Guild Wars 2 builds'
 
 BUILD_GAME_MODES = {
-    gw2build.definitions.game_modes['raids']: {},
-    gw2build.definitions.game_modes['fractals']: {},
-    gw2build.definitions.game_modes['dungeons']: {},
-    gw2build.definitions.game_modes['open world']: {},
-    gw2build.definitions.game_modes['pvp']: {},
-    gw2build.definitions.game_modes['wvw']: {},
+    gw2buildutil.definitions.game_modes['raids']: {},
+    gw2buildutil.definitions.game_modes['fractals']: {},
+    gw2buildutil.definitions.game_modes['dungeons']: {},
+    gw2buildutil.definitions.game_modes['open world']: {},
+    gw2buildutil.definitions.game_modes['pvp']: {},
+    gw2buildutil.definitions.game_modes['wvw']: {},
 }
 
 BUILD_ROLES = {
@@ -107,7 +107,7 @@ BUILD_GROUPING_METHODS = [
 def sort_by_defn (defn):
     lookup = {value: i for i, value in enumerate(defn.values())}
     return lookup.__getitem__
-sort_profs = sort_by_defn(gw2build.definitions.profession)
+sort_profs = sort_by_defn(gw2buildutil.definitions.profession)
 sort_builds = lambda build: sort_profs(build.metadata.profession)
 
 

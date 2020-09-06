@@ -2,8 +2,8 @@ import sys
 import collections
 
 from PIL import Image
-import gw2build
-import gw2build.compositions
+import gw2buildutil
+import gw2buildutil.compositions
 
 from .. import util
 
@@ -11,11 +11,11 @@ LOG_TAG = 'gw2.compositions'
 PAGE_ID = 'compositions'
 PAGE_TITLE = 'Guild Wars 2 raids compositions'
 
-GAME_MODE = gw2build.definitions.game_modes['raids']
+GAME_MODE = gw2buildutil.definitions.game_modes['raids']
 TARGET_BOONS = [ # ordering here determines roles display order
-    gw2build.definitions.boons['might'],
-    gw2build.definitions.boons['quickness'],
-    gw2build.definitions.boons['alacrity'],
+    gw2buildutil.definitions.boons['might'],
+    gw2buildutil.definitions.boons['quickness'],
+    gw2buildutil.definitions.boons['alacrity'],
 ]
 TARGET_UPTIME = 1.25
 OVERSTACK_UPTIME = 1.4
@@ -68,10 +68,11 @@ def _render_role_icon (gw2site, boon_icon_cache, role):
         boon_icon_w = boon_icon.size[0]
         party_w = boon_icon_w // 2
 
-        uptime5 = role.uptime(boon, gw2build.definitions.boon_targets['5'])
+        uptime5 = role.uptime(boon, gw2buildutil.definitions.boon_targets['5'])
         _render_role_icon_part(boon_icon, role_icon, uptime5,
                                0, party_w, position_l)
-        uptime10 = role.uptime(boon, gw2build.definitions.boon_targets['10'])
+        uptime10 = role.uptime(
+            boon, gw2buildutil.definitions.boon_targets['10'])
         _render_role_icon_part(boon_icon, role_icon, uptime10,
                                party_w, boon_icon_w, position_l + party_w)
 
@@ -140,16 +141,16 @@ def _providing_roles_display_info (roles_display_info):
 
 
 def build (gw2site):
-    config = gw2build.compositions.Configuration(
+    config = gw2buildutil.compositions.Configuration(
         target_buffs=TARGET_BOONS,
         target_uptime=TARGET_UPTIME,
         overstack_uptime=OVERSTACK_UPTIME)
     matching_builds = {name: build for name, build in gw2site.builds.items()
                        if build.metadata.game_modes is GAME_MODE}
-    roles = gw2build.compositions.Role.list_from_builds(
+    roles = gw2buildutil.compositions.Role.list_from_builds(
         matching_builds, config)
     comps = list(
-        gw2build.compositions.generate_compositions(roles, config))
+        gw2buildutil.compositions.generate_compositions(roles, config))
     used_comps = _comps_display_info(comps)
     max_role_icon_size, roles_display_info = (
         _roles_display_info(gw2site, used_comps))

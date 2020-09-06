@@ -1,7 +1,7 @@
 import os
 import json
 
-import gw2build
+import gw2buildutil
 
 from .. import util as siteutil
 from . import (
@@ -42,10 +42,10 @@ class Gw2Site:
         for category in categories:
             path = os.path.join(builds_base_path, category)
             for in_name in os.listdir(path):
-                build_meta = gw2build.parse.parse_title(in_name)
+                build_meta = gw2buildutil.parse.parse_title(in_name)
                 with open(os.path.join(path, in_name), 'r') as f_in:
                     builds[in_name] = (
-                        gw2build.parse.parse_body(f_in, build_meta))
+                        gw2buildutil.parse.parse_body(f_in, build_meta))
 
         return builds
 
