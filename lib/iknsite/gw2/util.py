@@ -8,11 +8,10 @@ class Tag:
 def get_build_tags (gw2site, build):
     tag_names = []
 
-    prof = build.metadata.profession
-    if prof.elite_spec is not None:
-        tag_names.append(prof.elite_spec)
+    if build.metadata.elite_spec is not None:
+        tag_names.append(build.metadata.elite_spec.id_)
     else:
-        tag_names.append(prof.profession)
+        tag_names.append(build.metadata.profession.id_)
 
     tag_names.extend(build.metadata.labels)
 

@@ -9,13 +9,25 @@ LOG_TAG = 'gw2.builds'
 PAGE_ID = 'builds'
 PAGE_TITLE = 'Guild Wars 2 builds'
 
+# in display order
+PROFESSIONS = [
+    'warrior',
+    'guardian',
+    'revenant',
+    'ranger',
+    'thief',
+    'engineer',
+    'necromancer',
+    'elementalist',
+    'mesmer',
+]
 BUILD_GAME_MODES = {
-    gw2buildutil.definitions.game_modes['raids']: {},
-    gw2buildutil.definitions.game_modes['fractals']: {},
-    gw2buildutil.definitions.game_modes['dungeons']: {},
-    gw2buildutil.definitions.game_modes['open world']: {},
-    gw2buildutil.definitions.game_modes['pvp']: {},
-    gw2buildutil.definitions.game_modes['wvw']: {},
+    gw2buildutil.build.GameModes.RAIDS: {},
+    gw2buildutil.build.GameModes.FRACTALS: {},
+    gw2buildutil.build.GameModes.DUNGEONS: {},
+    gw2buildutil.build.GameModes.OPEN_WORLD: {},
+    gw2buildutil.build.GameModes.PVP: {},
+    gw2buildutil.build.GameModes.WVW: {},
 }
 
 BUILD_ROLES = {
@@ -70,9 +82,10 @@ BUILD_ROLES = {
 
 def game_mode_desc (mode):
     sentences = []
-    if len(mode.game_modes) > 1:
-        sentences.append('Suitable for use in: ' +
-                         html.escape(', '.join(mode.game_modes) + '.'))
+    if len(mode.value.suitable_game_modes) > 1:
+        sentences.append(
+            'Suitable for use in: ' +
+            html.escape(', '.join(mode.value.suitable_game_modes) + '.'))
     if 'desc' in BUILD_GAME_MODES[mode]:
         sentences.append(BUILD_GAME_MODES[mode]['desc'])
     return '  '.join(sentences) if sentences else None
@@ -91,9 +104,9 @@ BUILD_GROUPING_THRESHOLD = 10
 BUILD_GROUPING_METHODS = [
     {
         'groups': list(BUILD_GAME_MODES.keys()),
-        'group label': lambda mode: mode.name,
+        'group label': lambda mode: mode.value.name,
         'group html desc': game_mode_desc,
-        'build group': lambda build: build.metadata.game_modes,
+        'build group': lambda build: build.metadata.game_mode,
     },
     {
         'groups': list(BUILD_ROLES.keys()),
@@ -104,11 +117,8 @@ BUILD_GROUPING_METHODS = [
 ]
 
 
-def sort_by_defn (defn):
-    lookup = {value: i for i, value in enumerate(defn.values())}
-    return lookup.__getitem__
-sort_profs = sort_by_defn(gw2buildutil.definitions.profession)
-sort_builds = lambda build: sort_profs(build.metadata.profession)
+def sort_builds (build):
+    return PROFESSIONS.index(build.metadata.profession.id_)
 
 
 def build_groups (builds, grouping_methods):

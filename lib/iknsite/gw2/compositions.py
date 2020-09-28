@@ -3,7 +3,6 @@ import collections
 
 from PIL import Image
 import gw2buildutil
-import gw2buildutil.compositions
 
 from .. import util
 
@@ -11,11 +10,11 @@ LOG_TAG = 'gw2.compositions'
 PAGE_ID = 'compositions'
 PAGE_TITLE = 'Guild Wars 2 raids compositions'
 
-GAME_MODE = gw2buildutil.definitions.game_modes['raids']
+GAME_MODE = gw2buildutil.build.GameModes.RAIDS
 TARGET_BOONS = [ # ordering here determines roles display order
-    gw2buildutil.definitions.boons['might'],
-    gw2buildutil.definitions.boons['quickness'],
-    gw2buildutil.definitions.boons['alacrity'],
+    gw2buildutil.build.Boons.MIGHT,
+    gw2buildutil.build.Boons.QUICKNESS,
+    gw2buildutil.build.Boons.ALACRITY,
 ]
 TARGET_UPTIME = 1.25
 OVERSTACK_UPTIME = 1.4
@@ -54,7 +53,7 @@ def _render_role_icon (gw2site, boon_icon_cache, role):
     role_boons = [boon for boon in TARGET_BOONS if role.provides_buff(boon)]
     for boon in role_boons:
         if boon not in boon_icon_cache:
-            icon_path = gw2site.tags[boon.id_].icon_page.path
+            icon_path = gw2site.tags[boon.value.id_].icon_page.path
             boon_icon_cache[boon] = Image.open(icon_path)
 
     role_icon_w = sum(boon_icon_cache[boon].size[0] for boon in role_boons)
@@ -68,11 +67,10 @@ def _render_role_icon (gw2site, boon_icon_cache, role):
         boon_icon_w = boon_icon.size[0]
         party_w = boon_icon_w // 2
 
-        uptime5 = role.uptime(boon, gw2buildutil.definitions.boon_targets['5'])
+        uptime5 = role.uptime(boon, gw2buildutil.build.BoonTargets.PARTY)
         _render_role_icon_part(boon_icon, role_icon, uptime5,
                                0, party_w, position_l)
-        uptime10 = role.uptime(
-            boon, gw2buildutil.definitions.boon_targets['10'])
+        uptime10 = role.uptime(boon, gw2buildutil.build.BoonTargets.SQUAD)
         _render_role_icon_part(boon_icon, role_icon, uptime10,
                                party_w, boon_icon_w, position_l + party_w)
 
@@ -146,7 +144,7 @@ def build (gw2site):
         target_uptime=TARGET_UPTIME,
         overstack_uptime=OVERSTACK_UPTIME)
     matching_builds = {name: build for name, build in gw2site.builds.items()
-                       if build.metadata.game_modes is GAME_MODE}
+                       if build.metadata.game_mode is GAME_MODE}
     roles = gw2buildutil.compositions.Role.list_from_builds(
         matching_builds, config)
     comps = list(

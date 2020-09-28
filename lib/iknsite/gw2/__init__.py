@@ -1,7 +1,7 @@
 import os
 import json
 
-import gw2buildutil
+from gw2buildutil import defnfile, api as gw2api
 
 from .. import util as siteutil
 from . import (
@@ -38,14 +38,17 @@ class Gw2Site:
         builds_base_path = os.path.expanduser(builds_config['path'])
         categories = ['active', '3rd party']
 
+        gw2api.crawl.crawl()
+
         builds = {}
-        for category in categories:
-            path = os.path.join(builds_base_path, category)
-            for in_name in os.listdir(path):
-                build_meta = gw2buildutil.parse.parse_title(in_name)
-                with open(os.path.join(path, in_name), 'r') as f_in:
-                    builds[in_name] = (
-                        gw2buildutil.parse.parse_body(f_in, build_meta))
+        with gw2api.storage.FileStorage() as api_storage:
+            for category in categories:
+                path = os.path.join(builds_base_path, category)
+                for in_name in os.listdir(path):
+                    build_meta = defnfile.parse_title(in_name, api_storage)
+                    with open(os.path.join(path, in_name), 'r') as f_in:
+                        builds[in_name] = (
+                            defnfile.parse_body(f_in, build_meta, api_storage))
 
         return builds
 
