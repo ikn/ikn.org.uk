@@ -2,11 +2,17 @@
 
 import sys
 import os
+import logging
 
 site_path = os.path.dirname(os.path.abspath(sys.argv[0]))
 dist_path = os.path.join(site_path, 'dist')
 sys.path.append(os.path.join(site_path, 'lib'))
 
 import iknsite
+
+logging.basicConfig(level=logging.INFO,
+                    format='[\033[1;30m%(name)s\033[0m] '
+                           '[\033[1;34m%(levelname)s\033[0m] '
+                           '%(message)s')
 
 iknsite.Site(site_path, dist_path).build()

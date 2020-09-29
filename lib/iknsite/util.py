@@ -5,10 +5,6 @@ import sys
 from PIL import Image
 
 
-def log (tag, *args):
-    print(f'[\033[1;34m{tag}\033[0m]', *args, file=sys.stderr)
-
-
 class Page:
     def __init__ (self, path, link):
         self.path = os.path.realpath(path)

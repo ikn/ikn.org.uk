@@ -1,16 +1,16 @@
 import os
 import json
+import logging
 
 from gw2buildutil import defnfile, api as gw2api
 
-from .. import util as siteutil
 from . import (
     util as gw2util,
     builds as builds_page_builder,
     compositions as compositions_page_builder,
 )
 
-LOG_TAG = 'gw2'
+logger = logging.getLogger(__name__)
 PAGE_ID = 'gw2'
 
 
@@ -64,11 +64,11 @@ class Gw2Site:
 
     def build (self):
         self.builds = self._load_builds()
-        siteutil.log(LOG_TAG, len(self.builds), 'builds')
+        logger.info(f'{len(self.builds)} builds')
         self.tags = self._init_tags()
 
         for page_builder in (builds_page_builder, compositions_page_builder):
-            siteutil.log(LOG_TAG, f'start {page_builder.PAGE_ID}')
+            logger.info(f'start {page_builder.PAGE_ID}')
             page_builder.build(self)
 
 

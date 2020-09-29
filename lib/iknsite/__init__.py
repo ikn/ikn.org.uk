@@ -1,4 +1,5 @@
 import os
+import logging
 import shutil
 import urllib.parse
 
@@ -12,7 +13,7 @@ from . import (
     util,
 )
 
-LOG_TAG = 'site'
+logger = logging.getLogger(__name__)
 
 
 class Site:
@@ -83,5 +84,5 @@ class Site:
             doc_page_builder,
             gw2_page_builder,
         ):
-            util.log(LOG_TAG, f'start {page_builder.PAGE_ID}')
+            logger.info(f'start {page_builder.PAGE_ID}')
             page_builder.build(self)

@@ -1,4 +1,5 @@
 import sys
+import logging
 import collections
 
 from PIL import Image
@@ -6,7 +7,7 @@ import gw2buildutil
 
 from .. import util
 
-LOG_TAG = 'gw2.compositions'
+logger = logging.getLogger(__name__)
 PAGE_ID = 'compositions'
 PAGE_TITLE = 'Guild Wars 2 raids compositions'
 
@@ -154,10 +155,10 @@ def build (gw2site):
         _roles_display_info(gw2site, used_comps))
     providing_roles = _providing_roles_display_info(roles_display_info)
 
-    util.log(LOG_TAG, len(roles), 'roles')
-    util.log(LOG_TAG, len(roles_display_info), 'used roles')
-    util.log(LOG_TAG, len(comps), 'compositions')
-    util.log(LOG_TAG, len(used_comps), 'used compositions')
+    logger.info(f'{len(roles)} roles')
+    logger.info(f'{len(roles_display_info)} used roles')
+    logger.info(f'{len(comps)} compositions')
+    logger.info(f'{len(used_comps)} used compositions')
 
     gw2site.render_page_template(PAGE_ID, PAGE_TITLE, {
         'compositions_module': sys.modules[__name__],

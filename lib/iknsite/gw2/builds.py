@@ -1,3 +1,4 @@
+import logging
 import collections
 import html
 
@@ -5,7 +6,7 @@ import gw2buildutil
 
 from .. import util
 
-LOG_TAG = 'gw2.builds'
+logger = logging.getLogger(__name__)
 PAGE_ID = 'builds'
 PAGE_TITLE = 'Guild Wars 2 builds'
 
@@ -147,8 +148,8 @@ def build (gw2site):
     grouped_builds = build_groups(list(gw2site.builds.values()),
                                   BUILD_GROUPING_METHODS)
 
-    util.log(LOG_TAG, len(gw2site.builds), 'builds')
-    util.log(LOG_TAG, len(grouped_builds), 'build groups')
+    logger.info(f'{len(gw2site.builds)} builds')
+    logger.info(f'{len(grouped_builds)} build groups')
 
     gw2site.render_page_template(PAGE_ID, PAGE_TITLE, {
         'grouped_builds': grouped_builds,

@@ -1,8 +1,9 @@
 import os
+import logging
 
 from . import util
 
-LOG_TAG = 'autotemplates'
+logger = logging.getLogger(__name__)
 PAGE_ID = 'autotemplates'
 
 
@@ -15,7 +16,7 @@ def build (site):
             rel_path = os.path.relpath(src_path, templates_path)
 
             if filename.startswith('.'):
-                util.log(LOG_TAG, f'skipping hidden file: {rel_path}')
+                logger.info(f'skipping hidden file: {rel_path}')
                 continue
             elif rel_path.endswith('.html.j2'):
                 page_id = rel_path[:-len('.html.j2')]
@@ -31,5 +32,5 @@ def build (site):
                 raise ValueError(f'not a template: {rel_path}')
             dest_page = site.page.child(dest_rel_path)
 
-            util.log(LOG_TAG, f'render {rel_path}')
+            logger.info(f'render {rel_path}')
             site.render_template(f'auto/{rel_path}', dest_page, template_args)
