@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-# ytsubs 0.3.3
+# ytsubs 0.3.4
 
 # Distributed under the terms of the GNU General Public License, version 3
 
@@ -18,10 +18,10 @@ import argparse
 import http
 import html
 import urllib, urllib.request
-from xml.sax.saxutils import escape as escape_xml
+from xml.sax import saxutils
 
 PROGRAM = 'ytsubs'
-VERSION = '0.3.3'
+VERSION = '0.3.4'
 
 PAGE_LIMIT = 50
 YT_BASE_URL = 'https://www.youtube.com'
@@ -124,14 +124,14 @@ video: as returned by get_channels_uploads
     ))) + desc
 
     feed_item = {
-        'title': '{}: \'{}\''.format(video['channel'], video['title']),
+        'title': '{}: \'{}\''.format(video['channel'], saxutils.unescape(video['title'])),
         'link': mk_video_url(video['id']),
         'description': desc,
         'published': time.strftime(FEED_DATE_FORMAT, video['published']),
     }
 
     return FEED_ITEM_TEMPLATE.format(**{
-        k: escape_xml(v) for k, v in feed_item.items()
+        k: saxutils.escape(v) for k, v in feed_item.items()
     })
 
 
@@ -296,7 +296,10 @@ Arguments are as taken by `req`.
             try:
                 for item in res['items']:
                     yield item
-            except (TypeError, KeyError):
+            except KeyError:
+                # items can be missing when empty
+                pass
+            except TypeError:
                 raise BadResponse(res)
 
             page_token = res.get('nextPageToken')
