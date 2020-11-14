@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-# ytsubs 0.3.4
+# ytsubs 0.3.5
 
 # Distributed under the terms of the GNU General Public License, version 3
 
@@ -21,7 +21,7 @@ import urllib, urllib.request
 from xml.sax import saxutils
 
 PROGRAM = 'ytsubs'
-VERSION = '0.3.4'
+VERSION = '0.3.5'
 
 PAGE_LIMIT = 50
 YT_BASE_URL = 'https://www.youtube.com'
@@ -124,7 +124,8 @@ video: as returned by get_channels_uploads
     ))) + desc
 
     feed_item = {
-        'title': '{}: \'{}\''.format(video['channel'], saxutils.unescape(video['title'])),
+        'title': '{}: \'{}\''.format(
+            video['channel'], html.unescape(video['title'])),
         'link': mk_video_url(video['id']),
         'description': desc,
         'published': time.strftime(FEED_DATE_FORMAT, video['published']),
