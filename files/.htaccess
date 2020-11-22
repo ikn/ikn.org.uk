@@ -1,1 +1,2 @@
 ErrorDocument 404 /not-found/index.html
+Options -Indexes
