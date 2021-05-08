@@ -36,7 +36,7 @@ class Gw2Site:
         with open(builds_config_path) as builds_config_f:
             builds_config = json.load(builds_config_f)
         builds_base_path = os.path.expanduser(builds_config['path'])
-        categories = ['active', '3rd party']
+        categories = ['6 - active', '5 - ready', '3rd party']
 
         gw2api.crawl.crawl()
 
