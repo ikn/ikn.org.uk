@@ -1,6 +1,7 @@
 import os
 import json
 import logging
+import time
 
 from gw2buildutil import defnfile, api as gw2api
 
@@ -13,12 +14,16 @@ from . import (
 logger = logging.getLogger(__name__)
 PAGE_ID = 'gw2'
 
+CRAWL_MAX_AGE_SECONDS = 60 * 60 * 24 * 1
+
 
 class Gw2Site:
     def __init__ (self, site):
         self.site = site
         self.data_path = os.path.join(self.site.data_path, PAGE_ID)
         self.icons_page = self.site.images_page.child(PAGE_ID).child('icon')
+        self._crawl_time_path = os.path.join(self.site.cache_path,
+                                             'gw2-crawl-time')
 
     def _init_tags (self):
         tags_definitions_path = os.path.join(
@@ -31,6 +36,17 @@ class Gw2Site:
             tags[name] = gw2util.Tag(self, name, data['build icon'])
         return tags
 
+    def _get_crawl_time (self):
+        try:
+            with open(self._crawl_time_path) as f:
+                return int(f.read())
+        except (FileNotFoundError, ValueError) as e:
+            return 0
+
+    def _set_crawl_time (self, t):
+        with open(self._crawl_time_path, 'w') as f:
+            f.write(str(int(t)))
+
     def _load_builds (self):
         builds_config_path = os.path.join(self.data_path, 'builds.json')
         with open(builds_config_path) as builds_config_f:
@@ -38,7 +54,9 @@ class Gw2Site:
         builds_base_path = os.path.expanduser(builds_config['path'])
         categories = ['6 - active', '5 - ready', '3rd party']
 
-        gw2api.crawl.crawl()
+        if self._get_crawl_time() < (time.time() - CRAWL_MAX_AGE_SECONDS):
+            gw2api.crawl.crawl()
+            self._set_crawl_time(time.time())
 
         builds = {}
         with gw2api.storage.FileStorage() as api_storage:

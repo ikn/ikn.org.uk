@@ -29,6 +29,11 @@ class Site:
         self.images_page = self.resources_page.child('img')
         self.style_images_page = self.images_page.child('style')
 
+        default_cache_path = os.path.join(os.path.expanduser('~'), '.cache')
+        cache_path = os.environ.get('XDG_CACHE_HOME', default_cache_path)
+        self.cache_path = os.path.join(cache_path, 'iknsite')
+        os.makedirs(self.cache_path, exist_ok=True)
+
     def link (self, rel_path):
         return urllib.parse.quote(self.page.child(rel_path).link)
 
