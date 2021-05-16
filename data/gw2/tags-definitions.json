@@ -29,6 +29,7 @@
 
     "power": { "build icon": "power" },
     "condi": { "build icon": "condition damage" },
+    "confusion": { "build icon": "confusion damage" },
     "healing": { "build icon": "healing power" },
 
     "might": { "build icon": "might" },
