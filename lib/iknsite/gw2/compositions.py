@@ -17,7 +17,7 @@ TARGET_BOONS = [ # ordering here determines roles display order
     gw2buildutil.build.Boons.QUICKNESS,
     gw2buildutil.build.Boons.ALACRITY,
 ]
-TARGET_UPTIME = 1.25
+TARGET_UPTIME = 1.1
 OVERSTACK_UPTIME = 1.4
 ROLE_ICON_UNFILLED_TRANSPARENCY = .3
 
