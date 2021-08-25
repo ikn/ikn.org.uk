@@ -41,10 +41,6 @@ BUILD_ROLES = {
         'name': 'Condition DPS',
         'labels': {'condi'},
     },
-    'heal': {
-        'name': 'Healing',
-        'labels': {'healing', 'support'},
-    },
     'boon': {
         'name': 'Boon support',
         'desc': ('Boon duration is optimised for raids, not fractals.  See '
@@ -65,6 +61,13 @@ BUILD_ROLES = {
             'squad alacrity',
             'some squad alacrity',
         }
+    },
+    'heal': {
+        'name': 'Healing',
+        'desc': ('These builds are intended for use in a role where you can\'t '
+                 'also reliably share boons or deal damage, such as tanking or '
+                 'kiting on some bosses.'),
+        'labels': {'healing', 'support'},
     },
     'hybrid': {
         'name': 'Hybrid role',
