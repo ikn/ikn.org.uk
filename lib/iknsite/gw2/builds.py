@@ -44,8 +44,7 @@ BUILD_ROLES = {
     'boon': {
         'name': 'Boon support',
         'desc': ('Boon duration is optimised for raids, not fractals.  See '
-                 'also the <a href="../compositions"> list of raid '
-                 'compositions</a>.'),
+                 'also the <a href="../roles"> list of raid roles</a>.'),
         'labels': {
             'boons',
             'might',

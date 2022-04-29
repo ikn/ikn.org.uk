@@ -1,0 +1,44 @@
+{% include 'include/header.html.j2' %}
+{% include 'include/gw2/builds-header.html.j2' %}
+
+<p>Roles are builds grouped by the boon uptimes they provide.</p>
+
+<div id="roles">
+    {% for role in roles.values() %}
+    <div class="role">
+        <h3 id="role-{{ role.role.id_ | e }}"
+            data-role-id="{{ role.role.id_ | e }}"
+            title="{{ role.role | e }}">
+            {% set role_id = role.role.id_ %}
+            Role: {% include 'include/gw2/role-icon.html.j2' %}
+        </h3>
+        <h4 title="Builds that fill this role">Builds</h4>
+        <ul>
+            {% for build_name in role.role.build_names %}
+                {% set build = builds[build_name] %}
+                <li>{% include 'include/gw2/build-link.html.j2' %}</li>
+            {% endfor %}
+        </ul>
+        {% if providing_roles[role] %}
+            <h4 title="Other roles that can be used in place of this one, but are less efficient">
+                Also covered by
+            </h4>
+            <ul>
+                {% for providing_role in providing_roles[role] %}
+                    <li>
+                        <a href="#role-{{ providing_role.id_ | e }}"
+                            data-role-id="{{ providing_role.id_ | e }}"
+                            class="providing-role">
+                            {% set role_id = providing_role.id_ %}
+                            {% include 'include/gw2/role-icon.html.j2' %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <hr />
+    </div>
+    {% endfor %}
+</div>
+
+{% include 'include/footer.html.j2' %}

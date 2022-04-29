@@ -8,8 +8,8 @@ import gw2buildutil
 from .. import util
 
 logger = logging.getLogger(__name__)
-PAGE_ID = 'compositions'
-PAGE_TITLE = 'Guild Wars 2 raids compositions'
+PAGE_ID = 'roles'
+PAGE_TITLE = 'Guild Wars 2 raids roles'
 
 GAME_MODE = gw2buildutil.build.GameModes.RAIDS
 TARGET_BOONS = [ # ordering here determines roles display order
@@ -101,13 +101,7 @@ def sort_roles (roles):
     return sorted(roles, key=_role_sort_key)
 
 
-def _comps_display_info (comps):
-    return sorted(comps, key=lambda comp: len(comp.roles))
-
-
-def _roles_display_info (gw2site, comps):
-    roles = {role for role in sum((comp.roles for comp in comps), [])}
-
+def _roles_display_info (gw2site, roles):
     gw2site.icons_page.create()
     boon_icon_cache = {}
     max_icon_w = 0
@@ -148,23 +142,16 @@ def build (gw2site):
                        if build.metadata.game_mode is GAME_MODE}
     roles = gw2buildutil.compositions.Role.list_from_builds(
         matching_builds, config)
-    comps = list(
-        gw2buildutil.compositions.generate_compositions(roles, config))
-    used_comps = _comps_display_info(comps)
-    max_role_icon_size, roles_display_info = (
-        _roles_display_info(gw2site, used_comps))
+    max_role_icon_size, roles_display_info = _roles_display_info(gw2site, roles)
     providing_roles = _providing_roles_display_info(roles_display_info)
 
     logger.info(f'{len(roles)} roles')
     logger.info(f'{len(roles_display_info)} used roles')
-    logger.info(f'{len(comps)} compositions')
-    logger.info(f'{len(used_comps)} used compositions')
 
     gw2site.render_page_template(PAGE_ID, PAGE_TITLE, {
         'compositions_module': sys.modules[__name__],
         'builds': matching_builds,
         'roles': roles_display_info,
-        'compositions': used_comps,
         'providing_roles': providing_roles,
         'max_role_icon_size': max_role_icon_size,
     }, js_deps=[
