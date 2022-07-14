@@ -68,14 +68,6 @@ BUILD_ROLES = {
                  'kiting on some bosses.'),
         'labels': {'healing', 'support'},
     },
-    'hybrid': {
-        'name': 'Hybrid role',
-        'desc': ('Other builds may fill multiple roles, but they\'re optimised '
-                 'primarily for one role over the others.  These builds, on '
-                 'the other hand, aren\'t fully optimised for any single '
-                 'role.'),
-        'labels': {'hybrid'},
-    },
     'specialised': {
         'name': 'Specialised role',
         'labels': {'deimos kite'},
