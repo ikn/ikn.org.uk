@@ -11,16 +11,43 @@ PAGE_ID = 'builds'
 PAGE_TITLE = 'Guild Wars 2 builds'
 
 # in display order
-PROFESSIONS = [
+SPECS = [
     'warrior',
+    'berserker',
+    'spellbreaker',
+    'bladesworn',
     'guardian',
+    'dragonhunter',
+    'firebrand',
+    'willbender',
     'revenant',
+    'herald',
+    'renegade',
+    'vindicator',
     'ranger',
+    'druid',
+    'soulbeast',
+    'untamed',
     'thief',
+    'daredevil',
+    'deadeye',
+    'specter',
     'engineer',
+    'scrapper',
+    'holosmith',
+    'mechanist',
     'necromancer',
+    'reaper',
+    'scourge',
+    'harbinger',
     'elementalist',
+    'tempest',
+    'weaver',
+    'catalyst',
     'mesmer',
+    'chronomancer',
+    'mirage',
+    'virtuoso',
 ]
 BUILD_GAME_MODES = {
     gw2buildutil.build.GameModes.RAIDS: {},
@@ -113,7 +140,9 @@ BUILD_GROUPING_METHODS = [
 
 
 def sort_builds (build):
-    return PROFESSIONS.index(build.metadata.profession.id_)
+    return SPECS.index(build.metadata.profession.id_
+                       if build.metadata.elite_spec is None
+                       else build.metadata.elite_spec.id_)
 
 
 def build_groups (builds, grouping_methods):
