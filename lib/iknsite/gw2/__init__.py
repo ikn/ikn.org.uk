@@ -8,7 +8,6 @@ from gw2buildutil import defnfile, api as gw2api
 from . import (
     util as gw2util,
     builds as builds_page_builder,
-    roles as roles_page_builder,
 )
 
 logger = logging.getLogger(__name__)
@@ -85,7 +84,7 @@ class Gw2Site:
         logger.info(f'{len(self.builds)} builds')
         self.tags = self._init_tags()
 
-        for page_builder in (builds_page_builder, roles_page_builder):
+        for page_builder in (builds_page_builder,):
             logger.info(f'start {page_builder.PAGE_ID}')
             page_builder.build(self)
 
