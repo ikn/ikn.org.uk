@@ -58,7 +58,7 @@ BUILD_GAME_MODES = {
     gw2buildutil.build.GameModes.WVW: {},
 }
 
-BUILD_ROLES = {
+RAIDS_BUILD_ROLES = {
     'power': {
         'name': 'Power DPS',
         'desc': 'Critical hit chance is optimised for raids, not fractals.',
@@ -71,32 +71,60 @@ BUILD_ROLES = {
     'boon': {
         'name': 'Boon support',
         'desc': 'Boon duration is optimised for raids, not fractals.',
-        'labels': {
-            'boons',
-            'might',
-            'some might',
-            'squad might',
-            'some squad might',
-            'quickness',
-            'some quickness',
-            'squad quickness',
-            'some squad quickness',
-            'alacrity',
-            'some alacrity',
-            'squad alacrity',
-            'some squad alacrity',
-        }
+        'labels': {'might', 'quickness', 'alacrity'}
     },
     'heal': {
         'name': 'Healing',
         'desc': ('These builds are intended for use in a role where you can\'t '
                  'also reliably share boons or deal damage, such as tanking or '
                  'kiting on some bosses.'),
-        'labels': {'healing', 'support'},
+        'labels': {'healing'},
     },
     'specialised': {
         'name': 'Specialised role',
         'labels': {'deimos kite'},
+    },
+}
+
+BUILD_BOON_SUPPORT_GROUPS = {
+    'quickness dps': {
+        'name': 'Quickness DPS',
+        'labels': lambda labels: ('quickness' in labels and
+                                  'healing' not in labels and
+                                  ('power' in labels or 'condi' in labels)),
+    },
+    'alacrity dps': {
+        'name': 'Alacrity DPS',
+        'labels': lambda labels: ('alacrity' in labels and
+                                  'healing' not in labels and
+                                  ('power' in labels or 'condi' in labels)),
+    },
+    'quickness healing': {
+        'name': 'Quickness healing',
+        'labels': lambda labels: 'quickness' in labels and 'healing' in labels
+    },
+    'alacrity healing': {
+        'name': 'Alacrity healing',
+        'labels': lambda labels: 'alacrity' in labels and 'healing' in labels
+    },
+}
+
+PVP_BUILD_ROLES = {
+    'damage': {
+        'name': 'Damage',
+        'labels': {'damage'},
+    },
+    'support': {
+        'name': 'Support',
+        'labels': {'support'},
+    },
+    'duelist': {
+        'name': 'Duelist',
+        'labels': {'duelist'},
+    },
+    'roamer': {
+        'name': 'Roamer',
+        'labels': {'roamer'}
     },
 }
 
@@ -112,30 +140,56 @@ def game_mode_desc (mode):
     return '  '.join(sentences) if sentences else None
 
 
-def build_role (build):
+def build_role (roles, build):
     for label in build.metadata.labels:
-        for role, role_defn in BUILD_ROLES.items():
+        for role, role_defn in roles.items():
             if label in role_defn['labels']:
                 return role
     raise ValueError(f'no role defined for build: {build.metadata.title}')
 
 
-# number of builds required to group by next method
-BUILD_GROUPING_THRESHOLD = 10
-BUILD_GROUPING_METHODS = [
-    {
-        'groups': list(BUILD_GAME_MODES.keys()),
-        'group label': lambda mode: mode.value.name,
-        'group html desc': game_mode_desc,
-        'build group': lambda build: build.metadata.game_mode,
-    },
-    {
-        'groups': list(BUILD_ROLES.keys()),
-        'group label': lambda role: BUILD_ROLES[role]['name'],
-        'group html desc': lambda role: BUILD_ROLES[role].get('desc'),
-        'build group': build_role,
+def role_grouping_method (roles, subgrouping_method):
+    return {
+        'groups': list(roles.keys()),
+        'group label': lambda role: roles[role]['name'],
+        'group html desc': lambda role: roles[role].get('desc'),
+        'build group': lambda build: build_role(roles, build),
+        'subgroup method': subgrouping_method,
     }
-]
+
+
+def build_boon_support_group (build):
+    for group, group_defn in BUILD_BOON_SUPPORT_GROUPS.items():
+        if group_defn['labels'](build.metadata.labels):
+            return group
+    raise ValueError('no boon support group defined for build: '
+                     f'{build.metadata.title}')
+
+
+BUILD_GROUPING_METHOD_BOON_SUPPORT = {
+    'groups': list(BUILD_BOON_SUPPORT_GROUPS.keys()),
+    'group label': lambda group: BUILD_BOON_SUPPORT_GROUPS[group]['name'],
+    'group html desc':
+        lambda group: BUILD_BOON_SUPPORT_GROUPS[group].get('desc'),
+    'build group': build_boon_support_group,
+    'subgroup method': lambda group: None,
+}
+GAME_MODE_SUBGROUP_METHODS = {
+    gw2buildutil.build.GameModes.RAIDS: role_grouping_method(
+        RAIDS_BUILD_ROLES,
+        lambda group: (BUILD_GROUPING_METHOD_BOON_SUPPORT
+                       if group == 'boon' else None)
+    ),
+    gw2buildutil.build.GameModes.PVP: role_grouping_method(
+        PVP_BUILD_ROLES, lambda group: None),
+}
+BUILD_GROUPING_METHOD_GAME_MODE = {
+    'groups': list(BUILD_GAME_MODES.keys()),
+    'group label': lambda mode: mode.value.name,
+    'group html desc': game_mode_desc,
+    'build group': lambda build: build.metadata.game_mode,
+    'subgroup method': lambda group: GAME_MODE_SUBGROUP_METHODS.get(group),
+}
 
 
 def sort_builds (build):
@@ -144,31 +198,32 @@ def sort_builds (build):
                        else build.metadata.elite_spec.id_)
 
 
-def build_groups (builds, grouping_methods):
-    if not grouping_methods or len(builds) < BUILD_GROUPING_THRESHOLD:
-        return sorted(builds, key=sort_builds)
-
-    grouping_method = grouping_methods[0]
+def build_groups (builds, grouping_method):
     grouped_builds = {group: [] for group in grouping_method['groups']}
     for build in builds:
         grouped_builds[grouping_method['build group'](build)].append(build)
 
     group_defns = []
     for group, group_builds in grouped_builds.items():
-        child_builds = build_groups(group_builds, grouping_methods[1:])
+        subgrouping_method = grouping_method['subgroup method'](group)
+        if subgrouping_method is None:
+            key = 'builds'
+            child_builds = sorted(group_builds, key=sort_builds)
+        else:
+            key = 'groups'
+            child_builds = build_groups(group_builds, subgrouping_method)
         if child_builds:
             group_defns.append({
                 'label': grouping_method['group label'](group),
                 'html desc': grouping_method['group html desc'](group),
-                ('groups' if isinstance(child_builds[0], dict) else 'builds'):
-                    child_builds
+                key: child_builds,
             })
     return group_defns
 
 
 def build (gw2site):
     grouped_builds = build_groups(list(gw2site.builds.values()),
-                                  BUILD_GROUPING_METHODS)
+                                  BUILD_GROUPING_METHOD_GAME_MODE)
 
     logger.info(f'{len(gw2site.builds)} builds')
     logger.info(f'{len(grouped_builds)} build groups')
