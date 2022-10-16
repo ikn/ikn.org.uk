@@ -56,3 +56,15 @@ class Licenses (enum.Enum):
     CC0_V1 = License('CC0 1.0', 'http://creativecommons.org/publicdomain/zero/1.0/')
     MIR_OS = License('MirOS', 'https://www.mirbsd.org/MirOS-Licence')
     APACHE = License('Apache', 'http://www.apache.org/licenses/LICENSE-2.0.txt')
+
+
+def parse_version (version, overrides):
+    return tuple(int(part)
+                 for part in overrides.get(version, version).split('.'))
+
+
+def hash_file (hash_obj, path):
+    with open(path, 'rb') as f:
+        while chunk := f.read(65_536):
+            hash_obj.update(chunk)
+    return hash_obj

@@ -10,6 +10,7 @@ from . import (
     autotemplates as autotemplates_page_builder,
     doc as doc_page_builder,
     gw2 as gw2_page_builder,
+    project,
     util,
 )
 
@@ -33,6 +34,8 @@ class Site:
         cache_path = os.environ.get('XDG_CACHE_HOME', default_cache_path)
         self.cache_path = os.path.join(cache_path, 'iknsite')
         os.makedirs(self.cache_path, exist_ok=True)
+
+        self.projects = project.Projects(self)
 
     def link (self, rel_path):
         return urllib.parse.quote(self.page.child(rel_path).link)
