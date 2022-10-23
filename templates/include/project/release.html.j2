@@ -1,0 +1,12 @@
+<li>
+    <a href="{{ release.file_page.link | urlencode }}">
+        <strong>{{ release.version | e }} ({{ release.type_ | e }})</strong>
+    </a>
+    <ul>
+        <li>released: <i>{{ release.date | e }}</i></li>
+        <li>SHA-256: <i>{{ release.sha256 | e }}</i></li>
+        {% if release.changes_page %}
+            <li><a href="{{ release.changes_page.link | urlencode }}">changes</a></li>
+        {% endif %}
+    </ul>
+</li>

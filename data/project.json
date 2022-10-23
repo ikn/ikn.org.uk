@@ -1,0 +1,32 @@
+{
+    "repository paths": [
+        "/home/j/Documents/Coding/projects/in progress",
+        "/home/j/Documents/Coding/projects/end-of-life",
+        "/home/j/Documents/Coding/projects/games/in progress",
+        "/home/j/Documents/Coding/projects/games/finished",
+        "/home/j/Documents/Coding/projects/games/abandoned playable"
+    ],
+    "version overrides": {
+        "apologise": {"48h": "0", "update": "1"},
+        "boom": {"ld": "0", "update": "1"},
+        "brjaf": {
+            "30-11-2011": "0",
+            "30-11-2011-2": "1",
+            "30-11-2011-3": "2",
+            "30-11-2011-4": "3",
+            "1-12-2011": "4",
+            "1-12-2011-2": "5",
+            "1-12-2011-3": "6",
+            "2-12-2011": "7",
+            "4-12-2011": "8",
+            "final": "9"
+        },
+        "christmas": {"pk": "0"},
+        "colour-blind": {"48h": "0", "latest": "1"},
+        "ipnep": {"ld": "0"},
+        "sequence": {"pk": "0"},
+        "spaaace": {"48h": "0", "fixes": "1", "update": "2", "update2": "3"},
+        "wearhouse": {"ld": "0"},
+        "wvoas": {"48h": "0"}
+    }
+}

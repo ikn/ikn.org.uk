@@ -1,0 +1,3 @@
+{% for release in site.projects.releases.get_old(site, page_id) %}
+    {% include 'include/project/release.html.j2' %}
+{% endfor %}

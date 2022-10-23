@@ -10,17 +10,12 @@
 <p>A 2-player battle game made for <a href="http://www.ludumdare.com/compo/">Ludum Dare</a> 28 (December 2013), for the theme 'you only get one'.  The battle plays out using mines: each player can throw any number of dummy mines and only one real one.  However, one player's 'real' mine is a dud, and neither player knows which.  A player can detonate all of his mines at any time, and can use lasers 3 times to destroy (without detonating) every placed mine.</p>
 <p>The game ends once the real mine has been detonated or destroyed, and the winner is the player left alive, if any. If both players are alive, the player who had the real mine loses.</p>
 <h2>Download</h2>
-<h3>Update</h3>
-<p>A version with some later fixes and improvements.</p>
 <ul>
-    <li><strong><a href="{{ site.link('download/game/boom/boom-update.tar.gz') }}">Source (506KiB)</a></strong></li>
-    <li><strong><a href="{{ site.link('download/game/boom/boom-win-update.zip') }}">Windows binary (6.35MiB)</a></strong></li>
+    {% include 'include/project/releases-latest.html.j2' %}
 </ul>
-<h3>Original</h3>
-<p>This is the version I had after the 48-hour competition.</p>
+<h3>Older versions</h3>
 <ul>
-    <li><strong><a href="{{ site.link('download/game/boom/boom-ld.tar.gz') }}">Source (499KiB)</a></strong></li>
-    <li><strong><a href="{{ site.link('download/game/boom/boom-win-ld.zip') }}">Windows binary (6.35MiB)</a></strong></li>
+    {% include 'include/project/releases-old.html.j2' %}
 </ul>
 <h2>Screenshots</h2>
 <p><img src="{{ site.link('resources/img/game/boom/screen 1.png') }}" alt="screenshot" width="960" height="540"></p>
