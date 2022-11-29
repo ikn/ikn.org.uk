@@ -61,7 +61,6 @@ BUILD_GAME_MODES = {
 RAIDS_BUILD_ROLES = {
     'power': {
         'name': 'Power DPS',
-        'desc': 'Critical hit chance is optimised for raids, not fractals.',
         'labels': {'power'},
     },
     'condi': {
@@ -75,9 +74,10 @@ RAIDS_BUILD_ROLES = {
     },
     'heal': {
         'name': 'Healing',
-        'desc': ('These builds are intended for use in a role where you can\'t '
-                 'also reliably share boons or deal damage, such as tanking or '
-                 'kiting on some bosses.'),
+        'desc': ('These builds supply healing and some dps, without quickness '
+                 'or alacrity.  They can be used in any composition, but work '
+                 'great in roles where you can\'t always reliably share boons, '
+                 'such as tanking or kiting on some encounters.'),
         'labels': {'healing'},
     },
     'specialised': {
@@ -224,10 +224,7 @@ def build_groups (builds, grouping_method):
 def build (gw2site):
     grouped_builds = build_groups(list(gw2site.builds.values()),
                                   BUILD_GROUPING_METHOD_GAME_MODE)
-
     logger.info(f'{len(gw2site.builds)} builds')
-    logger.info(f'{len(grouped_builds)} build groups')
-
     gw2site.render_page_template(PAGE_ID, PAGE_TITLE, {
         'grouped_builds': grouped_builds,
     })

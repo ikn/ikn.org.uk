@@ -1,0 +1,23 @@
+{% include 'include/header.html.j2' %}
+{% include 'include/gw2/builds-header.html.j2' %}
+
+<a href="{{ build.intro.url | e }}" class="info-box">Build Editor</a>
+
+<p>A build for <a href="https://www.guildwars2.com">Guild Wars 2</a>.</p>
+<p>{% include 'include/gw2/build-tags.html.j2' %}</p>
+
+{% if texts.desc %}
+{{ texts.desc }}
+{% endif %}
+
+{% if texts.usage %}
+<h2>Usage</h2>
+{{ texts.usage }}
+{% endif %}
+
+{% if texts.notes %}
+<h2>Notes</h2>
+{{ texts.notes }}
+{% endif %}
+
+{% include 'include/footer.html.j2' %}

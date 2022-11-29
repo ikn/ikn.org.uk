@@ -26,7 +26,7 @@
 
 <body>
     <ul id="nav">
-        <li><a href="{{ site.page.link | e }}" title="website home page">Home</a></li>
+        <li><a href="{{ site.page.link | urlencode }}" title="website home page">Home</a></li>
         <li><a href="{{ site.link('game') }}">Games</a></li>
         <li><a href="{{ site.link('app') }}" title="desktop GUI applications">Applications</a></li>
         <li><a href="{{ site.link('lib') }}" title="code libraries">Libraries</a></li>

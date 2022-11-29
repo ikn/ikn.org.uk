@@ -8,6 +8,7 @@ from gw2buildutil import defnfile, api as gw2api
 from . import (
     util as gw2util,
     builds as builds_page_builder,
+    build as build_page_builder,
 )
 
 logger = logging.getLogger(__name__)
@@ -70,21 +71,24 @@ class Gw2Site:
         return builds
 
     def render_page_template (self, page_id, page_title,
-                              template_args={}, js_deps=()):
+                              template_args={}, js_deps=(), dest_page_id=None):
         full_template_args = {
             'gw2site': self, 'gw2util': gw2util,
         }
         full_template_args.update(template_args)
 
+        if dest_page_id is None:
+            dest_page_id = page_id
         self.site.render_page_template(
-            f'{PAGE_ID}/{page_id}', page_title, full_template_args, js_deps)
+            f'{PAGE_ID}/{page_id}', page_title,
+            full_template_args, js_deps, f'{PAGE_ID}/{dest_page_id}')
 
     def build (self):
         self.builds = self._load_builds()
         logger.info(f'{len(self.builds)} builds')
         self.tags = self._init_tags()
 
-        for page_builder in (builds_page_builder,):
+        for page_builder in (builds_page_builder, build_page_builder):
             logger.info(f'start {page_builder.PAGE_ID}')
             page_builder.build(self)
 

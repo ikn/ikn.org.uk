@@ -25,3 +25,18 @@ def get_build_tags (gw2site, build):
 def get_text_build_tags (gw2site, build):
     return ', '.join(name for name in build.metadata.labels
                      if name not in gw2site.tags)
+
+
+def get_build_id (build):
+    m = build.metadata
+    parts = []
+    if m.game_mode is not None:
+        parts.append(m.game_mode.value.id_)
+    spec = m.profession if m.elite_spec is None else m.elite_spec
+    parts.append(spec.id_)
+    parts.extend(m.labels)
+    return '-'.join(parts).replace(' ', '-')
+
+
+def get_build_page (site, build):
+    return site.page.child('gw2/builds').child(get_build_id(build))

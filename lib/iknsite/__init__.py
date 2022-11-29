@@ -55,25 +55,27 @@ class Site:
             f.write(rendered_template)
 
     def render_page_template (self, page_id, page_title,
-                              template_args={}, js_deps=()):
+                              template_args={}, js_deps=(), dest_page_id=None):
         full_template_args = {
             'page_id': page_id, 'page_title': page_title,
             'js_deps': js_deps,
         }
         full_template_args.update(template_args)
+        if dest_page_id is None:
+            dest_page_id = page_id
 
         for src_rel_path, dest_page in (
             (
                 f'css/{page_id}.css.j2',
-                self.stylesheets_page.child(f'{page_id}.css')
+                self.stylesheets_page.child(f'{dest_page_id}.css')
             ),
             (
                 f'js/{page_id}.js.j2',
-                self.scripts_page.child(f'{page_id}.js')
+                self.scripts_page.child(f'{dest_page_id}.js')
             ),
             (
                 f'page/{page_id}.html.j2',
-                self.page.child(f'{page_id}/index.html')
+                self.page.child(f'{dest_page_id}/index.html')
             ),
         ):
             try:

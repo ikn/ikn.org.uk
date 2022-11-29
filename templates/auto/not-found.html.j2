@@ -2,6 +2,6 @@
 {% include 'include/header.html.j2' %}
 
 <p>Error: the requested page does not exist.  If you typed its name into the address bar, check it - note that capitalisation is important; if a link brought you here...get someone to fix it, I guess.</p>
-<p>(...Maybe <a href="{{ site.page.link | e }}">contact me</a>?)</p>
+<p>(...Maybe <a href="{{ site.page.link | urlencode }}">contact me</a>?)</p>
 
 {% include 'include/footer.html.j2' %}
