@@ -51,7 +51,6 @@ SPECS = [
 ]
 BUILD_GAME_MODES = {
     gw2buildutil.build.GameModes.RAIDS: {},
-    gw2buildutil.build.GameModes.FRACTALS: {},
     gw2buildutil.build.GameModes.DUNGEONS: {},
     gw2buildutil.build.GameModes.OPEN_WORLD: {},
     gw2buildutil.build.GameModes.PVP: {},
