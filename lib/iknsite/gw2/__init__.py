@@ -52,7 +52,7 @@ class Gw2Site:
         with open(builds_config_path) as builds_config_f:
             builds_config = json.load(builds_config_f)
         builds_base_path = os.path.expanduser(builds_config['path'])
-        categories = ['6 - active', '5 - ready']
+        categories = ['5 - active', '6 - complete']
 
         if self._get_crawl_time() < (time.time() - CRAWL_MAX_AGE_SECONDS):
             gw2api.crawl.crawl()
