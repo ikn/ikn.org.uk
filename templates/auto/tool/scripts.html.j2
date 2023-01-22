@@ -25,7 +25,7 @@
 {% include 'include/license.html.j2' %}
 
 <a name="aud"></a><h2>audctl/notifaud</h2>
-<p>Control the volume on an <a href="http://www.alsa-project.org">ALSA</a> system.  audctl does the controlling, and notifaud sends a desktop notification (via <a href="http://www.galago-project.org">libnotify</a>) indicating the current state; I use these together with <a href="https://github.com/baskerville/sxhkd">sxhkd</a> to map my keyboard's volume keys.</p>
+<p>Control the volume on an <a href="http://www.alsa-project.org">ALSA</a> system.  audctl does the controlling, and notifaud sends a desktop notification indicating the current state; I use these together with <a href="https://github.com/baskerville/sxhkd">sxhkd</a> to map my keyboard's volume keys.</p>
 <p>Unlike most volume control utilities I've used, audctl does not unmute the volume when it is changed; this is by design.</p>
 <p><b>Configuration</b>: audctl has a couple of things to set: open up the script in an editor and change the variables at the top (11th and 12th lines) if you want to.  See <code>man amixer</code> for details on what values these can take.  Similarly, open notifaud and change the values of 'TIMEOUT' and 'PID_FILE' to set the duration of notifications and the temporary file to use (lines 7 and 8).</p>
 <p><b>Usage</b>: audctl takes a single argument: 'up' or 'down' to step the volume up or down; 'toggle' to mute/unmute sound; or a number (integer) to set the volume to (a percentage, without the '%').  notifaud takes no arguments.</p>
