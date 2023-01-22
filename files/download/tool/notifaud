@@ -1,67 +1,68 @@
-#! /usr/bin/env python2
+#! /usr/bin/env bash
 
 # Distributed under the terms of the BSD 3-Clause license
 
 # Takes no arguments.
 
-import os
-from signal import signal, SIGUSR1
-from subprocess import check_output
-import re
-from time import sleep
+PID_FILE='/tmp/notifaud-pids'
+TIMEOUT=3
+TITLE='Sound volume'
+PROJECT_NAME=notifaud
 
-import pynotify
+VOLUME_HIGH_THRESHOLD=70
+VOLUME_MED_THRESHOLD=40
+VOLUME_HIGH_ICON=audio-volume-high
+VOLUME_MED_ICON=audio-volume-medium
+VOLUME_LOW_ICON=audio-volume-low
+VOLUME_MUTED_ICON=audio-volume-muted
 
-PID_FILE = '/tmp/notifaud-pids'
-TIMEOUT = 3
-n = None
-pynotify.init('notifaud')
+add-app-args() {
+    args+=(--app-name="$PROJECT_NAME")
+}
 
-def notify ():
-    # get volume and whether muted
-    s = check_output(('amixer', 'get', 'Master', 'playback'))
-    vol = re.findall('[0-9]*%', s)[0]
-    vol_num = int(vol[:-1])
-    muted = re.search(r'\[on\]', s) is None
-    if muted:
-        icon = 'muted'
-    elif vol_num > 70:
-        icon = 'high'
-    elif vol_num > 40:
-        icon = 'medium'
-    else:
-        icon = 'low'
-    args = (vol, None, 'audio-volume-' + icon)
-    global n
-    if n is None:
-        # create notification
-        n = pynotify.Notification(*args)
-        n.set_timeout(TIMEOUT * 1000)
-    else:
-        # update notification
-        n.update(*args)
-    n.show()
-    sleep(TIMEOUT)
+add-display-args() {
+    local playback_info="$(amixer get Master playback)"
+    local volume="$(echo "$playback_info" |
+        sed -nE 's/.*\[([[:digit:]]+)%\].*/\1/p' | head -n1)"
+    local muted
+    echo "$playback_info" | grep -qE '\[off\]' && muted=y || muted=n
 
-def update (sig, stack):
-    # update notification
-    global n
-    if n is not None:
-        notify()
-    # else between writing PID to file and creating the notification
+    local body="${volume}%"
+    local icon
+    if [ "$muted" = y ]; then
+        icon="$VOLUME_MUTED_ICON"
+    elif [ "$volume" -gt "$VOLUME_HIGH_THRESHOLD" ]; then
+        icon="$VOLUME_HIGH_ICON"
+    elif [ "$volume" -gt "$VOLUME_MED_THRESHOLD" ]; then
+        icon="$VOLUME_MED_ICON"
+    else
+        icon="$VOLUME_LOW_ICON"
+    fi
 
-# get current notification, if any
-try:
-    with open(PID_FILE) as f:
-        pid = int(f.read())
-    # send signal to other instance to tell it to renew the notification
-    os.kill(pid, SIGUSR1)
-except:
-    # write PID to file
-    with open(PID_FILE, 'w') as f:
-        f.write(str(os.getpid()))
-    # set up signal handler and notify
-    signal(SIGUSR1, update)
-    notify()
-    # remove PID file
-    os.remove(PID_FILE)
+    args+=(--urgency=low --transient --expire-time="$((TIMEOUT * 1000))"
+           --icon="$icon" "$TITLE" "$body")
+}
+
+create() {
+    stdbuf -o0 notify-send --print-id --wait "$@" > "$PID_FILE"
+    local res="$?"
+    rm -f "$PID_FILE"
+    return "$res"
+}
+
+update() {
+    local id="$1"
+    shift
+    notify-send --replace-id="$id" "$@"
+}
+
+args=()
+add-app-args
+add-display-args
+id="$(cat "$PID_FILE" 2> /dev/null)"
+
+if [ -n "$id" ]; then
+    update "$id" "${args[@]}" || create "${args[@]}"
+else
+    create "${args[@]}"
+fi
