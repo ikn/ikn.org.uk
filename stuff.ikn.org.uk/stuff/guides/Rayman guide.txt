@@ -1,0 +1,1264 @@
+
+    Rayman - complete walkthrough
+
+    Version 0.42
+
+    By J
+
+-------------------------------------------------------------------------------
+0. Contents
+-------------------------------------------------------------------------------
+
+To search for a particular section, append references together, e.g. '4aiii.'.
+
+* = incomplete section
+** = section not started
+
+0.   Contents
+
+1.   Legal and contact
+
+2.   Introduction
+
+3.   Current content
+
+4.   Gameplay
+  a.   Tips
+  b.   Items and objects
+  c.   Enemies
+
+5.   Bonus Stages(0.07)*
+  a.   The Dream Forest
+  b.   Band Land*
+  c.   Blue Mountains**
+  d.   Picture City**
+  e.   The Caves of Mr. Skops**
+
+6.   Walkthrough(0.51)*
+  a.   The Dream Forest
+    i.   Pink Plant Woods
+    ii.  Anguish Lagoon
+    iii. REVISITED Pink Plant Woods
+    iv.  The Swamps of Forgetfulness
+    v.   Mosquito's Nest
+    vi.  REVISITED Anguish Lagoon
+    vii. REVISITED Mosquito's Nest
+  b.   Band Land(0.09)*
+    i.   Bongo Hills
+    ii.  Allegro Presto
+    iii. REVISITED Bongo Hills**
+  c.   Blue Mountains(0.1)**
+  d.   Picture City(0.14)**
+  e.   The Caves of Mr. Skops(0.14)**
+  f.   Candy Chateau(0.04)**
+
+-------------------------------------------------------------------------------
+1. Legal and contact
+-------------------------------------------------------------------------------
+
+This guide is distributed under a Creative Commons license
+(Attribution-ShareAlike 3.0):
+
+http://creativecommons.org/licenses/by-sa/3.0/
+
+If you come across any significant section of this guide and its use does not
+comply with the above terms, please e-mail me.
+
+To contact me to either suggest information or ideas or point out corrections,
+use e-mail.  The e-mail address to use is J49137@gmail.com.
+
+-------------------------------------------------------------------------------
+2. Introduction
+-------------------------------------------------------------------------------
+
+This document is a walkthrough for the game Rayman, for the Sony PlayStation.
+Its aim is to help those that read it to complete the game as easily as
+possible, including many of the bonus games and extras, if not all of them.
+
+In writing this guide, I will not cover any matter that is in the game manual.
+Also, as a player progresses through the game, new Powers are gained, which are
+explained in the game, along with how to use them.  I will not, at those
+points, do the same, but I will describe particular strategies of their use
+when required, later on.  Also, though they are not exactly vital to completing
+the game, I will cover the collection of as many 'Tings' as is practical.
+
+Throughout the guide, although these may be the incorrect names, I call the 6
+places, e.g. The Dream Forest and Band Land, 'Worlds'; the places shown on the
+map 'Levels'; and the separate parts within them 'Stages'.  I use 'powers' to
+describe the number times Rayman can get hurt and, so, the items that replenish
+these are named 'Large Power-ups' and 'Small Power-ups appropriately' (don't
+mistake these with 'Powers', which are new moves given to Rayman at certain
+times by Betilla the Fairy; the difference is the capital letter).  Enemies are
+anything that move, are seemingly living and can hurt Rayman, bosses being
+those larger ones that have a Stage (or, in some cases, more than one) devoted
+to a battle with them.
+
+And there are also some random silly bits.  Naturally.
+
+-------------------------------------------------------------------------------
+3. Current content
+-------------------------------------------------------------------------------
+
+At the moment, this guide contains:
+- Gameplay information (nothing on enemies yet, though).
+- Walkthrough for World 1, including Bonus Stages.
+- Walkthrough for some of World 2 and some of its Bonus Stages.
+
+-------------------------------------------------------------------------------
+4. Gameplay
+-------------------------------------------------------------------------------
+
+'Gameplay' is the part of the guide that helps to explain other aspects of the
+game apart from simply what to do to complete it.  It is a reference to
+enemies and how to defeat them (including bosses) and the game's various items
+and the best ways to use them (though this is described with relevance to
+objective in the walkthrough).  Also, some tips that I have managed to think of
+are good-willingly included.
+
+Most, if not all, of this section is included in the walkthrough part of this
+guide, but it is here as well, so as to be easier to find and refer to.
+
+-------------------------------------------------------------------------------
+4a. Tips
+-------------------------------------------------------------------------------
+
+The following are a variety of tips that I have thought up, which will help in
+any part of the game, and that are, for the most part, not explained in the
+game or its manual:
+
+1. Be aware that by pressing X for a brief time, Rayman will perform a shorter
+jump than if X is pressed for a normal duration.
+
+2. After completing a Level, going back through it a second time will not take
+you through Stages or parts of Stages in which a new Power was given to Rayman,
+or where a boss was fought.
+
+3. Always go back to check for Power-ups and extra lives, or even Cages, if the
+'appearing' sound is heard.
+
+4. Rayman's fist goes further than a usual non-powered up punch if Square is
+pressed just as Rayman lands on the ground.
+
+5. The furthest that you can make Rayman jump from a ledge is achieved if X is
+pressed after Rayman begins to fall, but is still on the land and can propel
+himself off of it with a jump.
+
+6. Bonus Stages can be used (if they contain more than 10 Tings) to infinitely
+gain Tings and, so, lives.  However, this can be a very time-consuming process,
+especially once it has been take into account that 10 Tings are paid to the
+Magician by Rayman to allow entry to the Bonus Stage.
+
+7. To punch a low enemy or object (such as a Berry), punch then duck.  Hold
+the punch for a bit if it doesn't work without.
+
+8. When you use the return sign at the start of a Level, all progress in that
+Stage remains.  For example, you will keep Cages, Tings and extra lives
+collected.  Using one in a Bonus Stage will lose you the 10 Tings you paid for
+access, though.
+
+-------------------------------------------------------------------------------
+4b. Items and objects
+-------------------------------------------------------------------------------
+
+These are the most important items (things Rayman collects) and objects (things
+Rayman uses) in the game.  Less important ones are either less common, or are
+uninteresting and don't do much.
+
+    TING
+Tings are those pearl-like objects that litter the Rayman world, and are the
+only things of which I am sure of the name.  Collect 100 for another life, or
+fewer than that in Bonus Stages.  They make nice sounds if collected in the
+right order and at the right speed.
+
+    POWER-UP
+Power-ups come in Large and Small varieties, both red with a 'P'.  The smaller,
+however, has small, energetic, yellow dots around it as well, with a small
+central circle.  These replenish the powers Rayman has that constitute his
+life: collect a Large Power-up to refill 5 and create 5 spaces, and a Small one
+to refill up to 3 of however many spaces are currently available for powers (3
+or 5).
+
+    LIFE STATUE
+Resembling Rayman, only miniature, they add one to Rayman's number of lives.
+After collection, they never reappear, and can also be found in Bonus Stages,
+one in each.
+
+    CAGE
+There are 6 Cages per Level in the game's first 5 Worlds, each of which must
+be collected for access to World 6.  They each contain 6 Electoons, which are
+important...for some reason or other.
+
+    GOLDEN FIST/SUPER FIST
+This is either a gold-coloured, floating fist (actually, everything floats in
+this game) or a fist with a blue 'S' around it.  If collected, Rayman's punches
+are improved, though I'm unsure what each does.  It may be that Super punches
+are faster and Golden punches are more powerful; it is also possible to have
+both at once.  Golden Fists make Rayman's fist golden, while Super Fists make
+it have a magical-seeming trail behind it as he punches.
+
+    POTION
+This occurs in certain Stages after receiving the Helicopter Power.  It is a
+bottle of pink liquid, presumably potion, that makes Rayman's hair pink when
+helicoptering, allowing him to go up by repeatedly pressing X.
+
+    POWER
+These are the special moves Rayman gets given, which are permanent and all
+essential to complete the game.  In order of collection, they are:
+ - Punch        - punch anything (Square).
+ - Hang         - hang on ledges' edges (rhyme intentional).
+ - Grab         - grab Life statues and Flying Rings.
+ - Helicopter   - float in the air by rotating your hair (again, rhyme
+                  intentional) (X again in midair).
+ - Run          - Why are you even looking here?  (Circle.)
+
+    FLYING RING
+Winged, either pink or red, of course with eyes, and floating, Flying Rings are
+the purpose of Grab.  Punch to latch onto one and swing left and right.  Pink
+rings remain stationary, while red ones descend at a steady rate.
+
+    FAIRY
+Fairies are usually found in pairs, and are tiny things with a very odd, lumpy,
+triangular appearance.  Touch one to turn small or return to normal size.
+
+    '<-¬' SIGN
+These are found at the start of each and every Level and Bonus Stage, and serve
+as a way of returning to the the map screen (or Magician).  You will keep
+anything you collect while in the Level or Bonus Stage.
+
+    '!' SIGN
+The end of a Stage.  Touch to win, smile with shiny teeth and say 'Yeah!'.
+There are none in boss Stages.
+
+    CHECKPOINT
+A Checkpoint consists of the photographer and a picture with a space for your
+head.  Line Rayman up in the right spot to have his picture taken; now, if he
+should die in this Stage, he will restart here rather than at the beginning.
+
+    BERRY
+Found mostly in The Dream Forest, Berries serve as transport, for reach high
+places or crossing large bodies of water.  They reappear if off-screen for too
+long, and are knocked off their vine with a punch.  Punc-duck to move one you
+are on top of.
+
+    CLOUD
+There are many types of cloud, and they are mostly found in Band Land.
+Stationary clouds, disappearing clouds, bouncy clouds and elevator-like clouds
+are the variations on this object, and they help with accessing high or far-off
+areas.
+
+    EXPLODING ROCK
+Exploding rocks are often come across in Blue Mountains, and explode when
+dropped or punched.  This can refer to the smaller variety, which expel
+fragments (surprisingly slowly) and in this way are harmful, or the larger
+ones, which are harmless and contain items, most often blocking a path.
+
+    BOUNCY BALL
+In Picture City, bouncy balls are found either already bouncing or suspended;
+punch one to move it and jump on one to bounce up to high places.  They are
+very similar to Berries, except some are topped with spikes.
+
+-------------------------------------------------------------------------------
+4c. Enemies
+-------------------------------------------------------------------------------
+
+I don't think I'll attempt this section until I get some enemy names...
+
+-------------------------------------------------------------------------------
+5. Bonus Stages
+-------------------------------------------------------------------------------
+
+These are the best ways that I could find to complete the game's many and very
+varied bonus games.  Throughout the guide, they are referenced with a number to
+this section.
+
+(Format for numbers is: World#-Level#-Bonus#)
+
+-------------------------------------------------------------------------------
+5a. The Dream Forest
+-------------------------------------------------------------------------------
+
+BONUS 1-1-1
+10 Tings
+25 Seconds
+
+Start off by heading right to the red flower ahead; these fall when jumped on,
+carrying Rayman downwards.  Land on the lowest, then up and left twice,
+collecting Ting 1 under the third flower.  Then jump left, receiving 3 more
+Tings in an arc.  Take the same route up again, but go right from the third
+flower (Ting 5), then right and high for Ting 6.  On the third of the highest
+row of flowers wait while it drops until you have the Ting (7) just under it.
+Jump right to finish with the last 3 Tings.
+
+
+BONUS 1-1-2
+15 Tings
+35 Seconds
+
+As Rayman lands, go left for a Ting on the stone hand, then right again.
+Collect Tings on the way up, mastering the technique of jumping as you do so.
+After crossing the Stage 4 times, jumps get harder to pull off.  Now, rather
+than using short hops for greater speed, go as far as you can.  You may have to
+drop a bit at the ledges' ends to maximise the length of Rayman's jumps.  The
+final Ting is on the ledge at the top left of the Bonus Stage.
+
+
+BONUS 1-3-1
+12 Tings
+30 Seconds
+
+There isn't much I can say to help here, except to make it clear that to go up,
+you need to punch the Berry and ride it, then punch the next and continue,
+collecting the Tings on the way.  The best time to punch to get the timing
+right is when you are on the edge, and try to punch at the first edge you come
+to.
+
+A much easier, though perhaps slower way, would be to jump onto the next Berry
+and then punch it (punch-duck), making your way up like that.  The main way
+to make it easier to get onto the already-moving Berries is to punch the one
+before in the opposite direction, while the one above is directly above.
+
+
+BONUS 1-4-1
+17 Tings
+45 Seconds
+
+Begin holding right, then jump up the flowers quickly.  On the highest just
+before the Berry, stay on until the Berry swings across - the timing should
+be just right if you start immediately.  Across the other side of the screen,
+continue upwards, and the timing for the Berry should be good again as you land
+on the last flower.
+
+Back on the right, you can skip the first flower and go straight for the one
+with the Ting.  Jump for the next Berry just as it begins to come back to
+Rayman's side of the screen, to land on it in the centre of its swing, where
+the Ting is.
+
+The route for the flowers above should be careful, so as to have flowers enough
+to use and not fall back down.  To make this simpler, I'll draw a diagram with
+the flowers as numbers in the order to land on them.  It's a bit small and
+strange, I know, but it's the best I can do in 30 seconds:
+
+	[11]
+		[10][8]
+	[9]			[7]
+		[4]	[6]
+	[3]			[5]
+		[2]
+	[1]
+		 BERRY
+
+From there, it's simple; just follow the flowers up.
+
+-------------------------------------------------------------------------------
+5b. Band Land
+-------------------------------------------------------------------------------
+
+BONUS 2-2-1
+12 Tings
+25 Seconds
+
+Begin by going left, watching out for the return sign.  Jump up onto the
+rotating puddings there, collecting the first Ting on the way.  The second is
+on the left and a few more up on top of the next puddings.  From there, jump
+across to the right, collecting the one in the middle, and then around for 3
+more and down to the pudding below.  Get the Ting on the right of this, then
+jump left to grab the final 2 in the middle.
+
+I did have 13 Tings in this description, so I removed a random Ting.  Please
+e-mail if you find it to be wrong...oops.
+
+-------------------------------------------------------------------------------
+6. Walkthrough
+-------------------------------------------------------------------------------
+
+This is the main part of the guide: the actual walkthrough.  The following will
+be a detailed guide as to how to complete the game, to the very end.  It is
+important to collect every single Cage, but not all Tings, as Cages are needed
+in order for the game to be finished.  At the end of each Stage, I have written
+the number of Cages you should have by that point as a reference.
+
+After watching the introduction cut-scene, begin your game, using the save
+method of your preference.  The map will be the first thing you see; select
+'Pink Plant Woods' to start Rayman's quest.  Prepare for it to the soothing
+sound of...jungle drums...
+
+-------------------------------------------------------------------------------
+6a. The Dream Forest
+-------------------------------------------------------------------------------
+
+The Dream Forest is, as the name suggests, located within a forest, presumably
+The Dream one.  It is a grassy, earthy, watery area, with plenty of atmosphere
+and moody mists and rain.
+
+It features only basic enemies, generally rangers, small rangers, viscious
+plants and mallet-shooters, and the small black ball-shaped things - all of
+which I can't name through lack of instruction manual - littered in their many
+forms everywhere, as in all Worlds (if anyone knows the actual names for any
+enemies in the game, please contact and inform me on the E-mail address in the
+'Use of this FAQ' section (8.) below).
+
+-------------------------------------------------------------------------------
+6ai. Pink Plant Woods
+-------------------------------------------------------------------------------
+
+STAGE ONE
+
+When you begin, you will be able to see several shiny, pearl-like objects
+floating in mid-air around the Stage; I call these Tings, because of the
+characteristic sound made when they are collected.  They actually make nice
+(intended) tunes when several are collected in swift succession.  This first
+Stage is a place in which to learn how to move Rayman around, and jump, and
+collect Tings.
+
+Jump onto the hand of the statue (using X) to collect the first of these
+Tings and, from there, jump high to the right for two more.  (The large red and
+white 'P' is a Large Power-up, which increases the number of powers Rayman has
+to 5, but this one cannot be collected right now.)  As you go forwards (to the
+right), jump onto the red flower to get to the other side of the water: RAYMAN
+CANNOT SURVIVE IN WATER (i.e. he dies), though the stepping stones can be
+very misleading.
+
+Use this Stage also as a chance to learn what can be interacted with and what
+makes up part of the background, to help later on.
+
+Across the water, jump onto the ledge, then the vine coming down from above:
+this can be climbed with the D-Pad.  Once higher than the bottom of the other
+vine further left, jump across to it, then continue to the floating island
+above.  There, a Rayman statue can be found (gives Rayman an extra life).
+Proceed to jump across to the Large Power-up from earlier, before making your
+way back to the vine and passing it.  Jump across the ponds, and ascend using
+the floating ledges and stone hand, to reach the '!' sign: the end of the
+Stage.  Use these ledges that are close together to practise short hops by
+briefly pressing X; this will be useful later on in the game, when more speed
+may be required at times.
+
+Watch Rayman's teeth sparkle, before he heads onwards.
+
+STAGE TWO
+
+Begin by jumping on the red flower to the left, and then jumping off it to the
+vine on the right; do this when the flower is more than half of the way down,
+to be able to make it.  Climb the vine and jump to the left but then back again
+for an extra life.  Collect the Tings around the vine on the left (climb right
+to the very top of the first one before jumping to get there), then get onto
+the ledge surmounted with a top hat - which is revealed to be a Magician.  By
+paying him the 10 Tings, in this Stage and many others, you can try the Bonus
+Stage, for a life as a reward (see the 'Bonus Stages' section (5.) above for
+help with this; search 'BONUS 1-1-1').
+
+The sound played after jumping over the water below, at the start, is one that
+occurs whenever something appears; in this case it is an enemy only that has
+magically been produced behind, so continue to the right, ending up under the
+large floating ledge, whose top cannot be reached yet.  After a small island
+and a ramp, use the vine to get across with 3 Tings, avoiding the enemy below
+with big jaws and sharp teeth.  Climb the purple and yellow (if wrong, it's
+due to colour-blindness) thing to get the Large Power-up, then go down to the
+ledge below (ones above are out of reach for now).  Continue using jumps until
+you see a photographer (why a photographer?); stand in line with the head slot
+on the large picture to get Rayman's photo taken: this acts as a checkpoint, if
+you should die.
+
+Climb the vine above for 4 Tings, then head right once more, and onto the pink
+flower (will not fall).  You cannot attack enemies now, so avoid the
+ranger-type person and the piranhas between the vines ahead.  Again, ignore the
+Berry on the end of the vine and Cage below the ledge, and end the Stage to see
+Rayman's sparkly white teeth.  
+
+STAGE THREE
+
+On this next Stage, you will receive Rayman's first new Power (not power) from
+Betilla the Fairy; walk up to her to learn how to punch.  Now you can defeat
+enemies, use Berries and, by that, cross large bodies of water.  Experiment
+with punching and holding Square to wind Rayman's fist up, increasing the
+power.
+
+After that, jump up and punch the berry.  Get on top of it, then jump to get
+higher, before finally reaching the end and '!' sign.
+
+STAGE FOUR
+
+On the next (fourth) Stage, go forwards and use the the Berry to get high
+enough to jump onto the stone hand, for an extra life.  Jump on the berry
+several times to get higher.  Next, below again, you can break open your first
+Cage by punching it twice, or once with more power.  The symbol shown on the
+screen then represents the Cage: there are 6 on every Level but the last.
+
+After that, punch the berry ahead repeatedly until it lands in the water.  Land
+on it and face left to move it to the Golden Fist, which strengthens your
+punch.  If done right, the berry can alternatively go over the water and
+disable the enemy there (i.e. it becomes his head), so you can jump on that
+new head for the high-up Super Fist.
+
+Now, with punch, you can see Rayman's 3 hands.  Wind up your fist a lot and,
+once released, press Circle to make Rayman make a face.  Not only will 3 hands
+be shown on the screen (perhaps his fist is not actually part of him), but he
+will at his own fist(!).  Anyway, go right, defeating the two short ranger-type
+people, which duck if they see you, by punching when landing, thereby punching
+further.  To collect the Golden Fist on your third jump, walk almost off the
+platform before leaving the ground.
+
+Climb the vine above, then jump left for the extra life there.  Punch the Cage
+on the lower ledge to the right to open it before going onwards, to the sloping
+ledge.  At its end, an enemy appears behind (left), who shoots mallets (which,
+believe it or not, can hurt Rayman).  You cannot kill this type of enemy when
+his gun is pointing forwards, ready to shoot.  Jump off the ledge, and enemies
+will appear all around.  Drop down to the bottom, killing all enemies on the
+way, then jump up again.  Go onto the right ledge, rid it of enemies, then take
+the Berry down and use it to cross the  water to the left for another life.
+Return and do the same, only across the water on the right, for yet another
+life (all of these will probably be needed later on) and a Large Power-up.
+Across that water, jump onto the ledge before crossing it to the second small
+floating ledge.
+
+Jump and punch the Berry to the left and above next, following it quickly
+before it goes too far away and disappears.  Punch it into the water below,
+then use your vehicle to traverse the pond to find the Magician again (= Bonus
+Game = extra life)(search 'BONUS 1-1-2' for a solution).  After that, turn
+left, punch the Berry and jump onto it quickly, before the Magician has time to
+enrol Rayman in a second go at the Bonus Stage you have just (hopefully) won.
+
+Return to the vine-supporting ledge from which you punched the Berry, then head
+up and right, and across to the life; be ready to turn and fight your way out.
+Finally, drop down to where the mallet-shooting creature is placed.  Duck under
+his attacks while getting up the slope, then punch (once if you still have the
+Golden Fist(s)) before his gun is put up to fire.  Break open the Cage, then
+end, completing the Level with the sight of Rayman's sparkly smile and the
+current maximum 3 Cages out of the 6 hidden in the Level.
+
+3/6 Cages.
+
+-------------------------------------------------------------------------------
+6aii. Anguish Lagoon
+-------------------------------------------------------------------------------
+
+STAGE ONE
+
+Go to the right until Rayman reaches a junior-sized ranger-topped ledge,
+whereupon you should jump onto it and rid it of its occupant (best done when he
+is facing away because such enemies can duck).  Punch the Berry suspended there
+to start it swinging and alight it, from there leaving to the right.  Here, hop
+onto the second (already) swinging Berry to land on the first of the two
+red-edged flowers.
+
+However, seeing the ever-helpful Tings below, allow it to carry you down
+through the Tings to a mallet-shooting enemy below, complete with Cage and
+Rayman statue.  Remember to duck, and attack only when the gun is not aimed at
+Rayman; I shouldn't have to include further information on the Cage and life
+mentioned...  Use the Berry above to cross the body of water (deceivingly
+topped with stones), back to the red flowers, this time reaching the upper
+grassy ledge.  On seeing the Cage leftwards, open it - but be aware of the
+'appearing' sound indicating the appearance of a mallet-pencil...er...thing.
+Continue in the same direction across the two gaps, defeat the source of the
+previously mentioned missile and unlock the Cage.  For a quicker kill, jump
+when punching this enemy.
+
+The rest of this first Stage should be easy by now, so continue to the end.
+
+STAGE TWO
+
+Here, you will find the game's first boss, the Mosquito.
+
+After collecting the Large Power-up on the right, be careful to fall off the
+ledge in time to land on the Berry below, so as to be able to collect the Tings
+and Super Fist as well.  Now drop down to the battle arena and prepare
+for...battle.  (To collect more Tings, drop from the centre of the screen.)
+
+This boss is really very simple to get rid of - and so it should be, being the
+first in the game.  The battle consists of two sections, the first of these
+being a simple attack by the boss.  When its proboscis (snout[?]) straightens,
+it can hurt you, and you it; just jump to the right height and punch - what
+could be easier?  To get out of tight situations between the pink mosquito and
+the wall (which you should really be trying to avoid), crawl underneath its
+lunge of an attack with R1.
+
+The second Stage of the battle begins after the boss has taken two hits (I
+think): the Mosquito will have its snout protrude from one side of the screen,
+at head- or ground-height.  Be prepared to jump over it, preferably traveling
+in the direction of the boss's source to make the jump less difficult, though
+ducking is often the best option with the higher-up attempts at stabbing
+Rayman.
+
+From now on (after a few 'zooms'), the Mosquito will periodically vary between
+the two methods of attack: simply dodge and punch to gain victory.  When one
+hit away from a win for Rayman, the enemy will be able to dodge some punches,
+so be more careful then; after 5 blows to the head (well, he does seem to be
+one big head), the pink Mosquito will have lost the battle, and Rayman will
+dance.  Yay.
+
+But what's this?...Rayman is MAKING FRIENDS with his enemy?  Oh well.
+
+STAGE THREE
+
+The third Stage begins with a constantly moving screen and Rayman on his
+newfound friend's back.  Watch out for a speed increase or two later, though.
+At the start, follow the Tings upwards for a Golden Fist, then down and up once
+more for a Super Fist.  Then, be careful of the yellow/golden stars - they're
+spiky.  The Large Power-up under the stars below can only be collected if you
+are close to the far right edge of the screen as it comes into view.
+
+After you pass the second set of stars, 5 above 3, fly down to the bottom of
+the screen (not as low as possible though, as you will then get stuck between
+the screen's left edge and the ledge) to punch a Cage.  This is an easy one
+to accidentally but knowingly miss, and is the Level's fourth so far.  After
+more stars, 3 helicoptering ball-things pave the way to get punched; next, take
+the upper route through the ledges with the more scary, massive-jawed spheres:
+it's easier to pass through the top unscathed.
+
+After that, stay left, as mallets in pencils will attack at varying heights -
+here, the Mosquito speeds up.  Another Super Fist is here, before you must
+defeat the mallets' source - how he aimed so high I'll never know - and find a
+Small Power-up on the same ledge.
+
+Now, not without a rather odd warning, the speed will really increase. Get the
+Tings, then more, then more; dodge the stars, more speed, more Tings,
+ - but no hazards.  The end.  I really feel that last section could have been
+prolonged.
+
+STAGE FOUR
+
+Now, another Power.  Listen to Betilla (the fairy), and HANG on the ledge with
+Tings, jump up and end the Stage.  If you think about it, there are now only
+two Stages in this Level.
+
+4/6 Cages.
+
+-------------------------------------------------------------------------------
+6aiii. REVISITED Pink Plant Woods
+-------------------------------------------------------------------------------
+
+Now that you have the Powers Punch and Hang, all of the Cages in this first
+Level of the game are accessible.  To get Cages 4, 5 and 6, first make it to
+the second Stage.
+
+STAGE ONE - use 6ai.
+
+STAGE TWO
+
+Go right, across 3 small areas of water, before jumping up onto the higher
+ledge by hanging onto its edge.  When two small ranger-type guys appear, it is
+quickest to jump away and continue right on the instant they materialise.  Jump
+onto the second platform - here, avoid flying mallets and punch the small,
+round blue things.  It isn't difficult to pass by the gunman, so do so, and
+release the Electoons from their Cage on the next floating wad of mud and
+grass.
+
+Across another small platform, the pink (never-falling) flower and another
+midget-sized sphere-thing, collect the 6th and final Cage.  Next, jump across
+to the vine, from which everything to finish the Level is covered in the first
+walkthrough through it (section 6ai.).
+
+STAGE 3 - non-existent.
+
+STAGE 4 - use 6ai.
+
+6/6 Cages.
+
+-------------------------------------------------------------------------------
+6aiv. The Swamps of Forgetfulness
+-------------------------------------------------------------------------------
+
+(You'll notice that you now have two further Level choices.  Go left.)
+
+STAGE ONE
+
+This Stage is different to any you've so far had to complete, in that Rayman
+must go up, and there is a time limit of sorts.  When you begin, you'll see
+'Tarayzan' behind a plant on the left; jump and punch his clothes down for him
+to receive a seed.  Now, for this Stage only, you can plant seeds with Circle,
+which grow into plants, allowing you to reach higher places.  The deadly water
+will begin to rise...
+
+Much of this Stage is fairly straightforward; there is no need to go very fast,
+because the screen moves upwards at a set speed.  Begin by planting a seed on
+the right, near the ledge above, then jump to get up onto it.  Repeat to go
+left, across the flower, and then simply continue upwards, using the Berries
+to cross the screen.
+
+After the first Berry, there is a hammer-shooter and some Tings on the ledge
+above, then two easy-to-reach Cages.  A few flower, Berries and one more enemy
+further up, you'll reach the top ledge: as you near the '!' sign, be ready to
+turn back for an extra life that appears, if there is time.  There should be
+lots of time though.
+
+STAGE TWO
+
+The Super Fist will help ahead, where you must punch the Berries above to land
+on the rangers' heads in order to jump across.  Take the Berry on the next
+island under the ledge, across the water, to get a Large Power-up and be able
+to kill the ball-men more easily.  Next, use the Berry there to go under the
+ledge to the right; a Cage will appear on the ledge in front.
+
+On the next pink-laced flower below the swining Berry, you need to punch the
+high Berry off to the right and then ride it across the water to a Cage, the
+Level's 4th.  As is obvious, return to the swinging Berry and use it to swing
+up to the Stage's end.
+
+STAGE THREE
+
+Here, begin by punching the Berry, then using it to climb up the vine above it.
+At the top, you'll find some Tings, and more leading back down.  Take the fall
+- and don't worry, a drop cannot hurt Rayman - to find a Cage at the beginning
+again.  Next, use the Berry again, this time heading right and down the hill.
+Your journey down will get quite fast, so watch carefully for this: near the
+bottom is a flower that you can jump to, which leads to a Magician.  Naturally,
+complete the Bonus Stage for a life (search 'BONUS 1-3-1'), and then follow the
+Ting far away (they never lie) to land on a red-edged flower that appears.  The
+only thing you'll miss by going this way is about 10 Tings and a lot of 
+hammer/pencil/broom-dodging.
+
+Across the flowers and Berry is a ledge with the 6th Cage on it.  Climb the
+vine for 11 Tings if you feel it's worth the 20 seconds of your life it will
+take.  Jump off the right edge, following the Tings and Power-up, to land on
+the end sign.  Note the source of the mallets to the left.
+
+And that's it; with 6 out of 6 Cages collected, The Swamps of Forgetfulness
+gets completed the first time through.
+
+6/6 Cages.
+
+-------------------------------------------------------------------------------
+6av. Mosquito's Nest
+-------------------------------------------------------------------------------
+
+STAGE ONE
+
+Rayman starts under a multiple Ting-topped giant mushroom-tree.  Interesting...
+Use the other mushroom-branches to the left to get up the top and to the Tings,
+to hear the sound of an appearing Cage back down below.  It goes without saying
+that you should, as always, violently release its Electoons from their prison
+before continuing.
+
+The stars further on are new (I think...to be honest, I can't remember, and
+don't think I need to).  Use the Berry to cross the water and jump over them,
+timing them right by turning the Berry left and then right again appropriately.
+There are more on the next ledge, along with a few midget-sized enemies and a
+Large Power-up on top of the second star's purchase.  Along the water, there is
+no need to do anything to avoid the yellow stars, and you should dodge the fish
+in much the same way as the red stars, except without the jumping over.
+
+Carry on underneath the photographer to get the next Cage.  After returning to
+the checkpoint and going right again, punch the Berry down.  You could grab
+the vine and meet the Magician up there now, but you need another Power for the
+Cage, so I'll mention that in the revisitation of this Level.  Instead, get on
+the Berry in the water and use it to get across the water to the small ledge
+with a ball-enemy on top.  It is easiest to punch this when still on the Berry,
+so do so, and jump up onto the next ledge when the small enemies are not near
+and kill the crazy mallet-launcher.
+
+Carrying on to the right, use the Berry to get safely down the enemy-covered
+slope, at whose end is another ledge, with more madly criss-crossing tiny
+things.  These are fairly easy to pass (use small, delicate jumps), after which
+you will meet a new creature, though easy to get past.  Note that, from my
+experience, this thing is undefeatable, only passable; to do this, jump and
+punch its mouth, to release a ranger; dispose of him to be able to simply walk
+past what is now temporarily a pile of yellow stuff on the floor.
+
+This next red flower goes up, so stay on it to get up to the last ledge of the
+Stage.  Finish, grabbing the Small Power-up beyond the sign if you require it.
+
+STAGE TWO
+
+First of all, jump left and then left again to make a Cage appear further on;
+return and open this, the third so far.  Across the water, it makes sense to
+defeat the ranger before jumping on his floating island, though it isn't hard
+to rid it of him mid-jump.  Make the jump between the next two flowers as soon
+as you see the second, collecting the Golden Fist at the same time, as with the
+next leap between the next two.  For the lower one, leap as the flower you are
+on turns back left for a safe landing.
+
+Make your way to the top ledge past the red stars, before proceeding to cross
+the water by way of the flowers that fall.  The timing to dodge both stars and
+enemy over the hills after that is not hard.  Continue to the Cage below the
+checkpoint, both of which you should use, and then, perhaps collecting the
+Large Power-up when the swinging Berry is left-most (that is, if you feel
+Rayman deserves it), swing across to the flowers and stars.  Remember to duck
+before obliteration by red spikiness, and this will be easy too.
+
+Further jumps need no guide, but don't miss the Cage on the lower ledge before
+the mallet-gun wielder.  For this (and I would advise removing the
+aforementioned enemy first), punch the Berry that is hanging over the '!' sign
+back to the water.
+
+STAGE THREE
+
+This Stage presents another race against time, with the screen moving at a
+predermined, if not constant, speed.  Look back to see the Mosquito again, who
+seems to hate you again...strange relationship.  Naturally, he's carrying a
+spiky blue thing the size of the screen, so you should head right as normal.
+
+The hardest part about the first, slower section is that when you are over
+water, you might have to wait for the boss to catch up, which is often not an
+option when on a falling flower.  So, when you see a falling flower ahead, slow
+down a little beforehand.  Anyway, you should jump up to and across the 3
+medium-sized ledges to a slope.  Wait a while to go down it, because you must
+reach its end before the stars suspended above fall down - and they are quite
+spiky.
+
+Here, jump up onto the statue's hand to take the easier, upper route, as the
+Mosquito begins to occupy more of the screen, restricting your view ahead.
+And no, you are not allowed to hurt him just yet, however much you may want to.
+He will receed again but speed up as you cross ledges with blue ball-men on, to
+a speed that is the same as Rayman's maximum - this is not the time to make a
+mistake.
+
+Time jumps across the ledges to try not to waste time hanging, and time
+button-presses across the vines to jump onwards again immediately.  Luckily,
+there is a point past which your follower cannot proceed, so finish the Stage.
+
+STAGE FOUR
+
+This Stage is short and fairly relaxed compared to those before and after, with
+a fair amount of collectibles.  It starts off with you and a mini-ranger, which
+deserves to be punched, so punch it.  Go past, across the flowers, making sure
+to dodge the fish, collecting the Tings on the way.  Jump over the star and off
+the floating island to the Berry below as they both swing to the left, then
+carry on across the tiny ledges and flowers to land again.
+
+Now, simply follow the Tings on up the hill, past the lift that remains where
+it is, and to the sign that signifies the Stage's end.
+
+STAGE FIVE
+
+Rayman now enters what seems to be what the Level's name refers to as the
+'Mosquito's nest'.  The Mosquito, now red and initially seemingly in need of
+medical assitance, wastes no time in initiating battle.  The first attack phase
+is much like it was in your first encounter, two Levels back, with him trying
+to attack with his proboscis (stinger[?]), and Rayman being able to hurt the
+boss as he comes in to attack.
+
+After just two blows to the head, though, he will adopt a new strategy -
+dropping stars from the sky.  These are drop as they pass over Rayman and
+continue straight down, so walk under the Mosquito and past to avoid them.  He
+will drop two of these, then attack.  After this, he decides to drop larger,
+red spiky things, which always fall at the same place and bounce in the same
+way, making them fairly predictable - walk underneath as they bounce.
+
+Four of these will bound across the screen before the boss resorts to his old
+trick of zooming across at (what appears to be literally) breakneck speed.
+Duck or jump.  Combinations of these 4 types of attack and a 5th ensue -
+he also goes past with massive blue star, which can be avoided by crawling.
+There are frequent intervals to punch him, all of them easy to take advantage
+of.
+
+Follow this, and you should have Rayman dancing in no time.  This time, he does
+not make the mistake of teaming up with the Mosquito again.  All that follows
+is a test of your staying power; if I counted right, 12 hits makes a defeat
+this time around.
+
+STAGE SIX
+
+Betilla the Fairy is on hand to give aid once again, with a new Power: the
+ability to grab things.  This includes hauling in extra life statues from long
+distances with your fist, and swinging using pink flying rings.  The latter is
+the example used in this Stage to reach its end, and the Level's end.
+
+5/6 Cages.
+
+-------------------------------------------------------------------------------
+6avi. REVISITED Anguish Lagoon
+-------------------------------------------------------------------------------
+
+This time around, now with Grab, it is possible to get the last two Cages, both
+of which are on Stage 1.  This means that there is no need to complete the rest
+of the Level (only one other Stage, but still...), as you can use the return
+sign at the start.
+
+STAGE ONE
+
+Begin by going right and up onto the top ledge using the two Berries.  From
+there, walk left and off the edge of the floating island, whereupon Rayman
+should land on another below.  Jump left to get to the ledge under the Berry,
+punching the Berry as you bridge the gap.  from there, you can jump from the
+Berry and punch the flying ring to the left to grab it, and then swing across
+to the Cage.
+
+By walking off onto the Ting-topped plant below, you will make the last Cage
+appear just below.  Open that, and then exit the Level via the return sign at
+its beginning (just to the left).
+
+6/6 Cages.
+
+-------------------------------------------------------------------------------
+6avi. REVISITED Mosquito's Nest
+-------------------------------------------------------------------------------
+
+STAGE ONE
+
+Continue through the Stage (using 6av. if required) until you reach the
+photographer.  Here, punch the Berry and jump on it straight away; it should
+bounce off to the right, where you need to grab the vine above.  Climb the vine
+and go left on the ledge above, past numerous rangers, fish, gaps in the floor
+and another potato-headed mallet-shooting-type-thing.
+
+You'll meet the Magician again; pay the 10 Tings if you want to earn a life
+(search 'BONUS 1-4-1' for a guide).  After that comes the part where Grab is
+needed: jump of the edge of the ledge to the left and punch the flying ring
+that appears to swing across to the next; let go and repeat to reach the ledge
+beyond.  At the leftmost edge of this area is the last Cage of World 1, a Large
+Power-up and a Super Fist.  I'll leave you to decide which to deal with
+first...
+
+Now, retrace your steps along the top of the Level and then to the end, using
+section 6av if you need to.
+
+STAGE TWO - use 6av.
+
+STAGE THREE - non-existent.
+
+STAGE FOUR - use 6av.
+At the end of this, you can now get the Rayman statue (extra life).  Right
+before the '!' sign, turn left and punch it (wind up for a while) to pull it
+towards you and collect it.
+
+STAGES FIVE-SIX - non-existent.
+
+6/6 Cages.
+
+-------------------------------------------------------------------------------
+6b. Band Land
+-------------------------------------------------------------------------------
+
+You'll find a number of new enemies here, a few harder than before, and also
+the first slippery platforms.  The theme is music, which is a welcome deviation
+from the normal water/fire/ice.
+
+-------------------------------------------------------------------------------
+6bi. Bongo Hills
+-------------------------------------------------------------------------------
+
+STAGE ONE
+
+Rayman will begin on what I referred to just above as a slippery platorm -
+though I can't tell what it actually is.  Collect the Large Power-up just below
+if you  need it, then head off to the right.  Fall down onto the lower drum
+platform (there'll be a lot of these) and crawl quickly to the right.  Jumping
+up, there is the first of the bouncy hands/clouds (I think they're supposed to
+be clouds) that will be in the game from now on; for maximum height, jump as
+the cloud reaches its original position again.  An elevator cloud appears to
+take you over the recorder, and you'll see a bird-drum mutation below - jump
+on this, as it does not harm Rayman, instead helping him jump higher.
+
+Bounce off to the left and then off the edge of the music strip-type platform.
+Walk all the way to the right and then run back down left, ducking as you reach
+the drum.  After coming out of the other side, jump as far to the left as you
+can, still with the momentum from before, and a number of clouds appear.  Use
+the top one (more appear if you jump left) to make a Cage appear, so make your
+way back to the Level's start (you may have to crawl back under the massive
+drum and perform another run-up).
+
+Next, return to the bird-drum-creature and go right, jumping up onto the cloud
+with a darker blob in the middle (disappears) and up for a Small Power-up if
+you need it.  To the right, hands wielding huge drum-beaters are beating on the
+drum platform; simply time walking underneath right to pass.  The third is near
+an electric bolt-firing set of eyes, which belong to the recorder.
+
+If you are low on life, jump to make a disappearing cloud appear, then continue
+up to the recorder above and to the right.  You can collect the Large Power-up
+and jump over without having to stand on it, and reach the other side.
+
+Continue along the path; for another Small Power-up and a few Tings, drop down
+through the gap between platforms before the second bird-drum and walk to the
+recorder, then punch the creatures on the other side, where the Power-up is.
+Use the (stable) clouds that appear to climb back up.  The second bird-drum
+allows you to get up onto the moving clouds above it - and take note that the
+electric-blue spiky balls do indeed hurt.  Over and right, jump down the gap
+(follow the Ting) to find a Rayman statue, reached by a moving cloud.  Back up
+on the platform is the finish sign.
+
+STAGE TWO
+
+Walk forwards (right) until you have heard 3 appearing noises.  Walk back,
+avoiding the enemies, for an extra life.  Use the path below the drum to crawl
+right, and jump up under the green shaker with eyes (these fall a small
+distance with Rayman on them).  The green, winged bug further right is a new,
+fairly difficult-to-dispose-of enemy, that can duck, headbutt and, later on,
+fly and kick; punch a few times (and then quickly duck if it ducks) to defeat
+it.
+
+The small drum will fall as Rayman steps on it, so jump up quickly.  The bugs
+here are easily avoided: jump over the right one and off the edge of the drum.
+Take the falling cloud down and jump off left for Tings and a Super Fist, then
+use the other cloud to clouds to continue.  Right and up, walk off the platform
+and onto the shaker, then simply continue to walk right to another cloud.  This
+leads to more clouds; continue down and left to more sets of 3 drums,
+disappearing clouds, and then some tall, ball-enemy-topped drum platforms.
+
+At the top of these, use the cloud to go left and jump over the two music
+notes: this can be hard, so time it carefully to avoid a musically spiky death.
+If you jump over the '!' sign, another cloud appears that you can use to reach
+the three platforms above and their items.  When this cloud reappears, take it
+to the Cage a long way to the right that you might have seen earlier, and then
+make your way back to the Stage's end.
+
+STAGE THREE
+
+The green shaker you see here that seems to watch you mysteriously is actually
+rocket-powered.  Jump on it to activate upward motion.  Controlling this ascent
+is simple: move left or right (but not too far) for directional control;
+unfortunately, there are no brakes...
+
+Go left, right, left, right to find this Stage's checkpoint photographer, to
+the right of which a cloud awaits to bounce Rayman up to another rocket.  But
+don't use this just yet -  see the cloud below?  That's an indication that
+something important is below.  Fall through the gap and down onto what I can
+only describe as strangely connected, rotating puddings.  I'm sure they're
+meant to be some sort of instrument, though.  Anyway, down here are a Cage and
+Large Power-up; collect the Cage or both and jump back up to the second
+rocket-shaker (the cloud will reappear if encouraged by some jumping where it
+should be).
+
+Where you see many suspended, tall, thin drums, some with eyes, work your way
+left, but not all the way to the wall.  There are a number of items around here
+to collect if you really feel the need, but they are quite unimportant.  If you
+do fall, there is another rocket to the far left.
+
+Higher up, the second photographer is just as willing to take your picture.  Up
+the disappearing clouds, you will see a Small Power-up and Rayman statue
+protected by another green bug.  This has better reactions, so don't try to
+pass it; instead, you'll have to punch when it lands on the ground, and punch
+then duck if it is crouching itself.  Many short, quick punches work better
+than a wound-up one, because of this one's dodging abilities.
+
+After the fight, the third and final flying shaker will carry you on and up,
+past the helicopter-powered blue balls to the end of this Stage.
+
+STAGE FOUR
+
+At the start of this Stage, just walk at full speed to avoid the lighting
+bolts, jumping at the right times.  Past the Large Power-up, the easiest way
+to approach the drum with the small enemy on is to either dodge the enemy or
+hang on its edge and, from there, jump up and punch it in (hopefully) one fluid
+motion.  The latter, however, won't work for the next drum because of the
+(deadly) musical note before it.
+
+The Flying Ring you may spot here can be reached, but you will need another
+Power to use it to reach the Cage further on, which is the only one that
+remains on this playthrough of Bongo Hills.  Continue on down the round
+platforms until you reach the edge with a Small Power-up on it - grab this and
+walk off the edge for many Tings, a Super Fist and a Large Power-up.
+
+The cloud will help bounce Rayman up to the recorders' tops, from where you can
+go right for some Tings if you haven't already collected them from above.
+Otherwise, walk left this time.  To avoid the electric bolts past the
+recorders, simply walk at full speed, neither ducking nor jumping.  Walk right
+to the drum's edge to make the enemy on the next drum jump up so it can be
+easily punched, and then continue, repeating this process for the next enemy.
+
+Climb up the drums, dodging all the electricity, until you reach the heighest
+and begin to descend; here, jump around a bit until the cloud appears, which
+is in a position to allow Rayman to get higher, onto the drum on the left.  Up
+here, dispose of the enemy and walk right to the end for an extra life and a
+means of escape (the upper cloud).  Left is the way to the end, back down the
+lower route.
+
+STAGE FIVE
+
+More eerily rotating puddings are ahead, this time to be ridden on.  Jump on
+and ride down, around all the bright blue, spiky balls with eyes (everything
+has eyes in this game) and across.  Punch or dodge the flying enemies, then
+rotate on and up to come to a rest.
+
+Here, you will see two VERY strange fairies (which are on Rayman's side, no
+matter their appearance) and the photographer.  It may not sound best, but take
+the fairy on the left, across the gaping gap; only use the checkpoint if you
+have complete confidence in yourself that you will not die on this next
+venture (or you will have to repeat the Level for a Cage).  So jump left just
+as the pudding you are on is closest the fairy; as you reach the land, Rayman
+will become miniaturised, accompanied by a new sound.
+
+In this state, continue left (at least those small enemies are easier to punch
+now), only taking the gap between platforms if you are low on life (it's a long
+way to go for a Small Power-up).  Make your way up the 4 small platforms and
+then left, jumping down onto that initial set of puddings again (I think they
+may be maracas).  As this ride reaches the bottom, jump left, onto the platform
+below.  Ignoring the first cloud, continue to the second and ride it past the
+Cage (punch it, of course) and back round to the start of the Stage.  Return
+to the checkpoint you saw earlier, this time as tiny Rayman, and return to
+normal size using the gargoyle-type-fairy there.
+
+Another set of puddings will accompany you to the Stage's '!' sign here, but
+jump over this and, seeing the cloud, jump off to the right.  A short journey
+left will reveal a Cage, after which you can return to the end using another
+cloud that appears when jumping just back out from under the drum.
+
+STAGE SIX
+
+This final Stage introduces a new, very scary enemy that cannot be defeated.
+Avoid this red thing by way of the clouds around it, then jump down onto the
+cloud to the right.  Past the obstacles (take care if you need the Golden
+Fist), jump across the two clouds (these appear and disappear together) and
+then back to the leftmost cloud of the two that appear.  Jump off this to the
+left for Tings and another life before going all the way right to the
+vertically-moving cloud.
+
+Only collect the Large Power-up if you have less than full, because it causes
+the drums to gains eyes (and, naturally, the power to fire bolts of
+electricity).  Duck on the cloud below to pass the red robot enemy, then jump
+left.  Using the disappearing cloud below, jump up onto the other clouds if you
+want a few Tings, then jump to the fairy.  Your smallness allows you to collect
+the Tings and Large Power-up down the gap in the platform just left and return
+to normal size.
+
+Further left, under the recorder (this one with friendly (non-electrical)
+eyes), up via the cloud and then left past the Small Power-up, you will find
+the end of the Level.
+
+5/6 Cages.
+
+-------------------------------------------------------------------------------
+6bii. Allegro Presto
+-------------------------------------------------------------------------------
+
+STAGE ONE
+
+Allegro Presto starts with what may be the game's fastest-paced Stage.  Be
+prepared.  Begin by following the arrow of Tings to the right (no need to jump
+at the gap) and then keep going.  If you jump just as you reach the second gap,
+you can just about collect every Ting in the air, and then duck just in time to
+avoid the musical note.  Continue in this way to the end, turn back, duck and
+jump a few times and then notice the platform just above, to the left, as you
+reach the far left.  Jump up there and then right for a Cage.
+
+If you ever want to stop moving on this slippery stuff, the easiest way is to
+jump and then land without moving left or right.  On this Stage, if you slow
+down enough that you can't get under obstacles by ducking, crawl or go back and
+take a run-up.
+
+Return to the lower ledge and then walk right, ducking under the sets of
+multi-coloured musical notes with mean eyes.  When you see the Cage below,
+don't stop - you need the momentum for a Cage just past, which is high up.
+You'll see this ledge: the height is hard to make, but with an adequate run-up,
+jump just as Rayman ends the ramp where the Ting-arrow is.  Try again if you
+fail.  Then, return for the Cage you saw just before, and then continue once
+more (Be careful not to go too quickly as you head left again just below the
+high-up Cage.)  There should be no trouble in reaching the '!' sign from here.
+
+STAGE TWO
+
+The first part of this Stage introduces a new enemy - trumpets that blow (or,
+later, suck) Rayman with a lot of force.  Walk right until you hear the
+appearing sound, then return left to be blown back right.  As you get blown
+left again by the second trumpet, jump to get up onto the ledge and then again
+to land on the higher ledge on the left.  Continue in this fashion to reach
+the top (requires patience; timing is the key), after which there is a big jump
+to land near the checkpoint photographer.
+
+Further right, jump up the small white ledges; as you hear a trumpet's blowing
+sound, jump, to be blown left, up to an extra life.  The Tings will take
+Rayman back down to the photographer, from where you should jump over the
+recorder and wait for the trumpet below to suck.  Duck to be pulled underneath
+this enemy and to another, who sends Rayman flying back across the screen, to
+yet another.
+
+This time, prepare to jump and punch the Cage up right.  This is possible to
+pull off if you miss this first time, but more difficult; coming from the left,
+walk down the small slope just enough to gain enough speed but not to lost too
+much height.
+
+Once this has been accomplished, return left to be sucked to the right and up a
+slope, then land through a '?' of Tings and land between 2 trumpets.  Punch the
+right one before either gets a chance to make a move, and then move in that
+direction, over the Recorder and down the Ting-chute.  Disappearing clouds
+are there if you somehow manage to miss the ledge.  Left for the end.
+
+STAGE THREE
+
+As you begin here, notice that the large drum has eyes (= electric bolt-firing
+capability).  Jump onto the first small drum (beware: these fall) and then
+back to make another Cage appear, along with a few disappearing clouds.  These
+lead up to a drum-beating (actually, it beats on the tops of recorders),
+(friendly-)eyed recorder before a Small Power-up, extra life and set of
+rotating puddings.  (Please tell me what they are; I can't go on calling them
+'puddings' forever.)
+
+Rayman then lands on a ledge just past the drums that you could have crossed at
+the start of the Stage.  Jump up and to the right, onto a medium-sized ledge
+with a dip, of which there are many more further on.  Continue across these.
+Bear in mind that there is Large Power-up (right edge) and Super Fist (left
+edge) below if needed.  Take the risk if you feel the need.
+
+A wiggly ledge and an upward slope later, you will find a downward fall (well,
+it couldn't be an upward fall) of Tings, a Small Power-up and the photographer.
+Yes, I died trying to get in position to have Rayman's photo taken, so don't
+make the same mistake.  Continuing through the Stage, don't go too fast over
+the platforms here, because you'll need to return for 3 pudding-rotaters when
+they appear.  Make your way up these (these ones go in and out as well as round
+and round) to find another one of those grotesque fairies.  Touching this thing
+will make Rayman small enough to pass through the small passage below the eyed
+drum, where you can find another fairy and a Cage.
+
+After dropping back down, continue on your way, to the right.  The small
+platforms here are hard to navigate safely: I suggest trying to hang on their
+edges rather than landing on top of each, so as to avoid the slipperiness, so
+you won't lose control.  To avoid the enemies on the ledges further on, jump
+across while they are helicoptering along on their never-ending rotation below.
+There is a Large Power-up below as you leave the recorder for the first of
+these ledges, but there's no way back up, as far as I know (= death).
+
+At the end of this, go down the sloped white bars, right, left and right; at
+the end of the third, jumping far will be safe, because 2 disappearing hands
+will catch you underneath the drum.  Past the drum, another of those winged
+drums appears behind you as you reach the second of the tiny platforms, so
+return, if you want to meet the Magician again (bounce up to and cross the
+disappearing clouds).  (For the solution, search 'BONUS 2-2-1'.)
+
+Cross the ledges past the winged drum in the same way as the earlier ones, and
+you'll see a strange, red-robed, floating creature (with a pointed head and odd
+hairstyle, of course) holding a number of blue orbs, mysteriously linked.  He
+rearranges them every few seconds so that there is a larger or small platform
+for you (but you can't fall off if you're already on (unless you walk off)).
+Jump across and up the clouds that appear; from the ledge, go left for another
+cloud, which helps you to the '!' sign.  If the sign doesn't appear, go to the
+far edge of the last cloud, so that the higher ledge is off-screen.
+
+STAGE FOUR
+
+As soon as you start this Stage, the small purple musical note will come
+towards Rayman; these are indestructible, so jump over.  Continue in the same
+direction at your own pace, avoiding these new enemies.  Where one is receeding
+up a slope, you must wait until it reaches the level part of the platform to
+have enough speed to overtake it without getting hurt.  Duck under the groups
+of angry-looking musical notes, still going right.
+
+At this section, you need to pick up speed, ducking in time so Rayman doesn't
+slow down, and then jump as you reach the drum at the end.  If done right,
+Rayman will go high enough to hang on the edge of this; go over it, crawl under
+the next drum and jump on the solid, bouncy clouds to continue.  If you didn't
+make it over here, don't worry: it's just a shortcut.  Go left to the left end
+of the Stage and then right again, past the photographer (jump to stabilise
+enough to get your picture taken); it's all quite simple, just a lot of walking
+and ducking.
+
+Further on, there are many more of the purple musical notes on multiple paths.
+It really doesn't matter which of these you take, seeing as they all lead to
+the same place.  Just go wherever there are fewer enemies.  At the end, you
+come across a final two drums and a recorder, their tops level, with another
+of those enemies gliding along the path.  Ignore the giant saxophone with eyes
+for now, waiting until he leaves to finish the Stage.
+
+STAGE FIVE
+
+Here, your friend Betilla will give you the HELICOPTER Power.  Now you can
+imitate those helicoptering blue balls...well, not quite, seeing as you can't
+go up...yet.  Float across to the end of the Level.
+
+6/6 Cages.
+
+-------------------------------------------------------------------------------
+6biii. REVISITED Bongo Hills
+-------------------------------------------------------------------------------
+
+You can now collect the last Cage of this Level with the Helicopter Power.
+
+STAGES ONE-THREE - use 6bi.
+
+STAGE FOUR
+
+Continue until you reach the Flying Ring, which you should punch, using
+Helicopter if required, and then swing across and to the Cage (Helicopter is
+necessary).  Open this and jump back out, to the left.  Use 6bi to finish this
+Stage and the rest of the Level if you need.
+
+STAGE FIVE-SIX - use 6bi.
+
+-------------------------------------------------------------------------------

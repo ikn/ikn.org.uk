@@ -1,0 +1,1271 @@
+
+    Meteos - gameplay guide
+
+    Version 0.91
+
+    By J
+
+NOTE: This guide has been written for the European version of this game.  There
+are differences between versions (see note on planet names in Introduction,
+section 2).
+
+-------------------------------------------------------------------------------
+.0. Contents
+-------------------------------------------------------------------------------
+
+To search for a particular section, append references together with dots
+in-between and at start and end, e.g. '.3.1.5.'.
+
+An asterisk (*) indicates an incomplete section.
+
+0.  Contents
+
+1.  Legal and contact
+
+2.  Introduction
+
+3.  Current content
+
+4.  Gameplay guide
+  1.  Playing Meteos
+    1.  Basics
+    2.  Stacks
+  2.  Planets
+  3.  Strategies
+    1.   Playing for points
+      1.   Deluge*
+      2.   Time War I
+    2.  Playing for Meteos
+      1.   Time War II
+      2.   Simple
+      3.   Fusion
+    3.  Playing for Star Trip endings
+      1.   Straight
+      2.   Branch
+      3.   Multi
+
+-------------------------------------------------------------------------------
+.1. Legal and contact
+-------------------------------------------------------------------------------
+
+This guide is distributed under a Creative Commons license
+(Attribution-ShareAlike 3.0):
+
+http://creativecommons.org/licenses/by-sa/3.0/
+
+If you come across any significant section of this guide and its use does not
+comply with the above terms, please e-mail me.
+
+To contact me to either suggest information or ideas or point out corrections,
+use e-mail.  The e-mail address to use is J49137@gmail.com.
+
+-------------------------------------------------------------------------------
+.2. Introduction
+-------------------------------------------------------------------------------
+
+I have chosen to call this a 'gameplay guide': it concerns, chiefly, how to
+play the game well and attain high scores.  I set the standard quite high here,
+explaining what I think are the best possible strategies.  Take the time to
+familiarise yourself with how the game works first, using section 4.1, before
+expecting to be able to use these consistently when you play.
+
+Note about planet names:
+I own the European version of the game, in which many planet names vary from
+other versions'.  In the guide, wherever I mention a planet, I include its
+alternative name (if different) in parentheses that follow.
+
+-------------------------------------------------------------------------------
+.3. Current content
+-------------------------------------------------------------------------------
+
+At the moment, this guide contains:
+- How to play Meteos.
+- Data and general strategies for each planet.
+- Some strategies for Deluge Mode.
+- Complete sections for Fusion, Time War, Simple and Star Trip.
+
+-------------------------------------------------------------------------------
+.4. Gameplay guide
+-------------------------------------------------------------------------------
+
+The guide starts here.
+
+-------------------------------------------------------------------------------
+.4.1. Playing Meteos
+-------------------------------------------------------------------------------
+
+This section covers the basics: what Meteos are, why they are bad, and how to
+get rid of them.
+
+-------------------------------------------------------------------------------
+.4.1.1. Basics
+-------------------------------------------------------------------------------
+
+Meteos are the coloured blocks that constantly fall from above, and a planet
+nova occurs when a column piles over the top of the Touch Screen.  A nova is
+bad: it equates to losing a life, and you usually have only one.  To save your
+planet from annihilation, launch Meteos upwards and off the screen.  Although
+play varies immensely from planet to planet and across the numerous game modes,
+a few things are always the same.  When a column builds up to the top of the
+Touch Screen, you will hear a beep and the column will flash, to attract your
+attention the fact that the planet is close to a nova.  Bear in mind, however,
+that while one column is flashing, others that pile too high flash only, not
+beeping, so check all columns after a close call.
+
+Meteos can only be dragged up and down their columns, best done using the
+Stylus.  Move them one at a time to align 3 or more of the same type, either
+horizontally or vertically, which initiates an ignition.
+
+Depending on the planet, of which there are 32, the orientation of the
+alignment (horizontal or vertical), the number of Meteos in the columns
+directly above, and the number of aligned Meteos, different things can happen;
+usually, the Meteos and any in their columns above them fire upwards, slowly or
+quickly, often falling back down.  The ignited Meteos (the ones you aligned)
+turn grey, referred to in-game as 'incinerated', and can no longer be lined up
+for use in ignitions.  Incinerated Meteos turn back - that is, to a random type
+of Meteos - after having spent a period of time of the ground.  Each planet has
+a set variation of Meteos occurences, and only a few types.
+
+ - In planets with lower gravity, ignitions are more likely to leave the
+   screen.
+ - The higher the ratio of ignited Meteos to the total number of Meteos
+   launched, the more likely ignitions are to leave the screen.
+ - Whether horizontal or vertical ignitions have greater power is very varied
+   among the planets.
+
+In modes where you attack another planet - Star Trip, Simple and Multiplayer -
+any Meteos that you send off the screen that are not incinerated land on your
+opponent's/opponents' screen together at once as incinerated Meteos.  The
+Meteos are saved up and shown in the box above the Speeder, and launch if no
+more are launched for a second, or if you tap the box.  If Meteos land on your
+screen already incinerated, they are from another planet in the match: for
+those Meteos, the probability for which type of Meteos they will change into if
+left is dependent on the data for the planet on which they were last
+non-incinerated.  That means you are likely to have incinerated Meteos from
+Igneous (Firim) return to fire Meteos, even if your planet has a very low
+likelihood or even an absence of them.  Also, Meteos from other planets take
+much less time to turn back to normal Meteos initially (the first time they
+land on your planet).
+
+The only other way to shoot Meteos upwards apart from by using items is by
+flicking the top Meteos in a column upwards with the Stylus: if this hits
+another of the same type in midair, they will both disappear with a tiny poof.
+
+Fall speed of Meteos in the air increases as a game progresses - so the going
+gets tougher, with more Meteos landing all the time.  Additionally, they can
+be sped up by the player, most comfortably done by holding L or R (one
+exception: stacks on Gigantis (Yooj)).  The speed while holding L or R
+increases as the normal rate does.
+
+-------------------------------------------------------------------------------
+.4.1.2. Stacks
+-------------------------------------------------------------------------------
+
+When an ignition occurs, a stack forms; the Meteos in the stack (those above
+the incinerated Meteos in their columns) stick together, even (usually) when
+a secondary ignition is made halfway up the stack.  The stack will be no more,
+returning to its individual Meteos, when left on the ground for a while.  This
+period is equal to that after which incinerated Meteos turn into ordinary ones,
+and is dependent on planet.  It also decreases as the game progress.
+
+Stacks can be added to: Meteos or other stacks of Meteos that touch the stack
+from below (midair only) or above (anywhere) become a single stack, even if
+they are joined by just a single Meteos.  They can also be added to by
+ignitions that link two stacks, or a stack and the Meteos that would form a
+new stack anyway because of the ignition.
+
+Performing a second ignition within a stack will cause 'x02' to appear; this
+denotes a combo of 2, contributing to score and, on most planets, launching the
+Meteos higher.  Some planets allow an infinite amount of ignitions in a stack
+as long as there are non-incinerated Meteos, which is useful in Deluge Mode.
+The maximum combo is 'x99'.  If you align two or more sets of 3 or more Meteos
+with one movement - so that they ignite at exactly the same time - the combo
+will increase by only one.  Also, if two stacks join together, the highest
+combo of the two becomes the one over the whole new stack.
+
+Sometimes, an ignition in a stack will fire off from the main one, separating
+the two.  The way to determine when this will occur, in order to avoid it, is
+simple.  The rule is that if Meteos that were not incinerated by this new
+ignition that move up because of the ignition slide plast any other Meteos
+that are part of the main stack, the entire stack is launched upwards; if none
+or only the newly incinerated Meteos have this friction with the main stack, a
+separate stack breaks off (made up of those Meteos above the new ignition).
+
+Generally, the way to play is to clear the screen as quickly as possible, which
+is most effectively done in one go.  When the screen is made devoid of Meteos,
+a great point bonus is given (only helpful in Deluge Mode and perhaps Star
+Trip); you know you have achieved this when a small white flash emanates from
+the top of the Touch Screen for a split second.  Do this by causing horizontal
+ignitions in the very bottom row of the screen and aligning Meteos while the
+stack is in the air so that two or more columns will be added to the stack as
+it lands.  Examples:
+
+X = Meteos
+O = Meteos to be aligned
+
+      XX                     
+      XX                     
+    X OXX         X XX          X XX
+  X X XXX       X X XX        X X XX
+X XXX XXX     X XXX XXX     X XXX XXX
+X XXXX        X XXXXXXX     X XXXXXXX
+XXXXXO        XXXXXXOXX     XXXXXXXXX
+XXXXOX        XXXXOO        XXXXOOOXX
+Stack is      Line          Ignition!
+falling       Meteos up
+
+
+      O
+X     XX     X            X            X
+XXX   XX     XXX   X      XXX          XXX
+XXX  OXX     XXX   XX     XXX   X      XXX   X
+XXX O        XXX   XX     XXX   XX     XXX   XX
+XXOXX        XXXXOOOX     XXXXO XX     XXXXX XX
+XXXOX        XXOOX        XXOOXOOX     XXOOOOOX
+Stack is     Align        Stack        Align quickly
+falling      carefully    lands        for ignition
+
+The advantage of using the Speeder (L or R) is great.  It will allow you to
+launch more Meteos back off the screen, which can only mean more points, faster
+completions and more trouble for opponents.
+
+Finally, it is important to look across the whole screen, not focusing too much
+on one area, especially with those planets that have a wider play area.  Send
+multiple stacks up into the air just to keep the planet alive while you build
+up to a screen clear.
+
+-------------------------------------------------------------------------------
+.4.2. Planets
+-------------------------------------------------------------------------------
+
+In this section, I provide information on each planet:
+
+Name:              European version name (alternative name).
+Gravity strength:  Self-explanatory - qualitatively judged by Meteos fall
+                   speed.
+Ignition strength: Self-explanatory - qualitatively based on how high a stack
+                   of 3x3 or 3x6 goes at game start, including the effect of
+                   gravity strength on that.
+Screen width:      The number of columns of Meteos.
+Revert time:       Time taken by grounded stacks to stop being stacks - timed
+                   approximately in seconds at match start.
+Quirks:            Strange things on certain planets.
+Meteos types:      The planet's Meteos and their frequency (an overview only).
+General use: Basic idea of how best to play on the planet.
+
+The order is alphabetical because, apart from the initial 4 planets, the order
+on the selection screen is dependent upon that in which they were unlocked.
+
+Name:              Aetheria (Brabbit)
+Gravity strength:  High
+Ignition strength: Medium
+Screen width:      9
+Revert time:       1.5
+Quirks:            None
+Meteos types:      Air and few of other types.
+General use: Keep the whole screen in the air for large combos, which is very
+             good both defensively and offensively.  Refresh the burnt Meteos
+             by igniting a few in a row and releasing L or R.
+
+Name:              Anasaze
+Gravity strength:  Medium
+Ignition strength: High
+Screen width:      9
+Revert time:       2.5
+Quirks:            None
+Meteos types:      Mostly soil, a little zoo.
+General use: Get the whole screen off in the 7th or 8th ignition.
+
+Name:              Arborea (Wuud)
+Gravity strength:  High
+Ignition strength: Low
+Screen width:      10
+Revert time:       2
+Quirks:            None
+Meteos types:      Herb and not much of other types.
+General use: Like Aetheria (Brabbit).  Try not to ignite too quickly to avoid
+             losing the stack off the top.
+
+Name:              Bavoom
+Gravity strength:  Very high
+Ignition strength: Very low
+Screen width:      10
+Revert time:       3.5
+Quirks:            Low gravity strength with speeder on
+Meteos types:      Mostly air, but quite varied.
+General use: Use its quirk to set up a screen clear and then launch it, but
+             beware that other columns will fill up very quickly.
+
+Name:              Candelor (Lastar)
+Gravity strength:  Medium
+Ignition strength: High
+Screen width:      10
+Revert time:       2.5
+Quirks:            None
+Meteos types:      Wide variation of common types, plus glow.
+General use: Set up a screenwide stack that will leave the screen at the 6th or
+             7th ignition.
+
+Name:              Cavernis (Cavious)
+Gravity strength:  Low
+Ignition strength: High
+Screen width:      11
+Revert time:       2
+Quirks:            None
+Meteos types:      Most of soil, otherwise varied.
+General use: Screen clears as quickly as possible (x06 combo).
+
+Name:              Florias
+Gravity strength:  Low
+Ignition strength: High
+Screen width:      10
+Revert time:       3
+Quirks:            None
+Meteos types:      Herb and a relatively large amount of zoo.
+General use: Go for screen clears, making sure to keep track of the whole
+             (wide) playing field in the later stages.
+
+Name:              Forte
+Gravity strength:  Very low
+Ignition strength: Low
+Screen width:      9
+Revert time:       3
+Quirks:            Vertical ignition strength is very high
+Meteos types:      Heavily weighted towards soil.
+General use: Continue with ignitions in a screenwide stack, keeping a vertical
+             one in reserve until there are no others.  Use that saved
+             alignment to clear the screen when the time comes.
+
+Name:              Geolitia (Geolyte)
+Gravity strength:  Very low
+Ignition strength: Low
+Screen width:      9
+Revert time:       2.5
+Quirks:            None
+Meteos types:      Fair spread with a little zoo.
+General use: Quick screen clears at about x06 combo.
+
+Name:              Gigantis (Yooj)
+Gravity strength:  Medium
+Ignition strength: High
+Screen width:      11
+Revert time:       3
+Quirks:            None
+Meteos types:      Mostly air, with other common types.
+General use: Similar to Geolitia (Geolyte).
+
+Name:              Globin
+Gravity strength:  Low
+Ignition strength: High
+Screen width:      10
+Revert time:       3.5
+Quirks:            None
+Meteos types:      A lot of zoo, a little dark, the rest equal.
+General use: Try to create ignitions of more than 3 Meteos to get the stack to
+             cover the screen before it leaves at about the 5th 
+             ignition, especially earlier on in the match.
+
+Name:              Gravitas
+Gravity strength:  N/A
+Ignition strength: N/A
+Screen width:      10
+Revert time:       5
+Quirks:            1st ignition has no ignition strength, 2nd has near-infinite
+Meteos types:      A wide variation.
+General use: Launch Meteos as quickly as possible with quick double ignitions.
+
+Name:              Hevendor
+Gravity strength:  None
+Ignition strength: Near-infinite
+Screen width:      11
+Revert time:       N/A - never had a stack land, though I hear it's possible
+Quirks:            No gravity
+Meteos types:      Equal proportions of many frequent Meteos.
+General use: Quick ignitions, holding L.  Cover the whole screen, not focusing
+             too much on one area, and align Meteos on the bottom row.
+
+Name:              Holozero (Layazero)
+Gravity strength:  Low
+Ignition strength: Medium
+Screen width:      8
+Revert time:       2
+Quirks:            None
+Meteos types:      Zap mainly, and then some of other common types..
+General use: Screen clears can be hard to perform consistently while using the
+             speeder, as they take as little as 4 ignitions to launch off the
+             screen.  This can work quite well if you can get into the pattern,
+             as few ignitions are needed.
+
+Name:              Ignius (Firim)
+Gravity strength:  Medium
+Ignition strength: Medium
+Screen width:      7
+Revert time:       2
+Quirks:            None
+Meteos types:      Lots of fire.
+General use: Clearing the play area is easy to do quickly because of its size
+             and the small combo required.
+
+Name:              Insomnis (Dawndus)
+Gravity strength:  Medium
+Ignition strength: High
+Screen width:      8
+Revert time:       4
+Quirks:            None
+Meteos types:      Equal spread, including zoo.
+General use: Screen clears, lasting up to a x08 or x09 combo.
+
+Name:              Luna=Luna
+Gravity strength:  Medium
+Ignition strength: Low
+Screen width:      9
+Revert time:       1.5
+Quirks:            Commits suic- er...None
+Meteos types:      Similar to Hevendor.
+General use: Because stacks fall back so slowly, you may need to launch the
+             tops of the rest of the playing field off to save the planet from
+             a nova before you add the next 2 to 4 columns to the stack.
+
+Name:              Magmor (Jeljel)
+Gravity strength:  Very low
+Ignition strength: Medium
+Screen width:      9
+Revert time:       2.5
+Quirks:            None
+Meteos types:      Fire and others.
+General use: Clear the screen, which occurs after the 7th ignition.
+
+Name:              Megadom
+Gravity strength:  Very low
+Ignition strength: Very high
+Screen width:      9
+Revert time:       2
+Quirks:            Very low ignition strength with large stacks
+Meteos types:      Nothing in particular, all common.
+General use: Wait for some Meteos to land before launching anything, as small
+             stacks go off the top straight away.  You can either launch many
+             smaller stacks as an offensive playstyle, or create a single stack
+             that cannot be launched off the screen in the pursuit of a good
+             defence; the latter  poses a danger when the Meteos run out and
+             need to be renewed.
+
+Name:              Mekks
+Gravity strength:  Very high
+Ignition strength: Medium
+Screen width:      7
+Revert time:       3
+Quirks:            None
+Meteos types:      Iron and zap.
+General use: Launching from low down in the stack that should quickly grow to
+             encompass the entire screen because of its width, continue to
+             launch the stack up to the top as many times as possible before
+             renewing it.  Try to quickly, successively, align two sets of
+             Meteos in one launch skywards to renew more of the stack per
+             launch.
+
+Name:              Meteo
+Gravity strength:  Very low
+Ignition strength: High
+Screen width:      11
+Revert time:       2
+Quirks:            None
+Meteos types:      A range, including fair amounts of glow, zoo and dark.
+General use: The play area's great width makes screen clears hard to set up
+             while staying alive.  One way to counter this is to create two
+             large stacks on the screen and join them just before they go
+             off-screen.
+
+Name:              Neuralis (Wiral)
+Gravity strength:  Medium
+Ignition strength: Very low
+Screen width:      9
+Revert time:       3.5
+Quirks:            None
+Meteos types:      Zap, a small amount of dark.
+General use: Create a single stack and then set up a few more ignitions within
+             it to get past the 5th ignition and to achieve a screen clear.
+
+Name:              Oleana
+Gravity strength:  Very low
+Ignition strength: Low
+Screen width:      9
+Revert time:       2.5
+Quirks:            None
+Meteos types:      H2O, predominantly.
+General use: Again, screen clears.  Watch out for the slow fall rate that can
+             lead to high columns on the other side of the screen.  To avoid
+             novae, start with an ignition that launches the centre columns.
+
+Name:              Perilia (Boggob)
+Gravity strength:  Very high
+Ignition strength: Medium
+Screen width:      9
+Revert time:       5
+Quirks:            None
+Meteos types:      Herb and little of the others.
+General use: Try to keep the stacks on-screen long enough to join them
+             together.
+
+Name:              Polaria (Freaze)
+Gravity strength:  Medium
+Ignition strength: Medium
+Screen width:      7
+Revert time:       2.5
+Quirks:            None
+Meteos types:      H2O, with air, soil, iron and zap.
+General use: Very like Ignius (Firim).
+
+Name:              Pyros (Hotted)
+Gravity strength:  Medium
+Ignition strength: Very low
+Screen width:      10
+Revert time:       2.5
+Quirks:            1st ignition weak, 2nd strong, weak thereafter
+Meteos types:      Almost all fire, some iron and very little dark.
+General use: Set up large stacks in double launches to keep the screen
+             relatively Meteos-free.
+
+Name:              Sferia (Vubble)
+Gravity strength:  Very low
+Ignition strength: Very high
+Screen width:      8
+Revert time:       2.5
+Quirks:            x01 combo vertical ignitions don't work
+Meteos types:      H2O, and including a little glow.
+General use: Wait for taller columns before attempting to assemble any sort of
+             large stack for a screen clear.
+
+Name:              Smogor (Grannest)
+Gravity strength:  Medium
+Ignition strength: Medium
+Screen width:      9
+Revert time:       3
+Quirks:            None
+Meteos types:      Common Meteos, with more iron than any other.
+General use: Again, screen clears at about 8 or more ignitions each.
+
+Name:              Stellis (Starrii)
+Gravity strength:  Low
+Ignition strength: Very high
+Screen width:      8
+Revert time:       2.5
+Quirks:            None
+Meteos types:      The most common here is zoo, and there's some glow.
+General use: Get the screen clears at 5 to 7 ignitions each.
+
+Name:              Suburbion
+Gravity strength:  Very high
+Ignition strength: Low
+Screen width:      9
+Revert time:       4
+Quirks:            None
+Meteos types:      A relatively large amount of dark with others.
+General use: Combos make the weak initial ignitions increase in power quickly:
+             the stack will often launch a near-full screen
+             after only 4 ignitions.  Aim for ignitions of 4 or 5 Meteos to
+             clear the screen for those extra points.
+
+Name:              Trinova (Thirnova)
+Gravity strength:  Medium
+Ignition strength: Very high
+Screen width:      11
+Revert time:       2
+Quirks:            None
+Meteos types:      Fire and zap, with some glow.
+General use: Add columns quickly to avoid a nova.
+
+Name:              Vortinia (Gigagush)
+Gravity strength:  High
+Ignition strength: Medium
+Screen width:      11
+Revert time:       2
+Quirks:            None
+Meteos types:      Mostly zoo, but it's not much more frequent than the others.
+General use: Ignitions need to be quick so as to enlarge the stack in spite of
+             the quick revert time, few Meteos (because most leave the screen
+             every single ignition), quick fall rate and very varied Meteos.
+             The Meteos will not all launch off the screen, so just keep a
+             single, screenwide stack going up and down.  Meteos get renewed
+             very efficiently a few minutes into the game, as long as you keep
+             launching from the bottom.
+
+-------------------------------------------------------------------------------
+.4.3. Strategies
+-------------------------------------------------------------------------------
+
+This is the main body of the guide.  Here, I go over the various modes in the
+game and give explanations for how to best cope in the different situations.  I
+have organised the subsections by objective, of which there are very few, but
+which are spread out across the game's modes, so as to avoid repeating
+information: this way, I can give a general introduction to the objective that
+applies to all further subsections.  Star Trip has its own section because
+splitting up its individual modes would get complicated.
+
+-------------------------------------------------------------------------------
+.4.3.1. Playing for points
+-------------------------------------------------------------------------------
+
+This section covers modes where your aim is to earn as many points as possible,
+within a time- or nova-limit.
+_______________________________________________________________________________
+
+Firstly, an explanation of the scoring system.
+
+You are awarded points for just three things (ignitions, launched Meteos and
+screen clears):
+
+P  = number of points
+N  = number of aligned Meteos
+C  = combo number
+Ln = number of launched non-incinerated Meteos
+Li = number of launched incinerated Meteos
+I  = 10 when Li is greater than 0 (= 0 when Li is 0)
+
+Ignitions:       P = 100*N*C
+Launched Meteos: P = (30*Ln)+(10*Li+I)
+Screen Clears:   P = about 10,000        Not sure what it depends on yet.
+
+This shows why it is better to ignite more than 3 Meteos.  For every extra one
+you align, you get a minimum of 100 extra points (a maximum of 9900 extra),
+while incinerating it loses you only 20 points, and that only if it gets off
+the screen.
+
+Also, consider that when playing for points, there are, where combos can be
+made, two ways to play: either to aim for screen clears as often as possible,
+or to aim for a combo as high as possible (possibly with a screen clear at its
+end too).  Deciding which to use depends on the maximum combo before the stack
+can no longer stay on-screen: if 300*the highest possible combo is greater than
+10,000, continue  causing ignitions rather than clearing the screen.
+Therefore, force a screen clear as quickly as possible if the stack cannot stay
+on-screen for 10,000/300 ignitions - around 33, or 25 or 20 if you can
+consistently align 4 or 5 Meteos respectively.  However, there are few planets
+that can make it this far, which makes this paragraph quite redundant...
+
+Where you can continue combos until you run out of Meteos in the stack, either
+try to launch it high up to refresh the top half with new Meteos, or set up
+Meteos that will be easy to ignite to save the planet from a nova when it all
+lands, to start another combo.  This can be repeated infinitely on certain
+planets to attain multiple x99 combos.
+_______________________________________________________________________________
+
+Here are general strategies and advice to get points.  Of course, these are not
+true for all planets.
+
+Firstly, although not important, always try to ignite 4 or 5 Meteos in a row
+rather than 3, because you earn 1.333 or 1.666 times more points respectively
+for it.  Keep the speeder on almost all the time, but release the button if you
+are in danger of annihilation.
+
+Secondly, launch from the bottom row, using horizontal launches.  This is
+essential for getting screen clears, which is usually the aim.  Add Meteos to
+stacks a few columns at a time quickly to form one large stack and then launch
+it off-screen with a few quick ignitions.
+
+-------------------------------------------------------------------------------
+.4.3.1.1. Deluge
+-------------------------------------------------------------------------------
+
+In Deluge Mode, you play for as many points as possible in one nova, the
+maximum score for any one planet being 9,999,999.  Unless you can set up an
+infinite combo one way or another, the amount of Meteos falling past the
+3-minute mark is very hard to keep up with, and most games will not last much
+longer than 3 minutes, at least initially.  Here, I will describe strategies
+for each planet to attain high scores.  Again, they are listed alphabetically.
+
+To shorten the section, I will describe the two main methods here, and refer to
+them in the list.  The method to use depends on the highest combo achievable
+before the stack will no longer stay on the screen.  The first is for those
+planets that can sustain more subsequent ignitions; the second, more common
+general strategy is better where Meteos cannot stay on screen for too high a
+combo.  There are planets that are different, however, and require something
+else.
+
+Use a few ignitions to create a stack and add columns to it so that you control
+the entire screen of Meteos.  The way to set off ignitions within it depends on
+the planet: either a few to boost it up high so that the top is refreshed with
+new, non-incinerated Meteos, or as many as possible continually until there are
+no more possible ignitions.  The latter is used where ignitions are not very
+effective and will not send the stack off the screen.  To refresh the stack,
+either allow it to fall, setting up a few Meteos in place to save the planet
+from a nova once everything starts flashing; or, preferably (if possible) align
+a few sets of Meteos in succession to launch everything up and off the screen,
+earning a screen clear.  Even more preferably, just refresh the top half of the
+stack by moving it up high but not off the screen: this is most effective when
+the Meteos fall rate is higher, and is more advantageous because the combo is
+not reset.
+
+Otherwise, aim for rapid, continuous screen clears, the quicker the better.
+Try to assemble a stack with all the screen's Meteos and launch it quickly with
+multiple ignitions within.
+_______________________________________________________________________________
+
+Aetheria (Brabbit)
+ This is, in my opinion, the easiest planet to start achieving very high scores
+ on.  It is possible to sustain a stack in the air for a long time: make it as
+ wide as the screen and keep launching it up and then letting it fall a bit.
+ This is so as not to lose the stack off the top of the screen, and generally
+ can be raplaced with very fast, multiple ignitions after 2 minutes.  When
+ using the speeder does not let the stack rise at all, let go of L or R for a
+ few ignitions to launch it up, refreshing its top, ready for more.  Also, keep
+ a few Meteos down the bottom in reserve, lined up ready to ignite if it gets
+ near to losing the stack.
+
+Anasaze
+ Here, go for screen clears, which happen at the 8th or 9th ignition.  Use the
+ abundant earth Meteos to make finding aligments easy, and make sure to launch
+ from the bottom of the pile to get those 10,000 or so extra points.
+
+Arborea (Wuud)
+ Set up a stack for combos.  Because the Meteos fall slowly when setting the
+ combo up, you may need to launch a few Meteos while waiting, to avoid
+ annihilation.  It is easy to have the stack turn into individual Meteos at
+ the start by launching it too high because few Meteos land, so try not to
+ create too many ignitions early on.  It can be helpful to release L or R while
+ the stack is going up so that more of the incinerated Meteos are refreshed.
+
+Bavoom
+ The aim is screen clears again.  Use the fact that the speeder slows the fall
+ rate to help when putting the large stack together, letting it fall fast when
+ things are aligned for the next ignition by letting go of the button.  Beware,
+ though, that keeping the speeder on and waiting for stacks to descend slowly
+ will likely lead to flashing columns elsewhere on the screen.
+
+Candelor (Lastar)
+ Screen clears.  However, the low amount of ignitions needed makes adding every
+ Meteos to the stack before it goes away difficult.  Try to align 5 Meteos for
+ ignitions, or have a falling stack add columns to itself either side, which
+ counts as single extra combo.  Annoyingly, before a minute passes, the stack
+ can end up as a single, completely incinerated row after the 5th ignition,
+ and the Meteos are not replaced quickly enough to make another one; avoid this
+ by igniting again on the way up, which will also add more points.
+
+Cavernis (Cavious)
+ Let a few rows of Meteos fall before starting, so as to avoid losing small
+ stacks separately.  A screen clear usually takes in the area of 8 ignitions.
+
+Florias
+ Again, screen clears.  Watch out for the wide screen, which makes it hard to
+ cover the whole field of Meteos.  Sometimes only a x06 combo will launch
+ everything off-screen, so add everything to the stack as quickly as possible.
+ After 3 minutes, using the speeder is very hard because of the 11 columns, so
+ use it only when a nova is likely.
+
+Forte
+ Playing here is quite interesting because of the strength of vertical
+ ignitions.  Keep one in reserve in the stack for the end to launch it all, and
+ raise the combo quickly.  That the stack barely moves and that half of the
+ Meteos are earth makes very quick successive ignitions easy - aim for 15 to 20
+ before using that vertical ignition to start the cycle over again.
+
+Geolitia (Geolyte)
+ This is the typical planet, where screen clears work best and occur at just
+ the right time for quick play.  Quickly set it up and align a few more sets
+ of Meteos to get rid of the screen's Meteos.
+
+Gigantis (Yooj)
+ The amount of combos required is 7 or 8, but the high Meteos fall speed and
+ screen width makes it hard to sustain a chain of screen clears for long.  You
+ have to work quickly to link up the columns into one stack, while watching all
+ of the screen.
+
+Globin
+ The Meteos will leave the screen at a x05 combo even if there are many Meteos
+ in the stack, and the screen's width is 10 columns, so you may need to add
+ columns to both sides of a stack returning to the ground, or create 4- or
+ 5-Meteos ignitions to make the stack large enough before it is launched away.
+
+Gravitas
+ This planet is a strange one, and doesn't make it easy to achieve anything
+ high at all.  Use 4- and 5-width ignitions in pairs that slightly overlap to
+ rid the whole screen of Meteos in a couple of launches.  Screen clears are
+ possible, but difficult to set up: set off x01 ignitions on the far left and
+ far right of the screen, and link these two together on the bottom row with a
+ third ignition that overlaps both of the first two.  You will need to keep an
+ eye on the tops of the columns while you set this up.
+
+Hevendor
+ Again, it's very hard to reach high scores here because Meteos leave at the
+ first ignition, only returning to the planet under very, very rare
+ circumstances.  Screen clears are possible, if you can set off the 3 ignitions
+ required covering all 11 columns at near enough the same time that no more
+ Meteos fall onto the screen before the screen is clear.  If you can manage
+ these, go for them all the time; if not, you will make more points by simply
+ launching many small stacks of Meteos as quickly as possible.  The reason I
+ say small stacks is that ignitions earn you more points than Meteos launched,
+ so you should aim for ignitions rather than to launch many Meteos.  Still,
+ launch larger stacks if you are in danger of a planet nova.
+
+Holozero (Layazero)
+ Screen clears are, once again, the objective.  They work quite well here, and
+ you should have no trouble getting the Meteos to leave the screen.  If you
+ find it hard to attach all Meteos to the stack before it leaves off the top,
+ try to use 4- or 5-Meteos alignments instead: remember that slow screen clears
+ are far more point-efficient, time-wise, than quick launches of quite large
+ stacks.  As always, launch from the bottom.
+
+-------------------------------------------------------------------------------
+.4.3.1.2. Time War I
+-------------------------------------------------------------------------------
+
+2:00 Time War
+
+This is very similar to Deluge Mode.  You play on Geolitia (Geolyte), and need
+the best score possible within 2 minutes.  Constant screen clears work best and
+occur at just the right time for quick play.  Quickly set it up and align a few
+more sets of Meteos to get rid of the everything on the screen in one go.
+160,000 or more is a decent score here, if you practise enough.
+_______________________________________________________________________________
+
+5:00 Time War
+
+Again, like Deluge Mode with Holozero (Layazero).  However, the speed doesn't
+increase much, and is still very playable right up to the time limit, meaning
+higher scores are possible than with the same planet on a Deluge match.  Screen
+clears work quite well here, and you should have no trouble getting the Meteos
+to leave the screen.  If you find it hard to attach all Meteos to the stack
+before it leaves off the top, try to use 4- or 5-Meteos alignments instead:
+remember that slow screen clears are far more point-efficient, time-wise, than
+quick launches of quite large stacks.  As always, launch from the bottom.  A
+score of 300,000 is difficult, but achievable.  Don't expect anything so high
+if you're new to the game, though.  
+
+-------------------------------------------------------------------------------
+.4.3.2. Playing for Meteos
+-------------------------------------------------------------------------------
+
+The objective is to earn Meteos in two of the Time Wars, and Simple and
+multiplayer matches.  There is no multiplayer section, because that is the same
+as Simple...and also I have no-one to play with...
+
+-------------------------------------------------------------------------------
+.4.3.2.1. Time War II
+-------------------------------------------------------------------------------
+
+100-Meteos War
+
+The aim is to launch 100 Meteos as quickly as possible, on Ignius (Firim), and
+the Meteos fall rate starts very high.  When you first play the game, it is
+difficult even to survive; once you can pick out the alignments to make for a
+quick screen clear, it gets easier.  If you win while holding L or R the
+entire time, a time above 15 seconds is unlikely: using the speeder is the
+first step to quick completions.
+
+Steps for a good time:
+ - Align the Meteos for the first ignition straight away, either in the middle
+   or completely to one side.  Preferably, this should be made of 4 or 5
+   Meteos, as this will launch more Meteos off the screen in this first
+   ignition.
+ - Add a column or two onto this as it falls back down.  If possible, try to
+   create an entire screen stack on this second ignition either by using
+   5-Meteos ignitions or adding columns either side of the initial stack.
+   This should also be done as quickly as possible.
+ - Add more columns with the next ignition if there are any left (again,
+   quickly); otherwise, align Meteos within the stack (3 only) as it nears the
+   ground.
+ - Wait for some time, then align the final 3 Meteos.  The timing is vital: too
+   long and the stack won't go high enough to reach the 100-Meteos target this
+   ignition; too short and it will go off the screen before the target is
+   reached, as there are not enough Meteos on the stack.  Aim for about half a
+   second of time of the ground, in general.  If possible, use a vertical
+   ignition, as this will lower the time that Meteos take to go up, and negate
+   the possibility of the stack not traveling high enough to reach 100.
+
+Basically, fiddle around with the timings of these four ignitions, and you
+should need only those to launch 100 Meteos.  Look at how many Meteos are left
+to reach 100, or how many more rows would have launched if the limit were not
+reached, and adjust the timing appropriately next time.  If all this is done
+well, times sub-8.00 are achievable: currently, my best is 7.05.
+_______________________________________________________________________________
+
+1000-Meteos War
+
+Firstly, use the speeder while you can.  Part of getting a time under 1:30
+depends on luck - on how many Meteos fall in the time; partly, it's finding
+good, 3+ Meteos horizontal ignitions quickly; partly, it's strategy.  Wait
+between ignitions for the Meteos to pile up, then launch from the very bottom
+row, going from one side of the screen to the other so as not to let any one
+area pile too high.  This means that fewer Meteos get incinerated.  Also, avoid
+leaving single or double columns on their own, as their flashing and beeping of
+impending doom can get annoying.
+
+-------------------------------------------------------------------------------
+.4.3.2.2. Simple
+-------------------------------------------------------------------------------
+
+A Simple game is very similar to a multiplayer game, so these strategies apply
+to that as well.  Here are general strategies to employ in a match.
+
+Use the speeder: the more Meteos that come down, the more that can go back up.
+If there is more than one opponent, aim at one first, then the other once (if)
+that dies, by selecting it on the left of the Touch Screen.  This will kill one
+quicker, meaning you are bombarded by less of an attack from then on.
+The basic idea in a Simple match is to launch really large blocks of Meteos
+together, completely filling your opponent's screens.  Do this with screen
+clears for most planets, as often as possible, and waiting a little for the
+Meteos to pile up before the final ignition (don't leave it too long, though).
+
+On Forte, use a vertical ignition to launch the stack.
+
+On Gravitas, Hevendor and Pyros (Hotted), aim instead to launch many stacks as
+large as possible, unless you can manage screen clears.
+
+On Megadom, launch many smaller stacks of Meteos: forming a single massive
+stack will not allow for it to be launched, and will eventually leave the
+entire screen flashing.
+
+On Aetheria (Brabbit), Arborea (Wuud), Mekks and Vortinia (Gigagush), create a
+single, screen-filling stack and launch it up intermittently.  Use a few
+ignitions per launch upwards to refresh a lot of Meteos, but not so many that
+you will lose the stack: this varies with Meteos fall rate.
+
+-------------------------------------------------------------------------------
+.4.3.2.3. Fusion
+-------------------------------------------------------------------------------
+
+This section details how best to earn the Meteos for fusion rather than the
+actual amounts required for anything.  Simply know that to get a planet, item
+or sound set to appear in the Fusion Room, collect the amount of Meteos
+required to unlock it; once that is done, it will always be there to fuse at
+any time you want.
+
+Other than playing on the planets with the most of the Meteos type required,
+you could use this concept from section 4.1.1:
+
+'In modes where you attack another planet - Star Trip, Simple and Multiplayer -
+[...] if Meteos land on your screen already incinerated, they are from another
+planet in the match: for those Meteos, the probability for which type of Meteos
+they will change into if left is dependent on the data for the planet on which
+they were last non-incinerated.  That means you are likely to have incinerated
+Meteos from Ignius (Firim) return to fire Meteos, even if your planet has a
+very low likelihood or even an absence of them.'
+
+So, play a Simple match as Hevendor against 3 of the planets with the best
+distribution of the Meteos type you want, set the difficulty to 1 star and the
+CPU level to the highest you can manage.  When already-incinerated Meteos land,
+allow them to revert to their non-incinerated forms, and then play as you
+normally would in a Simple match.  I say to use Hevendor because this makes it
+easy to launch a lot of Meteos quickly, especially where the difficulty is low,
+without incinerating many Meteos; of course, you could use any other planet, to
+your preference.
+
+You will find that you collect pretty much all the more common Meteos you need
+in normal play anyway, but some of the rarer Meteos are found only on certain
+planets.  Here is a list of the best planets for each Meteos type: either play
+on them or use the strategy above.  This is the order in the Fusion Room, and
+is pretty much from common to rare.  The planets are listed from, in my
+opinion, best to worst for that Meteos.
+
+Air  - Aetheria (Brabbit), Bavoom, Gigantis (Yooj)
+Fire - Pyros (Hotted), Ignius (Firim), Magmor (Jeljel)
+H2O  - Sferia (Vubble), Polaria (Freaze)
+Soil - Forte, Anasaze, Gravitas
+Iron - Mekks, Smogor (Grannest), Suburbion
+Zap  - Neuralis (Wiral) (by far), Holozero (Layazero)
+Herb - Perilia (Boggob), Arborea (Wuud), Florias
+Zoo  - Stellis (Starrii), Globin, Florias
+Glow - Candelor (Lastar), Meteo, Trinova (Thirnova)
+Dark - Meteo, Suburbion
+
+Soul and Time are extremely rare and evenly distributed across all planets, and
+can also be fused in the Fusion Room.  The following is a list of which planets
+can provide which of these two 'Rare Metals', but it is advised to buy them
+instead due to their infrequency in-game.
+
+SOUL                    TIME
+Aetheria (Brabbit)      Anasaze
+Arborea (Wuud)          Bavoom
+Florias                 Candelor (Lastar)
+Forte                   Cavernis (Cavious)
+Geolitia (Geolyte)      Freaze
+Globin                  Gigantis (Yooj)
+Insomnis (Dawndus)      Gravitas
+Luna=Luna               Hevendor
+Magmor (Jeljel)         Holozero (Layazero)
+Oleana                  Ignius (Firim)
+Perilia (Boggob)        Megadom
+Pyros (Hotted)          Mekks
+Suburbion               Neuralis (Wiral)
+Vortinia (Gigagush)     Sferia (Vubble)
+                        Smogor (Grannest)
+                        Stellis (Starrii)
+                        Trinova (Thirnova)
+
+Planet Meteo and the planet in the credits at the end of Star Trip can have
+both Rare Metals land.
+
+-------------------------------------------------------------------------------
+.4.3.3. Playing for Star Trip endings
+-------------------------------------------------------------------------------
+
+There are a total of 12 Star Trip endings in Meteos.  This section concerns
+unlocking each one.  I will add the names of the endings at a later date.
+
+-------------------------------------------------------------------------------
+.4.3.3.1. Straight
+-------------------------------------------------------------------------------
+
+ONE: INVISIBLE BONDS
+
+Complete the mode once, with fewer than 500,000 points to unlock the first
+ending of the game.  You will play against 6 randomly selected planets which
+are not your chosen Home Planets, plus Meteo at the end, and are able to set
+the difficulty.  It really couldn't be easier.
+_______________________________________________________________________________
+
+TWO: A MIRACLE REBORN
+
+Complete with 500,000 or more points.  This is a little more difficult.
+Firstly, be aware that losing and then continuing will half your total points;
+secondly, you are given extra points between planets, 10,000 points for the
+first, working its way up by tens of thousands to 60,000 betweens planets 6 and
+Meteo.  This means, provided you don't suffer a nova, that you have 210,000 to
+start with, and need only earn 290,000 more.
+
+I would suggest selecting Hevendor as your Home Planet because it makes points
+hard to get.  As you go along, use the strategies outlined in the Deluge
+section (4.3.1.1) but slow it down a little to ensure that the match lasts
+longer than it would if you attacked as well as possible.  You must, however,
+finish each battle within the 3-minute time limit so as to avoid losing half
+your points.  Play at the highest difficulty you can cope with, probably 3
+stars or more required to keep the opponents alive long enough to earn
+sufficient points.
+
+-------------------------------------------------------------------------------
+.4.3.3.2. Branch
+-------------------------------------------------------------------------------
+
+THREE: A SPIRITUAL LEGACY
+FOUR: A SPORT IS BORN
+FIVE: THE GALAXY EMBARKS
+SIX: THE NEW UTOPIA
+SEVEN: THE GALACTIC FORK
+EIGHT: IN THE ANGEL'S HALO
+NINE: A NEW UNIVERSE
+
+In this mode, each of the 7 possible different encounters with planet Meteo at
+the end yield a different ending.  This time, there are 8 planets to defeat
+along the way, 28 spread out over the routes; however, they are selected
+independently of your chosen Home Planet, and are in the exact same layout
+every time you play.  Each time you get a victory by annihilating your opponent
+within 3 minutes, you get a choice of routes, higher or lower.  Select a fairly
+low difficulty to make achieving all 7 endings here a quick and easy affair.
+The order in which they are listed above is from top to bottom on the in-game
+layout.
+
+-------------------------------------------------------------------------------
+.4.3.3.3. Multi
+-------------------------------------------------------------------------------
+
+A mission is given at each encounter, where you battle with up to 3 other
+planets: succeed to get a choice of routes, or fail to be forced into the lower
+option.  You always play on a random one of the planets you must play against.
+Your chosen Home Planet makes no difference at all.
+_______________________________________________________________________________
+
+STRATEGIES TO WIN MISSIONS
+
+If at any point you are about to win without completing the mission, you can
+try again by forcing a planet nova.  You'll halve your points, but get another
+go.
+
+The information is in this format:
+
+#.  Name
+    Mission/ENDING
+    Planet(s)
+Strategies
+
+1.  H2O Planetaries
+    Win within 2:30
+    Geolitia (Geolyte), Oleana
+To beat them quickly, aim at one first, then, after it goes out, attack the
+other.  Aim for screen clears as quickly as possible with either planet.
+
+2.  Chlorophylls
+    Launch 200 Meteos or more
+    Arborea (Wuud), Perilia (Boggob)
+As long as the match lasts more than 30 seconds, you should be able to launch
+the required amount of Meteos.  If this fails, try to be less offensive and
+make it last a little longer.
+
+3.  Molten Hellions
+    Launch 100 Meteos or more
+    Ignius (Firim), Pyros (Hotted)
+This should be very quick and easy, seeing as 100 Meteos can be launched in a
+couple of screen clears on Ignius (Firim) or a few large stacks launched on
+Pyros (Hotted).
+
+4.  Earth Lovers
+    Clear the screen of Meteos
+    Anasaze, Cavernis (Cavious), Forte
+Although easiest on Forte, there is no problem here.  Do as normal on the other
+two, and align 3 Meteos vertically on Forte when the stack covers the screen.
+
+5.  Mechatropoloids
+    Clear the screen of Meteos
+    Megadom, Smogor (Grannest)
+This can be quite difficult to achieve on Megadom because large stacks go
+virtually nowhere.  Try to set the screen clear up before too many Meteos land,
+or commit suicide until you get Smogor (Grannest).
+
+6.  Stray Planet
+    Battle for over 1:00 and win
+    Magmor (Jeljel)
+As long as you hold off for the first minute, your computer-controlled opponent
+should last long enough.
+
+7.  Dimensionals
+    Send 50 burnt Meteos or more
+    Gravitas, Trinova (Thirnova), Vortinia (Gigagush)
+Wait until large amounts of burnt Meteos land on the screen, then launch them
+away quickly before they revert to ordinary Meteos.  Easiest on Gravitas since
+the second ignition is guaranteed to go off-screen.
+
+8.  Bubblies
+    Launch 30 H2O Meteos or more
+    Florias, Sferia (Vubble), Stellis (Starrii)
+This shouldn't be difficult, especially with Sferia (Vubble): just launch
+Meteos as normal.  You are likely to launch 200+ total Meteos anyway; just try
+not to incinerate many of the H2O ones.
+
+9.  Clean Air Club
+    Launch 75 Meteos at once
+    Aetheria (Brabbit), Bavoom, Gigantis (Yooj)
+To launch so many Meteos, you need to launch a screen-wide stack upwards but
+not off the screen, and keep it high up with the speeder on so that landing
+Meteos are immediately launched; set off another ignition if the stack begins
+to fall before the display on the right indicates that 75 or more will be
+launched.  This can be quite a challenge if the difficulty is low, because the
+Meteos fall rate won't be great enough to keep stacks from leaving the screen.
+This is easiest to achieve with Aetheria (Brabbit) because of its very low
+Meteos fall rate.
+
+10. Hot & Chillies
+    Launch 50 Meteos at once
+    Insomnis (Dawndus), Polaria (Freaze)
+All this requires is a screen clear, perhaps waiting for a few more Meteos to
+add to the stack than you normally would before the final ignition.
+
+11. Electric Nymphs
+    Launch 30 Meteos at once
+    Mekks, Neuralis (Wiral)
+This is quite easy to pull off: just launch a large stack up and off the
+screen, or keep it up there with more ignitions on Mekks.  On Neuralis (Wiral),
+a screen clear is easily enough.
+
+12. Rare Cultures
+    No mission
+    Candelor (Lastar), Globin, Suburbion
+No mission - no strategy.
+
+13. Illusionists
+    No mission
+    Holozero (Layazero), Holozero (Layazero), Holozero (Layazero)
+No mission - no strategy.
+
+14. Twin Moons
+    Win within 1:30
+    Luna=Luna
+It's too easy to win here; rather, you should be aiming to fail the mission but
+win the match.  For help with that, see ending twelve below.
+
+15. Hevendor Realm
+    Win within 2:00
+    Hevendor, Hevendor, Hevendor
+This can be very hard to do because there are 3 enemy planets.  Firstly, you
+could set the difficulty to a low value for the whole Star Trip.  Secondly, be
+sure to focus on the Hevendors in turn by touching one on the left to select it
+at the start, then another when the first is annihilated.  Try to launch very
+large stacks from low down on the screen, waiting for incinerated Meteos from
+the other planets to revert before you launch them.  Try not to leave single or
+double columns on their own near at one side.
+
+16. True Meteo
+    TEN: THE ASCENT
+    Meteo, Meteo, Meteo
+Again, because there are 3 planets to defeat, you may have some trouble with
+this one.  Aim for screen clears, and follow the advice for mission 15.
+
+17. Meteo
+    ELEVEN: THE GREAT BATTLE
+    Meteo
+This is easy enough: just defeat planet Meteo.  Do as you would on Simple mode.
+
+18. Meteo
+    TWELVE: THE LIMITLESS EYE
+    Meteo
+This is easy enough: just defeat planet Meteo.  Do as you would on Simple mode.
+_______________________________________________________________________________
+
+STRATEGIES TO SURVIVE
+
+To survive in matches where 3 planets attack you together (particularly
+missions 8, 12, 15 and 16), either set the difficulty to 1 star - this makes
+things harder when aiming for ending twelve - or aim for one planet over the
+others, as you might in a Simple match.  Do this by selecting the planet to
+destroy first on the left of the play area; this will help by focusing all
+attacks on one opponent.  Take them out in turn, and there should be no
+trouble.
+_______________________________________________________________________________
+
+ENCOUNTER LAYOUT
+
+Following each number in the diagram is a dash, then something like '4A-5B',
+where the numbers are the possible next encounters, and the letters indicate
+the path.  The numbers match those in the section above.
+
+A = path opened by completing mission
+B = path open without completing any missions
+c = path opened by failing mission
+
+                                9-12A-13B               16
+                4-7A-8B                 12-15B
+        2-4A-5B         7-9A-10B                15-16A-17C
+
+1-2A-3B         5-7A-8B         10-12A-14B              17
+                                        13-17B
+        3-5A-6B         8-10A-11B
+                6-7A-8B                 14-17A-18C
+                                11-13A-14B              18
+
+16, 17 and 18 are the 3 possible last matches, and each give a different
+ending.  As you can see, 17 is by far the easiest ending to get because there
+are 3 routes to it, while 18 requires that you fail mission 14 and 16 requires
+that you succeed at mission 15.
+_______________________________________________________________________________
+
+SUGGESTED ROUTES
+
+TEN: THE ASCENT
+
+For this ending, you must beat 'True Meteo', which is 3 planet Meteos at once.
+The only way to get to this (16) is by completing mission 15, 'Hevendor Realm'.
+It is therefore required that you reach mission 12, by succeeding with either
+mission 9 or 10, preferably 10 because of the easier mission.  I suggest this
+route:
+
+win 1 -> 2 -> 4 or 5 -> 7 or win 8 -> win 10 -> 12 -> win 15 -> 16.
+
+ELEVEN: THE GREAT BATTLE
+
+There are so many possible ways to get to encounter 17, so there is little
+point in suggesting any one over any others.  You will basically end up here if
+you reach 13, fail 15 or win 14.
+
+TWELVE: THE LIMITLESS EYE
+
+Attaining this one shouldn't be hard, but it is, because of the absolute
+failure that is a computer-controlled Luna=Luna.  You absolutely must fail
+mission 14, which entails keeping Luna=Luna alive for 1:30.  This is best done
+by setting the difficulty to 5 stars, and then, once at the mission, not using
+the speeder until after 1:30.  Launch very small stacks off the top of columns,
+preferably with little more than 5 non-incinerated Meteos on them, when a
+column starts to flash.  After 1:30, you should have no problem helping your
+opponent to annihilate itself...
+
+This is the route I propose, going to 7 (Dimensionals) rather than 8 (Bubblies)
+for ease of survival.  For this, you must win mission 6 (Stray Planet):
+
+1 -> 3 -> win 6 -> 7 -> 10 -> lose 14 -> 18.
+
+-------------------------------------------------------------------------------

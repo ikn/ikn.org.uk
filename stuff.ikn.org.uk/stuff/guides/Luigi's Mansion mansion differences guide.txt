@@ -1,0 +1,406 @@
+
+    Luigi's Mansion - mansion differences guide
+
+    Version 2.0.2
+
+    By J
+
+-------------------------------------------------------------------------------
+.0. Contents
+-------------------------------------------------------------------------------
+
+To search for a particular section, append references together with dots
+in-between and at start and end, e.g. '.3.1.5.'.
+
+0.  Contents
+
+1.  Legal and contact
+
+2.  Introduction
+
+3.  Current content
+
+4.  Version differences
+  1.  The Mansion
+  2.  The Hidden Mansion
+  3.  Lists - PAL The Hidden Mansion/other versions
+    1.  Boos' HP
+    2.  'Normal' ghosts
+    3.  Boss differences
+
+5. Credit
+
+-------------------------------------------------------------------------------
+.1. Legal and contact
+-------------------------------------------------------------------------------
+
+This guide is distributed under a Creative Commons license
+(Attribution-ShareAlike 3.0):
+
+http://creativecommons.org/licenses/by-sa/3.0/
+
+If you come across any significant section of this guide and its use does not
+comply with the above terms, please e-mail me.
+
+To contact me to either suggest information or ideas or point out corrections,
+use e-mail.  The e-mail address to use is J49137@gmail.com.
+
+-------------------------------------------------------------------------------
+.2. Introduction
+-------------------------------------------------------------------------------
+
+There are various differences between versions of Luigi's Mansion, and
+especially the PAL version of The Hidden Mansion varies from all others.  This
+guide is written to make it clear what those differences are.
+
+-------------------------------------------------------------------------------
+.3. Current content
+-------------------------------------------------------------------------------
+
+At the moment, this guide contains:
+- All version differences I can come up with.
+- List to show Boo HP differences.
+- List to show numbers of 'normal' ghosts in the PAL The Mansion.
+- List of boss differences.
+
+This is most likely the final version, unless I have made any mistakes or
+anyone requests any more lists.
+
+-------------------------------------------------------------------------------
+.4. Version differences
+-------------------------------------------------------------------------------
+
+This is split into two sections, for the two different mansions obtainable:
+The Mansion and The Hidden Mansion, which is unlocked after completing
+the game, only on that game file.
+
+-------------------------------------------------------------------------------
+.4.1. The Mansion
+-------------------------------------------------------------------------------
+
+PAL (e.g. Europe, Australia)             NTSC (e.g. USA)
+------------------------------------    ------------------------------------
+Rooms are fairly light, so they can     The room is harder to see where
+be easily seen without Luigi's          Luigi's torch is not shining; this
+torch.                                  is also the case in both versions of
+                                        The Hidden Mansion.
+------------------------------------    ------------------------------------
+The rank requirements are different:    There is a maximum of 142,390,000G
+150,000,000G for A-rank.  There is      and 100,000,000G is the A-rank
+no more money, which means an A-rank    requirement.
+is not possible in The Mansion:
+there is still a maximum of
+142,390,000G.
+(All other rank requirements are the
+ same)
+
+-------------------------------------------------------------------------------
+.4.2. The Hidden Mansion
+-------------------------------------------------------------------------------
+
+Differences present in both PAL and NTSC The Hidden Mansions:
+
+- There is no introduction movie or training, and you already have the first
+  key.  This, however, is also the case if you select 'The Mansion' after
+  having already beaten the game once on that file.
+
+- Luigi takes double the damage he takes in The Mansion.
+
+- Except for with Boos, the Poltergust is stronger than in The Mansion; it is
+  said that it is 5 times stronger in the PAL version and 1.5 times in the NTSC
+  version, but this remains untested.
+
+- There is a small star in the bottom right hand corner of the screen.  (If you
+  can't see this when playing in The Hidden Mansion, the chances are it has
+  been cut off by your television.)
+
+- Ghost stun periods are much shorter, so you must be closer before flashing
+  them with the torch. (Note: portrait ghosts do not need to be flashed with
+  torchlight; they can be vacuumed straight away when their heart is exposed.)
+
+- There are more poison mushrooms, in furniture and Portrait Ghosts.
+
+- When you select 'The Mansion' from the menu in E.Gadd's laboratory, he says
+  'Careful now, Luigi!', while selecting 'The Hidden Mansion' will make him say
+  'Don't get scared stiff, Luigi!'
+_______________________________________________________________________________
+
+Differences present only in the PAL version of The Hidden Mansion:
+
+- The entire mansion is mirrored from left to right/right to left, including
+  Luigi (his cap's 'L' is reversed and he uses the Poltergust left-handedly).
+NOTES: - E.Gadd's lab. is only mirrored during Portraitification.  At the end
+         of this, though, it flips back quickly, quite visibly, so that Luigi
+         shines his torch to the right, as usual, to show the captured Portrait
+         Ghosts.
+       - All other cut-scenes are mirrored.
+
+- There are many more 'normal' ghosts in hallways and rooms.
+
+- Boss Ghosts are harder (usually faster, bigger attacks), and sometimes
+  different strategies are needed.
+
+- Some Boos have more HP.
+
+- Some Boos move around more quickly or are more agile.  A notable example is
+  TurBoo.  (Perhaps all of them are faster.)
+
+- There are quite a number fewer hearts, and some have changed in size
+  (generally becoming smaller).
+
+- Money: 25 more diamonds (grey) are present, each worth 2,000,000G, one in
+  each Golden Mouse and one in each Blue Ghost.  This means that 50,000,000G
+  extra is available, bringing the maximum up to 192,390,000G - and so an
+  A-rank is possible.
+
+- The requirement to fight the final boss is 45 Boos rather than the normal 40;
+  there is no change in the 20-Boo requirement earlier on.
+
+-------------------------------------------------------------------------------
+.4.3. Lists - PAL The Hidden Mansion/other versions
+------------------------------------------------------------------------------
+
+This section contains various lists to demonstrate some of the above
+differences:
+ - Boo HP
+ - Numbers of 'normal' ghosts in rooms/hallways
+ - Boss differences
+The lists show the differences in these areas between PAL's The Hidden Mansion
+and all other mansions.
+
+To request another list, e-mail me at the address found in the 'Legal
+information and use of this guide' section (1.) above.
+
+-------------------------------------------------------------------------------
+.4.3.1. Boos' HP
+-------------------------------------------------------------------------------
+
+It turns out that some Boos have lower HP in The Hidden Mansion (PAL), though
+it is higher for most.
+
+(Arranged alphabetically)
+
+/////////////////////////////////////////////////////////////
+/   Name            / The Mansion HP/ The Hidden Mansion HP /
+/////////////////////////////////////////////////////////////
+/BamBoo             /   30          /   150                 /
+/Boo B. Hatch       /   200         /   100                 /
+/Boo La La          /   60          /   80                  /
+/Boo Peep           /   100         /   100                 /
+/Boocaster          /   300         /   50                  /
+/Boodacious         /   80          /   150                 /
+/Booffant           /   300         /   300                 /
+/Boogie             /   40          /   50                  /
+/Boohoo             /   50          /   80                  /
+/Booigi             /   40          /   50                  /
+/Boojangles         /   50          /   60                  /
+/Boolderdash        /   150         /   300                 /
+/Boolicious         /   30          /   40                  /
+/Booligan           /   80          /   100                 /
+/Boolivia           /   100         /   200                 /
+/Boomeo             /   40          /   50                  /
+/Boomerang          /   300         /   200                 /
+/Boonita            /   100         /   100                 /
+/Boonswoggle        /   100         /   80                  /
+/Booregard          /   100         /   100                 /
+/Booripedes         /   100         /   150                 /
+/Booris             /   100         /   100                 /
+/Bootha             /   50          /   60                  /
+/Bootique           /   300         /   200                 /
+/GameBoo            /   50          /   60                  /
+/GameBoo Advance    /   30          /   40                  /
+/GumBoo             /   40          /   50                  /
+/Kung Boo           /   40          /   50                  /
+/LimBooger          /   100         /   100                 /
+/PeekaBoo           /   40          /   100                 /
+/ShamBoo            /   50          /   200                 /
+/TaBoo              /   50          /   60                  /
+/TamBoorine         /   200         /   150                 /
+/TurBoo	            /   50          /   30                  /
+/UnderBoo           /   150         /   200                 /
+/////////////////////////////////////////////////////////////
+
+-------------------------------------------------------------------------------
+.4.3.2. 'Normal' ghosts
+-------------------------------------------------------------------------------
+
+I use 'normal' to generally mean unimportant ghosts.  It excludes Portrait
+Ghosts, Golden Mice and Blue Ghosts.
+
+The following are the codes I have used in the table for the types of 'normal'
+ghost (most don't have names as far as I'm aware, so I hope it's clear what the
+descriptions mean):
+
+A yellow (10HP)
+B pink (20HP)
+C blue (30HP)
+D white grabber (10/20HP)
+E red grabber (20HP)
+F purple grabber (20HP)
+G Shyguy (20HP)
+H fire elemental (varies)
+I water elemental (varies)
+J ice elemental (varies)
+K Mr. Bones (30HP)
+L banana dropper (40HP)
+M white hanger (0HP)
+N purple hanger/bomber (0HP)
+O yellow bomber (0HP)
+P exploder
+Q mini pink blob
+R mini green blob
+S blue mouse
+T purple mouse
+U yellow bat
+V purple bat
+
+In the table, the code refers to the ghost(s) and the number to the number of
+them.  The commas separate times when ghosts appear.  For example, if one
+yellow ghost appears, and then 2 yellow and a pink one later, I write:
+
+'1A,2A1B'
+
+It might seem confusing, but it saves space and makes it easy to read all
+together.  (There are no numbers with Q and R.)
+
+Where HP can vary, an HP value is given after the letters, e.g.
+
+'1H[10]'
+'2D[20]'
+'2H,1H,1H[20]'
+
+Only rooms with 'normal' ghosts in either mansion are listed.  They are in the
+order in which they would most likely be visited.
+
+Note: Hidden Mansion numbers are currently missing for types Q to V.
+
+///////////////////////////////////////////////////////////////////////////////
+/   Room                 /   The Mansion             /   The Hidden Mansion   /
+///////////////////////////////////////////////////////////////////////////////
+/ Parlour                / 1A,1A,1A                  / 1A,1B,1C               /
+/ Anteroom               / 1A,1B,2A,1A1B             / 1C,2B,1B               /
+/ Wardrobe Room          / 1A,1A,1A1L,1A1L           / 1C,1D[10],1D[10],2D[20]/
+/ 2F hallway [area 1]    / 3S2T                      /                        /
+/ 1F hallway             / 4M1N2O3S3T4U4V            / 1M3N2O4P               /
+/ 1F Bathroom            / 2D[10]                    / 3E                     /
+/ Ball Room              / 6G                        / 6G QR                  /
+/ Storage Room           / 1B,1E,1B1E                / 2A1L,2C,1A3L           /
+/ Mirror Room            / 1D,1D,2D,2D[20]           / 2D,4D[20]              /
+/ Laundry Room           / 1B,1E,1B1D[10]            / 2G,1B1C                /
+/ Butler's Room          / 4S                        / R                      /
+/ Hidden Room            / 4J[20](chests)            / 4G(chests)             /
+/ Kitchen                / 1J[20]                    / 1J,2B2J[20]            /
+/ Boneyard               / 1K                        / 1K                     /
+/ Graveyard              / 3K                        / 5K                     /
+/ Courtyard              / 1M3N12Q                   / 4N Q                   /
+/ Bottom of the Well     / 1M                        / 1N                     /
+/ Tea Room               / 1D,1D[10]                 / 1A1C1E1J,2J[20]3G      /
+/ 2F hallway [area 2]    / 2M1N3O8P6S4T4U            / 1M2N1O2P               /
+/ 2F Washroom            / 1H[10](open toilet)       / 2H[10](open toilet)    /
+/ Astral Hall            / 1A1G,1A1G,2G1D[10]        / 4L,2D[10]2E[20],2A3K   /
+/ Projection Room        / 1F,1F,2F,3F               / 3F,6F                  /
+/ 3F hallway [2F stairs] / 3V                        /                        /
+/ Safari Room            / 1I,1I,2L1I[30]            / 2J,2J2N,2B4J[30]       /
+/ 3F hallway [right]     /                           / 1N                     /
+/ 3F hallway [left]      / 1O                        / 1O2N                   /
+/ Breaker Room           / 6S                        /                        /
+/ Cellar                 / 2B(barrels)               / 1A1B1C,1A1B1C(barrels) /
+/ Telephone Room         / 2K(chests)                / 1I2O,1I2O[30](chests)  /
+/ Roof                   / 6G,2J[20]                 / 2G,5J[20],1A1B1C1E1L1O /
+/ Sealed Room            / 1A1B1C1N (open chest)     / 7B*                    /
+/ Sitting Room           / 5A,2H[10]                 / 3H[10]3G               /
+/ Armory                 / 1A2B1C1E1L(chests/armour) / 4N2J[20]               /
+/ BF hallway             / 1M1N2P                    / 3N2P                   /
+/ Pipe Room              / 2E1D[10]6Q                / 3B2N,3C2E Q            /
+/ The Artist's Studio    / 3A,3B,3C,3E,3G,3L,3N      / 5A,5B,5C,5E,5G,5N      /
+///////////////////////////////////////////////////////////////////////////////
+*In the Sealed Room in The Hidden Mansion, lots of 20HP pink ghosts appear at
+ once, so the game lags a lot.  Because of this, they are hard to count (not to
+ mention needing to survive), so I can't be certain that there are exactly
+ seven.
+
+It seems that, during the blackout that occurs just after Area Three has been
+completed, the numbers are the same in all mansions, apart from the fact that
+there are many more mice in the PAL The Hidden Mansion, such as in the Safari
+Room and Anteroom.  I have included the numbers here anyway, as a comparison to
+the above list.  Obviously, only rooms accessible during the blackout can be
+listed.
+
+//////////////////////////////////////////
+/   Room                / Ghost Numbers  /
+//////////////////////////////////////////
+/ Parlour               / 5A             /
+/ Anteroom              / 4A1B           /
+/ 2F [balcony]          / 2A             /
+/ 2F hallway [area 1]   / 1M2N3S2T       /
+/ Study                 / 1E             /
+/ Master Bedroom        / 2A3E           /
+/ Nursery               / 2A1B1C         /
+/ 1F hallway            / 2M5N2O3S3T4U4V /
+/ 1F Bathroom           / 3H[10]         /
+/ 1F Washroom           / 1E             /
+/ Ball Room             / 5G             /
+/ Storage Room          / 2B2D[10]       /
+/ Mirror Room           / 4D[20]         /
+/ Laundry Room          / 3L             /
+/ Butler's Room         / 2A2J[20]       /
+/ Hidden Room           / 2C1D           /
+/ Conservatory          / 3A1B           /
+/ Dining Room           / 1A,1L          /
+/ Kitchen               / 1A2B           /
+/ Boneyard              / 3H[10]         /
+/ Rec Room              / 3C3D[10]       /
+/ Tea Room              / 1I[30]         /
+/ 2F hallway [area 2]   / 1M5N2O8P6S4T4U /
+/ 2F Washroom           / 2H[10]         /
+/ 2F Bathroom           / 2C             /
+/ Nana's Room           / 5B             /
+/ Astral Hall           / 6G             /
+/ Billiards Room        / 3A4D[10]       /
+/ Projection Room       / 5F             /
+/ The Twins' Bedroom    / 2G2D[10]       /
+/ Fortune-teller's Room / 2B1C           /
+/ Safari Room           / 2A2D[10]       /
+/ 3F hallway [right]    / 1O             /
+/ Balcony               / 2A2B2C         /
+/ 3F hallway [left]     / 1O             /
+/ Telephone Room        / 1A1B1C         /
+//////////////////////////////////////////
+
+Although I tried to list every ghost, numbers for the hallways could be wrong
+because the ghosts do not always appear.  Feel free to e-mail me if you find a
+mistake (see section 1.).
+
+-------------------------------------------------------------------------------
+.4.3.3. Boss differences
+-------------------------------------------------------------------------------
+
+BOSS ONE: CHAUNCEY
+- Rocking horses are a lot bigger, and move more quickly.  Their motion is
+  wave-like, from side to side.
+- Chauncey moves more quickly when bouncing around.
+
+BOSS TWO: BOGMIRE
+- Bogmire stays visible for less time.
+- There might be more of the other ghosts (it's hard to tell).
+
+BOSS THREE: BOOLOSSUS
+- Boolossus begins much larger, even though he is made up of the same amount of
+  Boos.
+- As you start the battle, the screen zooms in to show Luigi jumping onto the
+  Poltergust 3000.  This means that he can move around very quickly during the
+  battle, and can only rotate with the C-stick.  This, however, actually makes
+  capturing Boolossus's component Boos easier.
+
+BOSS FOUR: KING BOO
+- Sometimes, one or two of the spiky balls Bowser throws will flash straight
+  away rather than after a few seconds, meaning that they will blow up before
+  you can use them.  This hurts.
+
+-------------------------------------------------------------------------------
+.5. Credit
+-------------------------------------------------------------------------------
+
+vipsoccermaster - fixing a lot of errors and omissions in section 4.3.2.
+
+-------------------------------------------------------------------------------

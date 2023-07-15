@@ -1,0 +1,1003 @@
+
+    Super Mario 64 DS - mini-game guide
+
+    Version 0.45
+
+    By J
+
+-------------------------------------------------------------------------------
+0. Contents
+-------------------------------------------------------------------------------
+
+To search for a particular section, append references together, e.g. '4aiii.'.
+
+0.   Contents
+
+1.   Legal and contact
+
+2.   Introduction
+
+3.   Current content
+
+4.   The mini-games*
+  a.   Unlocking the mini-games
+  b.   Mini-game guides*
+    i.   Yoshi's mini-games
+    ii.  Mario's mini-games**
+    iii. Luigi's mini-games**
+    iv.  Wario's mini-games**
+
+-------------------------------------------------------------------------------
+1. Legal and contact
+-------------------------------------------------------------------------------
+
+This guide is distributed under a Creative Commons license
+(Attribution-ShareAlike 3.0):
+
+http://creativecommons.org/licenses/by-sa/3.0/
+
+If you come across any significant section of this guide and its use does not
+comply with the above terms, please e-mail me.
+
+To contact me to either suggest information or ideas or point out corrections,
+use e-mail.  The e-mail address to use is J49137@gmail.com.
+
+-------------------------------------------------------------------------------
+2. Introduction
+-------------------------------------------------------------------------------
+
+My aim in writing this is to help any readers unlock all the mini-games in the
+game for the Nintendo DS, Super Mario 64 DS, and achieve the highest scores
+they can on them.  The game contains 36 mini-games, 9 for each of the 4
+playable characters (Yoshi, Mario, Luigi and Wario), and so the mini-games in
+the guide are organised into 4 groups: one for each character.
+
+-------------------------------------------------------------------------------
+3. Current content
+-------------------------------------------------------------------------------
+
+At the moment, this guide contains:
+- Summary of mini-games.
+- Locations of all rabbits.
+- Guides for all of Yoshi's mini-games.
+
+I hope that the list will grow in future updates; for the time being, this is
+all there is in this document.
+
+-------------------------------------------------------------------------------
+4. The Mini-games
+-------------------------------------------------------------------------------
+
+The mini-games are found in the Rec. (recreation) Room.  This is accessed from
+the Title Screen by the button 'Rec Room'.
+
+All mini-games are played using only the touch screen.  Once at the Recreation
+Room, the 4 characters' smiling pictures are shown on the left of the screen
+and are, from top to bottom, Yoshi, Mario, Luigi and Wario.  By selecting one
+of these faces, the menu for the character's mini-games can be seen.
+High scores for each game are displayed above or below the mini-game they are
+for.  During the playing of a mini-game, pressing Start, Select, A or B will
+pause the game and show a menu, where you can view a description of the
+mini-game, options, continue playing it or quit (WITHOUT A YES/NO PROMPT).
+
+When the game is begun, there are 8 mini-games available: 2 for each character,
+even those that have not been unlocked in the main game.  The mini-games are,
+for each character, the first 2 in each section being those that do not need to
+be unlocked, named the following:
+
+Yoshi:
+
+         WANTED!              LOVES ME...?          HIDE AND BOO SEEK
+      PUZZLE PANEL              BOOM BOX             TOX BOX SHUFFLE
+     WHICH WIGGLER?             MIX-A-MUG             PUZZLE PANIC
+
+Mario:
+
+     MARIO'S SLIDES         BOUNCE AND POUNCE       SORT OR 'SPLODE
+     TRAMPOLINE TIME          SHUFFLE SHELL        BOUNCE AND TROUNCE
+ CONNECT THE CHARACTERS        SHELL SMASH         TRAMPOLINE TERROR
+
+Luigi:
+
+      MEMORY MATCH             PAIR-A-GONE            PICTURE POKER
+    MUSHROOM ROULETTE          MARIO SLOT              LUCKY STARS
+   PAIR-A-GONE AND ON         MEMORY MASTER         SUPER MARIO SLOT
+
+Wario:
+
+      BOB-OMB SQUAD          SNOWBALL SLALOM           BINGO BALL
+     COINCENTRATION            PSYCHE OUT!             SLOTS SHOT
+      LAKITU LAUNCH      INTENSE COINCENTRATION   GIANT SNOWBALL SLALOM
+
+-------------------------------------------------------------------------------
+4a. Unlocking the mini-games
+-------------------------------------------------------------------------------
+
+The mini-games are unlocked during the main game ('Adventure').  They are
+hidden in the drawers of Princess Peach, past the Character Changing Chamber.
+To open the drawers, keys are needed.  These come from each of the coloured
+rabbits that can be seen roaming the castle.  There are 7 for each character,
+to add to the 2 mini-games already available, resulting in the total: 9.  To
+get the key from each rabbit, you must catch it with A, whereupon, in fear, it
+will give its key to you.  They are easier to catch with Yoshi because of his
+long tongue; with the others, and especially Wario, a lucky dive is what helps;
+try to aim where the rabbit is heading.
+
+Here are the locations of all of the rabbits in the castle (the colours in
+parenteses are those of the rabbits):
+
+Yoshi (yellow/green (sorry, not sure which due to colour-blindness)):
+1. Castle grounds.  It is found at the bridge over the moat, and covers the
+   left (near the waterfall) area of the grounds.
+2. Castle grounds.  This is found at the bridge as well, but it wanders around
+   the middle section of the grounds, nearer to the lake and cannon.
+3. Castle grounds.  Again, this is found at the bridge, and in the rest of the
+   castle grounds.  It goes to the right and across the wooden bridge and near
+   the trees there.
+4. Castle grounds.  This is found on the wooden bridge to the right of the main
+   stone one.  It wanders the area with the trees as the rabbit above (number
+   3).
+5. Castle grounds.  This fifth rabbit of Yoshi's in the grounds is to the left
+   of the starting position, hopping around the low-trimmed hedges.
+6. Castle grounds.  Found in the moat (once drained), it wanders its length,
+   and up the ramp on the left as well.
+7. Basement.  Yoshi's last and only rabbit to not be in the castle grounds hops
+   around all of the basement and starts in front of the pool before the
+   picture that leads to Lethal Lava Land.
+
+Mario (red-pink):
+1. Castle grounds.  The first of Mario's rabbits is located at the edge of the
+   grass that overlooks the waterfall, and wanders that area, around the few
+   trees there.
+2. As Yoshi, rabbit 6.  It also comes out of the moat though.
+3. As Yoshi, rabbit 7.
+4. As above (rabbit number 3).
+5. Ground floor.  In the room with the Jolly Roger Bay picture, starting just
+   to the left as you enter, this rabbit moves around the whole room.
+6. First floor.  At the top of the stairs to the second floor, this rabbit runs
+   all around the donut-shaped gallery-like room here.
+7. First floor.  It is found in the Snowman's Land picture room (take the door
+   that has an embedded area of wall around it), and begins on the left.
+
+Luigi (green):
+1. Castle grounds.  In the maze to the left, in a corner of two hedges, going
+   around the entire maze.
+2. Ground floor.  In the room with the Bob-omb Battlefield picture, to the
+   left.
+3. Ground floor.  In the small room with Mario's picture, 2 doors past the
+   character changing room.
+4. Castle courtyard.  This is where the entrance to Big Bo's Haunt is found.
+   The rabbit is in a niche above the door by which you enter; backflip up
+   there to find it.
+5. Basement.  This can be accessed either from the door in the moat once it has
+   been drained, or from a door in the basement.  Near to the stone pillars, a
+   shallow area of water has the rabbit in its centre, where ramps lead down to
+   it from either side.
+6. First floor.  As you come up the stairs, it is just to the right through the
+   door, and circles that section of the floor.
+7. Castle roof.  Found behind the fenced area, it hops around the whole roof.
+
+Wario (brown):
+1. Castle grounds.  Near the trees on the right side, over the small bridge,
+   and staying only there.
+2. Ground floor.  This rabbit starts in the far left corner of the room
+   containing the Whomp's Fortress picture.  It moves about the entire room.
+3. Castle courtyard.  Beginning on the opposite side of the fountain from the
+   entrance, it goes around and around the fountain.
+4. Basement.  This one can be found to the left of the entrance from the upper
+   castle, near Toad.  It hops around that side of the basement.
+5. First floor.  This can be caught near in the room of the Tiny-huge Island
+   paintings, below the one that cannot be entered.  It goes all around this
+   room.
+6. Second floor.  Right outside the doors to enter this floor, the rabbit runs
+   about the whole lower area here.
+7. Second floor.  This is next to the hole for Rainbow Ride, in front of it at
+   first, and then always only on that ledge.
+
+-------------------------------------------------------------------------------
+4b. Mini-game guides
+-------------------------------------------------------------------------------
+
+Here are the guides for each mini-game in the order that they are shown in the
+game.
+
+For each mini-game, I will write its name, the in-game description, my
+description and, finally, what strategies to employ in order to gain a
+high-as-possible score.
+
+They are presented as below:
+
+NAME
+
+In-game Description.
+
+My Description.
+
+Strategies.
+
+-------------------------------------------------------------------------------
+4bi. Yoshi's mini-games
+-------------------------------------------------------------------------------
+
+WANTED!
+
+Description:
+It's easy to get lost in a crowd! Find the one who disappeared and touch him.
+There he is!
+
+My Description:
+On the top screen, a picture of the character you must touch is shown, and is
+chosen from Yoshi, Mario, Luigi and Wario.  On the touch screen, lots of heads,
+only one of which is the character above, are shown.  The number, placement and
+motion of the heads changes as you progress.  You begin with 10 seconds and
+lose when the time expires.  Choosing the correct head pauses the timer, adds 5
+seconds to the timer and a star to your total, and then begins the next level.
+Choosing a wrong head results in the timer losing 10 seconds: you can press as
+many incorrect heads as to cause the timer to read 0 in a level, before you are
+correct.
+
+Strategies:
+Play starts off simply: there are only 4 heads, one of each type, and are lined
+up in the centre of the touch screen; simply touch the right one.  Next, 16 are
+shown, in 4 rows of 4, followed by 48 (6 rows of 8).  After that, although it
+is not the last time that the heads will be neatly aligned, they are placed
+randomly and overlapping each other for a while, but with the head required
+covered by no others.  After you have five stars, the heads will move.  This
+begins simply, usually with the correct head at the top or bottom of a
+vertically-moving column, though it is not always on-screen.  This occurs for
+one star, then they are stationary once more.
+
+Next, the heads overlap, and the correct one may be underneath others, but will
+only be covered partially: some of these can be hard if you look in the wrong
+places.  Note that if you press any space that occupies the correct head, even
+if it is covered, you win.  After 9 stars is reached, only 8 chins, each on the
+top border of the screen, are shown.  It is easy to get Yoshi (green chin), and
+Luigi is thin.  Also, Wario's chin is the widest, and of more of a red colour.
+
+Then, the heads move again, but are not lined up; they still move in groups,
+but can overlap each other.  However, the correct head is not in a group, but
+is separate from all others on the screen and has a different direction of
+motion.  After this, more stationary and moving screens are shown, but few
+lined up.  Some move in different patterns, sometimes most of the head is
+covered, and more heads are often crammed onto the screen.
+
+In order to achieve a high number of stars, watch the screen carefully and try
+to look around at all of it.  Try to find the heads faster in the earlier,
+easier times so there is more time later on, when it gets harder to continue.
+Learn what each part of each of the heads looks like, as sometimes only a nose
+or cap can be seen (though it isn't hard to mistake Yoshi).  Finally, if all
+else fails, and you just aren't quick enough to gain your desired score, play
+with someone else and multiple Styli: more eyes to search the screen are always
+helpful.  A single game in 'Multiplayer' can last a long time, so if going for
+a high score, make sure you remain undisturbed for quite a while...
+_______________________________________________________________________________
+
+Loves Me...?
+
+Description:
+Play this mini-game for advice on your love life!  Pluck the petals to find out
+how your crush feels about you.
+
+My Description:
+The only high score-less mini-game.  Yoshi is shown sitting on a wall on the
+top screen, and he picks petals from his flower as you do the one on the Touch
+Screen by touching them.  The above description explains play well enough.
+
+Strategies:
+There are really no strategies for anything, but getting either 'loves me' or
+'loves me not' a number of times in a row gives you such phrases as 'really
+loves me' or 'really...loves me not'.  However, I _really_ don't want to waste
+time finding out the exact number of times in a row to get each of these 'new
+and exciting' phrases.  There is not much point.
+
+Seeing as the petals can be moved about, you could throw them up and catch them
+repeatedly...but it's not that fun.
+_______________________________________________________________________________
+
+Hide and Boo Seek
+
+Description: 
+Rub the Touch Screen where the Boos are hiding!  For the first 15 levels, you
+get 3 seconds to find them.  After that, you only get 2 seconds.
+
+My Description:
+A Boo begins on the top screen, who then turns out the lights.  The Touch
+Screen shows the entrance of Big Boo's Haunt with a number of Boos flying
+around, which differs as you play.  Then, the screen goes black and, after the
+clock begins to count down, you have to rub the Boos (now unseen) to see them
+with Luigi's torch (you cannot do this before the timer begins), who is shown
+with his torch on the top screen, looking scared.  Find all of the Boos to win
+a star and to continue.
+
+Strategies:
+As you progress, the Boos' directions and numbers differ, making it gradually
+harder.  On top of that, as said in the in-game desciption, the amount of time
+given to find the Boos changes.
+
+The most important point to make is that the Boos travel only in STRAIGHT
+LINES, never changing direction apart from when bouncing off walls.  They also
+bounce off of any torch lines of light that have been drawn with the stylus, so
+they can get trapped in small areas without getting caught or noticed.  The
+only way to find a ghost is to touch its centre, which stops it and places a
+number on it (the position it was found, i.e. 1 was first, 2 second).  Just a
+small black dot on the centre of the ghost, even when it is stationary,
+prevents it from being seen.
+
+Because the ghosts' speed change neither, their locations can be predicted once
+the screen has turned black.  It is best to aim for where the Boos should be
+rather than guess.  Above all, it does not help to scribble on the Touch Screen
+randomly because it can create small black areas where Boos remain hidden (as
+well as being less kind to your Touch Screen).  Although following a Boos with
+the Stylus can help, there are almost always more than one Boo, so it is better
+to follow them individually as best you can in your head.
+
+Another thing to take note of and use to an advantage is that a characteristic
+sound is played each time a Boo is found: use this to be sure of when a Boo is
+caught and when it is not.  Finally, the use of 2 Styli does not help in this
+mini-game due to the fact that it creates crazy lines that shoot from one
+Stylus to the other, and also the timescale is very short.
+_______________________________________________________________________________
+
+Puzzle Panel
+
+Description: 
+Match the Touch Screen picture to the top screen.  Touch a panel to turn over
+the surrounding panels.  Harder levels will take more turns to solve.
+
+My Description:
+All of the puzzles in this mini-game are made up of a 4-by-4 or 5-by-5
+grid consisting of squares which are white (depicting mushrooms) and brown
+(depicting feathers).  By touching a square, that square and the 3-by-3 block
+that surrounds it will change colour (brown to white or white to brown).  The
+aim of the game is to match the bottom grid to the top screen's one by flipping
+the right tiles, which gives you a star and progresses you to the next puzzle.
+
+Strategies:
+For each puzzle, you are given a maximum number of turns to use, ranging from
+1 to many.  You lose one of 3 lives that you are allocated for each puzzle
+each time you fail to complete it in the number of turn given; losing all 3
+ends the game.
+
+Firstly, this is a mini-game that takes a lot of time, because it is important
+to plan each move before taking it.  After losing a life, the tiles on the
+lower puzzle that were flipped onto the wrong side flash, as well as their
+corresponding squares on the top screen.  Use this to your advantage: it is
+important to remember the moves that you have taken, and then, working through
+them, figure which need(s) to be changed to include the tiles that flashed in
+the second attempt, thereby completing the puzzle.
+
+Tiles can be changed from one colour to another and back again, so it is good
+to be able to tell where the 3-by-3 turns need to overlap, keeping one or more
+tiles the same.  Here are some examples taken from in the game (M and . are
+used because they are very different and make it easy to see the shapes - so,
+one is white and the other brown; 1 means change this tile once, 2 means change
+this tile twice (and so on), T means touch this tile and - means correct):
+
+Completed puzzle/given puzzle/wrong tiles & tiles to touch
+
+1 turn
+M . . M    . M . M    1 1 - -    The wrong tiles make a 2-by-3 box whose sides
+M M . M    . . . M   T1 1 - -    are shared with a side of the puzzle, so touch
+M . M M    . M M M    1 1 - -    the box's centre.
+M . . M    M . . M    - - - -
+
+1 turn
+M . . M    M . M .    - - 1 1    As above puzzle.
+M M . M    M M M .    - - 1T1
+M . M M    M . . .    - - 1 1
+M . . M    M . . M    - - - -
+
+1 turn
+. . . .    M M M .    1T1 1 -    It is easy to see that there is a
+. M M .    M . . .    1 1 1 -    colour-inverted area on the Touch Screen here,
+. M M .    . M M .    - - - -    so do as the two puzzles above.
+. . . .    . . . .    - - - -
+
+2 turns
+. . . .    . . . .    2T1 2 -    As there are only 3 (in a row) wrong tiles,
+. M M .    . M M .    2T2 2 -    others must be flipped twice.  To make sure
+. M M .    M . . .    1 1 1 -    the wrong tiles are flipped once, the way that
+. . . .    . . . .    - - - -    the side of the puzzle changes the flipped
+                                 tiles area is used.
+2 turns
+. . . .    M M M .    1T1 1 -    It can be seen that there are two boxes that
+. . . .    . . M .    2 2 1 -    overlap, and the overlap has two tiles that
+. . . .    M M . .   T1 1 - -    are the right colour - so they are flipped
+. . . .    M M . .    1 1 - -    twice.
+
+1 turn
+. M . M .    . M . M .    - - - - -    This is as easy as the first three
+M . M . M    M . M . M    - - - - -    puzzles, only the grid is 5-by-5 in
+. M . M .    M . . M .    1 1 - - -    size.
+M . M . M    . M M . M   T1 1 - - -
+. M . M .    M . . M .    1 1 - - -
+
+2 turns
+. . . . .    . M . . M    - 1T2T2 1    As before (fourth example), there are
+. M M M .    . . M M .    - 1 2 2 1    2 boxes that overlap - only more subtly:
+. M M M .    . M M M .    - - - - -    it is harder to spot because they
+. M M M .    . M M M .    - - - - -    overlap more.
+. . . . .    . . . . .    - - - - -
+
+3 turns
+M . . M    . M M M    1 1 1 -    This is more difficult, so I will explain in
+M M . M    M M M M    2T2 1 -    more detail.  Firstly, there are clearly two
+M . M M    . M M M   T3 3 2 -    boxes that overlap, as it would be below (were
+M . . M    M . M M    2T2 1 -    it not for the other tile):
+
+ 1T1 1 -    BUT there are 3 other tiles to change, so this will not work.
+ 2 2 1 -    Also, there is the following overlap of two boxes:
+T1 1 - -
+ 1 1 - -    - - - -    BUT this does not account for the 4 '1's on the top 2
+            1 1 - -    lines of the solution, or the third '2' on the third
+           T2 2 1 -    row.  SO, the 2 solutions are combined.
+            2T2 1 -
+                       The area with a problem when both cases are combined
+is shown below, denoted by Ws:
+
+- - - -    So, the upper box (a turn) is lowered by one tile to encompass this
+- - - -    area.
+W W W -
+- - - -
+
+I think that the games goes through a 25-puzzle rotational period, during
+which the puzzles are of a separate set each few stars.  After 25 stars are
+yours, the puzzles come from the first (easiest) set once again - the game
+does not get harder after that point.
+
+Overall, look for inverted boxes or ones that overlap earlier on, then be sure
+that you can spot which tiles, and rows or columns of tiles, need to be flipped
+twice or three times later on in a game.  The same ideas apply when solving the
+majority of puzzles.
+_______________________________________________________________________________
+
+Boom Box
+
+Description: 
+Each time you open a treasure chest, you'll hear a sound.  Open 2 chests with
+the same sound.  Win by matching all the pairs!
+
+My Description:
+A selection of chests is before you, either 6, 8 or 10 lined up neatly in 2
+rows. A star is won by matching the sounds played when they are touched and
+opended, and all chests vanquished.  When you do this, you receive a star,
+you continue to the next set of chests - and, unfortunately, Mario partakes in
+a goofy laugh.  For each set of chests, you receive 3 lives - each incorrect
+pair loses you one of these; after you lose all 3, you lose the game.  The only
+drawback to the laugh is that you have to hear it, because you need to hear the
+chests' sounds...
+
+Strategies:
+For one thing, it is vital that you have the volume on, preferably up high,
+and are not in a noisy place when attempting this mini-game.  Secondly, you
+need to listen carefully (obviously).  Finally, although it is not as important
+or difficult in this game, you need to be able to remember the sounds and their
+locations each time - this is not too hard, though.
+
+The only ways in which this game gets harder is an increase in the number of
+chests, and an increase in the sounds' similarity to each other.
+
+The first 2 levels have 6 chests, as do many others - these can always be won
+if your memory and hearing are good enough.  Although there is always a factor
+of luck in this game, luck will never cheat you out of losing these levels.
+This is because if your first 3 choices are different, you can then never get
+another pair wrong:
+
+(The numbers refer to the sound - numbers match.  The locations are irrelevant
+to the guide; it just makes it clearer and easier to explain if they are placed
+like so)
+
+Chests:
+1 2 3    If you pick 1 and 2, then 3 and any chest from the bottom row, you
+1 2 3    have, without any chance at all, lost 2 lives.  However, then you
+         should pick any chest on the bottom row, and, as you have heard all
+the sounds on the top row before, match it correctly, similarly with the other
+2 on the bottom row, no matter which you choose first.  Simply, ALWAYS choose a
+new chest, unless there are none that have not been opened, so that you can act
+depending upon its contents.
+
+With 8 chests, there is the possibility of losing the game even if you play
+perfectly, if luck is not on your side:
+
+Chests:        The following logical choices could lose you the game:
+1a 2a 3a 4a    1 - 1a 2a (life 1)    2 - 3a 1b (life 2)    3 - 1b 1a
+1b 2b 3b 4b    4 - 4b 2b (life 3) OR 4 - 4b 3b (life 3) OR 4 - 4a 3b (life 3)
+               There are many quite a few ways to lose with no say in it.
+To have the best chance of avoiding this, ALWAYS choose a new chest (except
+when matching known chests).  Similarly, with 10 chests, there is a chance of
+involuntary loss, but the probability is even higher than with 8 chests.
+Simply, ALWAYS choose a new chest.
+
+The hardest sounds to match up are ones that depend upon the dual speakers,
+because they are the same sounds, only emitted from different speakers.  For
+example, one set of 6 chests has the following pairs:
+1 - a shaking sound traveling from the right to the left speaker, then an
+    explosion.
+2 - a shaking sound traveling from the left to the right speaker, then an
+    explosion.
+3 - a shaking sound from both speakers, then an explosion.
+In this case, it is best to face the DS and listen carefully, perhaps moving
+closer.  In any case, DO NOT tilt your head so that one ear faces the DS.  This
+disables your ears' ability to tell the sounds' sources, because of the way our
+ears do that.  This is similar to the reason why we cannot tell whether sounds
+come from behind or in front of us, but can work out the angle to the side of
+our direction.
+
+As a final note, I'll say this: if you complete a level without losing a single
+life (i.e. you are so lucky that you never pair any 2 chests incorrectly),
+the screen says 'Perfect' instead of 'Clear'.
+_______________________________________________________________________________
+
+Tox Box Shuffle
+
+Description: 
+Oh, no!  Yoshi's trapped in a Tox Box!  Find which one he's in to save him!
+
+My Description:
+Yes Yoshi(s) is/are trapped in a box/2 boxes.  There are 3 Tox Boxes on the
+bottom, inside one of which (at least to begin with) is Yoshi.  The boxes close
+and then move about, switching positions with each other randomly.  After they
+have stopped moving, touch the box Yoshi is in to progress: to receive a star,
+to save Yoshi again, and...to hear Mario's goofy laugh.
+
+Strategies:
+The things that change to increase the difficulty of this game are the number
+of Yoshis (one becomes 2), the speed that the boxes move, and the amount of
+time for which the boxes remain still before moving again after each switch.
+When there are 2 Yoshis, one is blue and the other green, and after the boxes'
+movement ends, you are told which one to find - which means that you are
+required to track 2 Tox Boxes and remember which is which.
+
+Simply put, you have to follow the box that Yoshi is in carefully, so that you
+choose the correct box at the end.  After a certain point (50 stars, possibly)
+the movement of the boxes cannot get any faster; the only thing required to
+continue forever past that stage is an undiminishing level of concentration -
+something that few people can possess.  You have 2 lives to lose at the start,
+a supply which is refreshed after every 5 stars earned.  Obviously, after
+losing both lives you end the game.
+
+One thing to be especially wary of is the start of each level: sometimes, the
+boxes close very quickly, giving you little chance to see the starting
+locations of the Yoshis.  So, always be ready at the beginning of a new level.
+_______________________________________________________________________________
+
+Which Wiggler?
+
+Description: 
+Touch the Wiggler on the Touch Screen that matches the one on the top screen.
+Choose carefully, though; he has a terrible temper.
+
+My Description:
+You are given 20 seconds at the start, and the time is much like that of
+Wanted!  There is one Wiggler on the top screen, asleep, who matches just one
+of those (also all sleeping) on the Touch Screen; touch the correct one,
+matching the patterns, to win.  Each correct answer receives a star and 5 more
+seconds, while each incorrect one loses 10 seconds.  When the time runs out,
+the upper Wiggler awakes, they all get angry - and you lose.
+
+Strategies:
+Each Wiggler has 4 body sections (plus a head), each of which show one circle,
+or parts of 2, in a certain position.  These are what must be matched.  At the
+start, though, the upper Wiggler is stretched out and the others (first 3, then
+4, then 5 for the first 3 stars) are curled, making it difficult.
+
+When the wrong one is touched, as well as going red and angry for a few
+seconds, every Wiggler on both screens moves more quickly.
+
+The fourth star has 4 moving Wigglers below, and the one above is awake and
+moving (though going nowhere) as well.  The differences in the directions they
+face make matching them up more difficult.  Later, on the sixth star, they move
+in curved paths, as opposed to the straight lines of before.  The number of
+them, having risen, drops to 3 again, then slowly rises up to the ninth star.
+The fact that they overlap each other is tricky; make sure you touch the right
+one, seeing as always the one on top is touched.
+
+After, there are more than one per row, and they move in lines again.  There
+are 3 on each row, all different.  They are similar in how the parts are
+arranged as well.  For example, 3 body sections of type A and one of type B are
+shown, and they all have those, but the type B one is in different positions.
+
+From the eleventh star, the Wigglers move in straight lines again, and are few,
+before they follow the patterns of the last 2 paragraphs.  They are, however,
+always more similar to each other, perhaps only using 2 body types overall.
+
+Firstly, use the period at the start before the lower Wigglers appear to
+memorise the pattern of the upper one.  Mostly, it is enough to remember the
+types and locations of just 2 or maybe 3 body sections, because it is unlikely
+that 2 below will be that similar.  Then, look at the Wigglers on the Touch
+Screen and match them to what you have remembered.  When the Wiggler to match
+has 3 or even 4 similar body sections in a row, it is easier, and harder when
+there are less; for this reason, when there are 2 similar ones, they are the
+parts that should be remembered.
+
+Use the earlier, easier stages to gain time, and try, rather than make a
+mistake, to observe carefully.  Check all of the Wigglers, just in case,
+especially whenever there are few.
+
+Furthermore, some types of body sections look similar, but are not.  Note the
+angle that the circles face: whether they are upright or angled to one side
+makes a difference, and even differently-angled ones are not deemed the same.
+_______________________________________________________________________________
+
+Mix-a-Mug
+
+Description: 
+Line up the slots on the touch screen to form a face.  Win more coins by
+matching the center face in the slots to the one on the top screen.
+
+My Description:
+You begin with 12 coins and lose 3 whenever you match the faces wrongly, and
+gain 3 whenever they are correctly matched.  The amount gained rises to 6 when
+the face is in the centre of the 3 possible positions.  Match the face to the
+one on the top screen.  Losing all coins results in game over; try to earn as
+many stars as possible.
+
+Strategies:
+The face parts do not always move in the same directions as each other, and not
+at the same speeds.  When a line is stopped, the correct part flashes with a
+box around it, to help.  As the game progresses, row directions change more and
+their speeds increase, as does the number of characters, which starts with just
+Wario, Mario and Luigi.
+
+Firstly, the rows move in a different direction to the one next to them.  It
+does not matter when the first row is stopped, as it cannot end up off the
+screen, though it is best to get it in the centre, and easiest from there as
+well.  I find that it is easiest to stop the fastest row first, as that is
+more difficult to match when others are paused.  Next, stop the one that is (if
+just one) adjacent to it first, then the other remaining row.  It is harder to
+stop rows that need to be stopped at the place where they come onto the reel,
+as they need to be guessed, so avoid that occurring.  I find that, when this
+is a problem, it is best to time when it gets in place by watching the part of
+the face that arrives before it, and stopping the row after that.
+
+Once you have one star, Yoshi's faces joins the others' as well, meaning that
+the correct face can be stopped while of the screen. Generally, it is always
+easiest to stop the face in the middle first, and stop one of the rows that is
+moving in a different direction from either of the other 2.  Alternatively, it
+may just be better to stop the slowest row, because it is the easiest to stop
+in the centre, increasing the ease with which you can get 6 coins.
+
+Only a few stars later, Peach becomes a part of the pictures.  If all rows but
+one are moving in the same direction, stopping that one first could be
+beneficial.  Try to stop the right face on the edge where it first enters, so
+that it is easy to match the others, after following them across the whole
+screen.
+
+Be aware that when you touch a picture, it stops on the next position it
+reaches.  This means that there is a timeframe within which it can be stopped
+and come to rest in the right place, giving you a good chance to get it right.
+Avoid touching the row when the face part is in line, but instead stop it
+slightly before that time, for best accuracy.
+
+Past a certain point, these do not get any harder (around 30 stars, I think)
+and so, if you can still earn rather than lose stars (which is not too hard),
+there is not much point in continuing in an endless loop, for a long time.
+_______________________________________________________________________________
+
+Puzzle Panic
+
+Description: 
+This mini-game takes the Puzzle Panel to a whole new level.  Put on your
+thinking cap.  You're going to need it.
+
+My Description:
+All of the puzzles in this mini-game are made up of a 4-by-4 or 5-by-5
+grid consisting of squares which are white (depicting mushrooms) and brown
+(depicting feathers).  By touching a square, that square and the 3-by-3 block
+that surrounds it will change colour (brown to white or white to brown).  The
+aim of the game is to match the bottom grid to the top screen's one by flipping
+the right tiles, which gives you a star and progresses you to the next puzzle.
+    (copied from Puzzle Panel description)
+
+Strategies:
+The only difference here is the difficulty.  There are more moves to be taken
+at higher levels, and the puzzles begin larger and more complicated.  They
+start 6-by-6 tiles, and do not get smaller.  Although starting easy, the
+difficulty level raises much more quickly than with the other mini-game.
+Nevertheless, the same principles apply as with Puzzle Panel, so look there for
+help with this one.
+
+-------------------------------------------------------------------------------
+4bii. Mario's mini-games
+-------------------------------------------------------------------------------
+
+Mario's Slides
+
+Description: 
+Guide Mario down the slides to the Star.  Draw lines on the Touch Screen to
+create new routes for him.  Collect 5 Stars to move up a stage.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Bounce and Pounce
+
+Description: 
+Mario's in free fall, but he can bounce back if you touch him.  Stomp the Fly
+Guys, but make sure he doesn't fall off the Touch Screen.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Sort or 'Splode
+
+Description: 
+Guide Bob-ombs to the black carpet and Bob-omb Buddies to the red carpet.  If
+you bring in a wrong-colored Bob-omb, it will blow up!
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Trampoline Time
+
+Description: 
+Draw a line on the Touch Screen to turn it into a trampoline.  You  can draw up
+to 3 lines at a time.  Help Mario bounce to safety!
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Shuffle Shell
+
+Description: 
+Use the paddle to push the Koopa shells to the target.  The closer the shells
+land to the center of the target, the more points you will earn.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Bounce and Trounce
+
+Description: 
+Mario's surrounded by Fly Guys to trounce.  Touch him on his left, right or
+center to make him bounce in that direction.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Connect the Characters
+
+Description: 
+Draw lines to match the characters' heads to their bodies.  Press "GO!" when
+you're finished to see how you fared!
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Shell Smash
+
+Description: 
+Hit Koopa shells together to score points.  Hit many in a row for even more
+points.  Score higher points by smashing green shells together.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Trampoline Terror
+
+Description: 
+Only players with superb stylus skills will be able to make Mario bounce
+through the rings!
+
+My Description:
+
+Strategies:
+
+-------------------------------------------------------------------------------
+4biii. Luigi's mini-games
+-------------------------------------------------------------------------------
+
+Memory Match
+
+Description: 
+Pick two matching cards to make them disappear.  Clear all the cards to win.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Pair-a-Gone
+
+Description: 
+Touch 2 identical cards that are connected vertically, horizontally, or
+diagonally to make them disappear.  Clear them all to win.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Picture Poker
+
+Description: 
+Get a better hand than Luigi to win!  If you're confident your hand is best,
+increase the number of coins you bet!
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Mushroom Roulette
+
+Description: 
+Guess where the ball will land on the roulette wheel.  Guess correctly to win
+coins!
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Mario Slot
+
+Description: 
+Touch the spinning slots to stop them.  Get 3 items in a row to earn coins!
+The Superstar is wild.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Lucky Stars
+
+Description: 
+From a pair of cards, pick the one with more stars to win coins.  Beat Luigi
+at his own game!
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Pair-a-Gone And On
+
+Description: 
+This game of Pair-a-Gone goes on forever!  Test your skill and see how many
+cards you ncan clear.  Go for the record!
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Memory Master
+
+Description: 
+If Memory Match was a piece of cake for you, try out this harder version.  You
+now have more cards to play with.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Super Mario Slot
+
+Description: 
+Touch the spinning slots to stop them.  Get 3 items in a row to earn coins.
+The Superstar is wild.  Are you feeling lucky?
+
+My Description:
+
+Strategies:
+-------------------------------------------------------------------------------
+4biv. Wario's mini-games
+-------------------------------------------------------------------------------
+
+Bob-omb Squad
+
+Description: 
+The parachuting Bob-ombs are destroying your flowers!  Use your slingshot to
+knock them out of the air.  Hit Lakitu to blow them all up.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Snowball Slalom
+
+Description: 
+Rub the Touch Screen to roll the snowman's head to the goal before time runs
+out!  Rocks will slow you down, as will touching his head!
+
+My Description:
+
+Strategies:
+
+_______________________________________________________________________________
+
+Bingo Ball
+
+Description: 
+Launch a ball into a numbered slot on the Touch Screen.  That number will light
+up in the top screen.  Get 3 numbers in a row to score!
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Coincentration
+
+Description: 
+Pay attention to where the falling coins land.  Touch the blocks to retrieve
+the coins.  But if you choose the wrong block, your game will end.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Psyche Out!
+
+Description: 
+Are you psychic?  Can you guess what's on the card's other side?  Maybe if you
+stare at it long enough, a vision will come to you.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Slots Shot
+
+Description: 
+The bars swing open when a ball goes in a Piranha plant.  Sink the ball into
+the pipe to trigger the slots Switch.  Get 3 items in a row for a bonus!
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Lakitu Launch
+
+Description: 
+Shoot as many balls as you can into the tubs within the alloted time.
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Intense Coincentration
+
+Description: 
+There aren't as many falling coins this time around, but that won't stop Wario.
+Watch the coins carefully!
+
+My Description:
+
+Strategies:
+_______________________________________________________________________________
+
+Giant Snowball Slalom
+
+Description: 
+Roll the snowball over a longer course!  As before, avoid rocks because they'll
+slow you down.
+
+My Description:
+
+Strategies:
+-------------------------------------------------------------------------------

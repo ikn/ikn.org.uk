@@ -5,7 +5,7 @@ import os
 import logging
 
 site_path = os.path.dirname(os.path.abspath(sys.argv[0]))
-dist_path = os.path.join(site_path, 'dist')
+dist_path = os.path.join(site_path, 'ikn.org.uk')
 sys.path.append(os.path.join(site_path, 'lib'))
 
 import iknsite

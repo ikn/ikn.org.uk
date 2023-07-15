@@ -1,0 +1,6 @@
+version: "3.8"
+services:
+  ikn:
+    image: ikn5812/ikn:latest
+    ports:
+      - 80:80

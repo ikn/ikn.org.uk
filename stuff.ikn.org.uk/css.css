@@ -1,0 +1,18 @@
+/* GLOBAL */
+body {font-size: 81%; width: 60%; min-width: 650px; max-width: 900px; margin: 5px 0 8px 161px; padding: 5px 20px 10px;}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a img {border: none;}
+
+/* CONTENT */
+p {line-height: 1.5em; margin: 10px 0;}
+h1 {margin: 15px 35px; padding: 0 5px; border-bottom: 1px solid #000;}
+h2 {margin-left: 25px;}
+h3 {margin-left: 10px;}
+hr {border: none; border-top: 1px solid #000;}
+pre {margin-left: 5em; font-size: 1.1em; white-space: pre-wrap; overflow: auto;}
+.centre {text-align: center;}
+p.quote, .spoilerh {font-size: 0.85em; font-weight: bold; margin: 1.2em 1.5em 0;}
+blockquote {font-style: italic;}
+blockquote, .spoiler, pre {margin: 5px 3.5em 1.2em; padding: 5px 15px; background: #f8f8f8; border: 1px solid #ccc;}
+.mono {font-style: normal; font-family: monospace;}
