@@ -23,8 +23,13 @@ builds a static site in the `dist` directory, and a Docker image called `ikn`.
 - [Pillow](https://python-pillow.org/)
 - [gw2buildutil](http://ikn.org.uk/lib/gw2buildutil) (0.2)
 - [Docker](https://www.docker.com/)
+- [rsync](https://rsync.samba.org/)
 
 # Web server setup
 
-Install Docker and Docker Compose.  Configure SSH for passwordless access with
-hostname `ikn`.  Add the SSH user to the `docker` group.
+* install Docker and Docker Compose
+* install rsync
+* enable and start cronie
+* cron job: `0 4 * * * ~/docker/reload-apache.sh`
+* create remote user and add to the `docker` group
+* configure SSH locally for passwordless access with hostname `ikn`

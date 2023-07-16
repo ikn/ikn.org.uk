@@ -11,14 +11,14 @@ push:
 	docker push ikn5812/ikn:latest
 
 deploy:
-	scp docker/deploy.sh docker/docker-compose.yaml ikn:docker/
-	ssh ikn docker/deploy.sh
+	ssh ikn rm -rf docker
+	rsync -av --exclude site/ docker/ ikn:docker/
+	ssh ikn ENV_FILE=docker/tls.env PULL_POLICY=always docker/deploy.sh
 
 deploy-local:
-	./docker/deploy.sh
+	ENV_FILE=docker/no-tls.env PULL_POLICY=never ./docker/deploy.sh
 
 clean:
 	$(RM) -r ikn.org.uk/ docker/site/
 	find lib/ -type d -name __pycache__ | xargs $(RM) -r
 	docker image rm -f ikn5812/ikn:latest
-	docker image prune -f

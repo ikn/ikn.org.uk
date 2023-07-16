@@ -4,5 +4,8 @@ set -x -e
 
 docker container ls -q | xargs -r docker container stop
 docker container prune -f
-docker compose --file - up --detach < "$(dirname "$0")/docker-compose.yaml"
+cat $ENV_FILE
+docker compose --file "$(dirname "$0")/docker-compose.yaml" \
+    --env-file "$ENV_FILE" \
+    up --detach --pull="$PULL_POLICY"
 docker image prune -af

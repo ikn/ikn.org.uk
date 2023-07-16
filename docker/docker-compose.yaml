@@ -4,3 +4,11 @@ services:
     image: ikn5812/ikn:latest
     ports:
       - 80:80
+      - 443:443
+    volumes:
+      - ikn-apache-md:/usr/local/apache2/md
+    environment:
+      IKN_TLS_DISABLED: ${IKN_TLS_DISABLED}
+
+volumes:
+  ikn-apache-md:
