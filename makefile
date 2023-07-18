@@ -5,10 +5,10 @@ all:
 	mkdir -p docker/site/
 	cp -r *ikn.org.uk/ docker/site/
 	cp -r ../fileshare/ docker/site/stuff.ikn.org.uk/
-	docker build docker --tag ikn5812/ikn:latest
+	docker build docker --tag iknorguk/ikn:latest
 
 push:
-	docker push ikn5812/ikn:latest
+	docker push iknorguk/ikn:latest
 
 deploy:
 	ssh ikn rm -rf docker
@@ -21,4 +21,4 @@ deploy-local:
 clean:
 	$(RM) -r ikn.org.uk/ docker/site/
 	find lib/ -type d -name __pycache__ | xargs $(RM) -r
-	docker image rm -f ikn5812/ikn:latest
+	docker image rm -f iknorguk/ikn:latest
