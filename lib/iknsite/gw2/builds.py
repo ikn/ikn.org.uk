@@ -140,11 +140,15 @@ def game_mode_desc (mode):
 
 
 def build_role (roles, build):
-    for label in build.metadata.labels:
-        for role, role_defn in roles.items():
-            if label in role_defn['labels']:
-                return role
-    raise ValueError(f'no role defined for build: {build.metadata.title}')
+    for label_group in build.metadata.labels:
+        for label in label_group:
+            for role, role_defn in roles.items():
+                if label in role_defn['labels']:
+                    yield role
+                    break
+            else:
+                continue
+            break
 
 
 def role_grouping_method (roles, subgrouping_method):
@@ -152,17 +156,17 @@ def role_grouping_method (roles, subgrouping_method):
         'groups': list(roles.keys()),
         'group label': lambda role: roles[role]['name'],
         'group html desc': lambda role: roles[role].get('desc'),
-        'build group': lambda build: build_role(roles, build),
+        'build groups': lambda build: build_role(roles, build),
         'subgroup method': subgrouping_method,
     }
 
 
 def build_boon_support_group (build):
-    for group, group_defn in BUILD_BOON_SUPPORT_GROUPS.items():
-        if group_defn['labels'](build.metadata.labels):
-            return group
-    raise ValueError('no boon support group defined for build: '
-                     f'{build.metadata.title}')
+    for label_group in build.metadata.labels:
+        for group, group_defn in BUILD_BOON_SUPPORT_GROUPS.items():
+            if group_defn['labels'](label_group):
+                yield group
+                break
 
 
 BUILD_GROUPING_METHOD_BOON_SUPPORT = {
@@ -170,7 +174,7 @@ BUILD_GROUPING_METHOD_BOON_SUPPORT = {
     'group label': lambda group: BUILD_BOON_SUPPORT_GROUPS[group]['name'],
     'group html desc':
         lambda group: BUILD_BOON_SUPPORT_GROUPS[group].get('desc'),
-    'build group': build_boon_support_group,
+    'build groups': build_boon_support_group,
     'subgroup method': lambda group: None,
 }
 GAME_MODE_SUBGROUP_METHODS = {
@@ -186,7 +190,7 @@ BUILD_GROUPING_METHOD_GAME_MODE = {
     'groups': list(BUILD_GAME_MODES.keys()),
     'group label': lambda mode: mode.value.name,
     'group html desc': game_mode_desc,
-    'build group': lambda build: build.metadata.game_mode,
+    'build groups': lambda build: [build.metadata.game_mode],
     'subgroup method': lambda group: GAME_MODE_SUBGROUP_METHODS.get(group),
 }
 
@@ -200,7 +204,12 @@ def sort_builds (build):
 def build_groups (builds, grouping_method):
     grouped_builds = {group: [] for group in grouping_method['groups']}
     for build in builds:
-        grouped_builds[grouping_method['build group'](build)].append(build)
+        groups = set(grouping_method['build groups'](build))
+        if not groups:
+            raise ValueError(
+                f'no role defined for build: {build.metadata.title}')
+        for group in groups:
+            grouped_builds[group].append(build)
 
     group_defns = []
     for group, group_builds in grouped_builds.items():
