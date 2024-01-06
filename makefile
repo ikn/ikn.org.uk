@@ -4,21 +4,23 @@ all:
 	./build
 	mkdir -p docker/site/
 	cp -r *ikn.org.uk/ docker/site/
-	cp -r ../fileshare/ docker/site/stuff.ikn.org.uk/
+	mv docker/site/ikn.org.uk/download/ docker/download
 	docker build docker --tag iknorguk/ikn:latest
 
 push:
 	docker push iknorguk/ikn:latest
 
 deploy:
-	ssh ikn rm -rf docker
-	rsync -av --exclude site/ docker/ ikn:docker/
-	ssh ikn ENV_FILE=docker/tls.env PULL_POLICY=always docker/deploy.sh
+	scp ../remote.env ikn:remote.env
+	rsync -av --delete --exclude site/ --exclude download/ docker/ ikn:docker/
+	rsync -av --delete docker/download/ ikn:download/
+	rsync -av --delete ../fileshare/ ikn:fileshare/
+	ssh ikn ENV_FILE=remote.env PULL_POLICY=always docker/deploy.sh
 
 deploy-local:
-	ENV_FILE=docker/no-tls.env PULL_POLICY=never ./docker/deploy.sh
+	ENV_FILE=../local.env PULL_POLICY=never ./docker/deploy.sh
 
 clean:
-	$(RM) -r ikn.org.uk/ docker/site/
+	$(RM) -r ikn.org.uk/ docker/site/ docker/download/
 	find lib/ -type d -name __pycache__ | xargs $(RM) -r
 	docker image rm -f iknorguk/ikn:latest
