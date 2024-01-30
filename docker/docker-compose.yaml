@@ -10,7 +10,7 @@ services:
       - ${IKN_DOWNLOAD_PATH:-/opt/ikn/download}:/usr/local/apache2/htdocs/ikn.org.uk/download
       - ${IKN_FILESHARE_PATH:-/opt/ikn/fileshare}:/usr/local/apache2/htdocs/stuff.ikn.org.uk/fileshare
     environment:
-      IKN_TLS_DISABLED: ${IKN_TLS_DISABLED}
+      IKN_TLS_ENABLED: ${IKN_TLS_ENABLED}
 
 volumes:
   ikn-apache-md:
